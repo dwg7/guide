@@ -29,10 +29,11 @@
 - 規則4: 英文化する際は、guide の肯定形・小文字 dwg7 の規則(`AGENTS.md`)に従う。
 
 # /sources/unopengis-7-issues
-- 取り込み状況: 一部取り込み(最新 25 件の一覧、open 26 件の一覧、#1003・#1027・#995・#1029 の本文と要約)
+- 取り込み状況: 統計は取り込み済み(993 件の本文とコメントの JSON)。主題ごとの本文の読解は一部取り込み(#1003・#1027・#995・#1029)。
 - URL: https://github.com/UNopenGIS/7/issues
-- 取得: 2026-11-11(WebFetch による公開ページの読み取り。1 ページ 25 件、全 39 ページ)
-- 限界: API による全文取得は、この環境では許可されていない。ページ読み取りは要約を含むため、引用する前に原文で確認する。
+- 取得: 2026-11-11(`gh issue list --state all --json ...` の JSON。`miso/source/issues.json`、git 管理外)。再生成の手順は `miso/scripts/analyze.py` の冒頭を参照。
+- 規模: 993 件(open 26、closed 967)、2022 年 40、2023 年 309、2024 年 266、2025 年 197、2026 年 181。
+- 限界: JSON はスナップショットで、後の編集や削除を反映しない。引用の前に原文で確認する。
 - 利用条件: リポジトリのライセンスは CC0-1.0(README の一覧による)。個別の Issue 本文の帰属は各 Issue に従う。
 
 # /sources/unopengis-7-repo
@@ -66,6 +67,39 @@
 - 内容: dwg5 との協働を見通すメタ Issue。関連する Issue: #932(dwg5 との協働の可能性)、#994(FAO TechTalk「Geospatial Access for AI Assistants」、2026-09-28)、#997(FERSPAS と Staccato Library の統合)、#1006(FAO CSI との FERSPAS 協働の会議、2026-09-18)、#1011(FERSPAS の HTML デモ)。
 - 注: dwg5 と dwg7 の役割分担の定義は、Issue から確認できていない(`open`)。
 
+# /organization/active-contributors
+- status: verified(JSON の発言記録による。確認 2026-11-11。人が確認済み: 6 名が主要メンバー)
+- 基準: 2026 年に発言があり、最終発言が 2026-10 以降の GitHub ユーザー。
+- 主要メンバー(6 名、2026 年の発言数の順): hfu(604)、yuiseki(214)、smellman(30)、k96mz(28)、mapconcierge(13)、kenjiyoshidahome2026-bit(4)。
+- 最終発言: yuiseki と hfu 2026-11-11、kenjiyoshidahome2026-bit 2026-11-10、k96mz 2026-11-09、smellman 2026-11-03、mapconcierge 2026-10-27。
+- 過去の主要な発言者(最近は休止): albertkun(累計 237 件、最終 2024-10-20)、ShogoHirasawa(最終 2024-02-07)。人の確認で休止と整理した。ubukawa(累計 50 件、最終 2023-05-13)と asahina820(累計 23 件、最終 2024-11-25)も、最近の発言がない。
+- 全体: 発言の約 6 割が hfu。bot(github-actions)が週次 Issue などを作る。
+- guide での用途: 内部メモ。個人名は guide に書かず、「contributor」などの役割で書く(AGENTS.md)。
+
+# /lessons/priority-labels
+- status: derived(JSON の閉じるまでの日数の中央値と件数による。確認 2026-11-11)
+- `priority/MUST`: 164 件、閉じるまで中央 14 日、コメント中央 4。
+- `priority/SHOULD`: 229 件、中央 23 日、コメント中央 2。
+- `priority/MAY`: 185 件、中央 32 日、コメント中央 2。
+- `someday/maybe`: 35 件、`information`: 148 件(中央 13 日)、`adopt`: 23 件、`in progress`: 50 件、`request for comments`: 40 件、`help wanted`: 22 件、`event`: 58 件、`meetup`: 277 件(中央 8 日)。
+- 解釈(derived): `priority/*` は、対応の早さの目安として使われている。MUST が最も早く閉じ、MAY が最も遅い。ラベル定義の文書は確認できていない(`open`)。
+- guide での用途: `docs/field-guide.md` の Q9。
+
+# /traces/themes
+- status: derived(題のキーワードと件数による。本文の確認は未了)
+- 週次ミートアップ(`meetup`): 277 件。2023 年から続く。
+- タイル配信と PMTiles: 題に pmtiles を含む 37 件(2023-01〜2026-09)。例: #642(Martin または Caddy によるローカルタイル配信の高速化)、#548(MapLibre GL JS と PMTiles のサイト)。
+- UNVT Portable / Smart Maps Portable: 27 件(2022-10〜2025-11)。例: #567、#272、#41。
+- FOSS4G: 30 件(2022-10〜2026-06)。発表の準備と参加の記録。
+- JICA 研修: 11 件(2022-10〜2026-09)。例: #575(2024)、#765(2025)、#976(2026-11/12、open)。
+- Mapterhorn Japan(標高・画像タイル): 11 件(2025-08〜2026-08)。例: #978、#920、#925。
+- IPFS と Bazaar: 24 件(2023-03〜2024-05)。例: #361(PMTiles と IPFS の全球標高タイル)、#82。
+- UNIFIL との対話: 18 件(2023-05〜2025-02)。例: #254(UNIFIL GIS との会話)、#258。
+- HOT タスクと地域の地図化: 10 件(2024-06〜2026-09)。例: #857、#867、#873(open)。
+- STAC / FERSPAS / Staccato: 19 件(2023-10〜2026-09)。例: #936、#997、#1011。
+- AI と GeoAI: 24 件(2023-11〜2026-09)。例: #443、#525、#356。
+- guide での用途: `docs/onboarding-paths.md` の「最初に読む Issue」と、`docs/good-first-experiments.md` の題材の根拠。
+
 # /inventory/issues-open-2026-11-11
 - status: volatile(次の確認で更新する)
 - 取り込み状況: 一覧のみ取り込み済み。本文は #1003、#995、#1027、#1029 以外は未取り込み。
@@ -97,18 +131,17 @@
 
 # /inventory/issues-backlog
 - status: open
-- 全体: 971 件、39 ページ(25 件/ページ)。取り込み済み: 1 ページ目(#1005–#1029)の題とラベル。
+- 全体: 993 件。統計と主題の分類(題ベース)は取り込み済み。本文の読解は 4 件。
 - 次に取り込む順序(案):
-  1. open 26 件の本文(上の一覧)。
-  2. 2 ページ目以降を新しい順に、題とラベルで主題を分類する。
-  3. 主題ごとに代表的なスレッドの本文を読み、連鎖(問い → 実験 → 結果 → 訂正 → 未解決)で記録する。
-  4. 全期間の時系列を `/traces/timeline` に作る。
+  1. open 26 件の本文を連鎖(問い → 実験 → 結果 → 訂正 → 未解決)で記録する。
+  2. 主題ごとに、コメント数の多いスレッドを 2〜3 件読み、`/traces/` に記録する。
+  3. 全期間の時系列を `/traces/timeline` に作る。
 - 注: 2023 年以前の記録は Objective 構成が異なる可能性がある(`open`)。
 
 # /open-questions/guide-claims
 - status: open
 - guide の Field Guide Q10・Q15・Q17・Q18 は、記録で確認できていない提案である。取り込みを進め、根拠が見つかれば `verified` として書き換え、見つからなければ削除する。
-- ラベルの意味(`priority/MUST` など)は、Issue 群の使われ方から導く必要がある。
+- ラベルの意味は `/lessons/priority-labels` で導いた。定義文書の有無は未確認。
 - dwg5 と dwg7 の役割分担は、記録から確認できていない。
 
 # /acceptance-tests/t01-what-is-dwg7
@@ -132,8 +165,8 @@
 # /acceptance-tests/t04-labels
 - query: `priority/MUST` と `priority/SHOULD` は、記録の中でどのように使い分けられているか。
 - expected: 実際の Issue 群の使われ方に基づく導出。
-- requires: /inventory/issues-open-2026-11-11
-- result: untested
+- requires: /lessons/priority-labels
+- result: partial(閉じるまでの日数から導出済み。定義文書は未確認)
 
 # /acceptance-tests/t05-domain-themes
 - query: 過去 12 か月の Issue から、dwg7 の主な主題を 5 つに分類して答えよ。
