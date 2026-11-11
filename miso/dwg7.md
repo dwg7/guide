@@ -197,7 +197,7 @@
 - 後継(人の確認): Martin のインスタンス(stars など)、Source Cooperative、GitHub Pages。
 - 書き方の規則: guide は IPFS・Bazaar を現在の活動として書かず、経緯として書く。「2023–2024 に試され、配信は Martin、Source Cooperative、GitHub Pages に移った」と日付つきで書く。
 - 一般化: 止まった主題は、後継と移行の理由を記録する。これも踏み跡の一部である。
-- 他の主題の状態(derived): UNVT/Smart Maps Portable は最後の題が 2025-11(#567 は 2024-10 に停止)。UNIFIL は最後の題が 2025-02。活動中かどうかは、本文の確認と人の確認を経て記す(`open`)。
+- 他の主題の状態(derived): UNVT/Smart Maps Portable は、#567 が 2024-10 に停止したが、UNVT Portable の系は継続中(2026-11-10 の記事、`/lessons/lineage-qiita-unvt`)。UNIFIL は最後の題が 2025-02。活動中かどうかは、本文の確認と人の確認を経て記す(`open`)。
 
 # /lessons/lineage
 - status: derived(Issue と Qiita 記事 208 件の索引・抜粋による。確認 2026-11-11。人の確認は未了)
@@ -211,8 +211,21 @@
 - 系譜 6(2024〜): 学びの連鎖。k96mz の記事(2024-08)は、ubukawa の演習記事とリポジトリ(charites-init)を使った練習の記録である。先行者の記事を足場に、後続が自分の環境で再現して記録する。これは `/lessons/recurring-logic` のパターン 9(足場にして始める)の人づてのかたち。
 - 系譜 7(2025〜2026): Martin、Source Cooperative、GitHub Pages への配信の移行(#642、#999)、PMTiles を使う produce 系ツールの更新(k96mz、2026-03/04/10)、AI と GeoAI(#936 ほか)。
 - 発展の論理(derived): 作る → 持ち出す → 分散する → 正本を公開して Martin で配る、と進んだ。各段階で「何が配信のボトルネックか」という問いが変わり、解は前の段階の成果(PMTiles、Raspberry Pi)を使い続けた。
-- 未確認(`open`): 2018〜2021 の初期の経緯(unvt の立ち上げ時の動機)。UN Open GIS Initiative 全体との関係。
+- 初期の経緯(`/lessons/lineage-qiita-unvt` で一部補った): unvt の公開は 2018 年。2021 年にコミュニティの記事が増えた。立ち上げ時の動機は未確認(`open`)。UN Open GIS Initiative 全体との関係も未確認。
 - guide での用途: なし(内部の理解のため)。ただし `docs/good-first-experiments.md` の題材は、この系譜の「手を動かせる地点」から選んだ。
+
+# /lessons/lineage-qiita-unvt
+- status: stated(記事の本文の記述)+ derived。確認 2026-11-11。読了: 12 本(ubukawa 8 本、k96mz 6 本の導入と結び)。
+- 内部メモ。guide には載せない。
+- 記事の実践(stated): ubukawa は 2021 年末のベクトルタイルのアドベントカレンダーに、生産・ホスト・最適化・消費と、分野を変えて記事を寄せたと書く(2021-12-08)。unvt の道具を「非公式のカタログ」として紹介する(2022-04)。2021-10-22 に UNVT Storytelling Workshop が開かれた(2021-11-07 の記事)。
+- 企業環境との接続(stated): ubukawa の記事は、ArcGIS Online など企業環境で、外部のベクトルタイルを使う方法を 2021-11 から追った。GitHub Pages に置いた静的タイルを ArcGIS Online で使う(2021-11-28)、認証(Azure AD)の試行(2021-12-17、開発環境のみ)、国土地理院が 2022-03-28 に公開した ArcGIS REST API 実装ツール(unvt/itoma)の検証(2022-04)。k96mz は 2025-01 に、この系の記事を自分の環境で再現した。
+- 持ち出しの原型(stated): ubukawa は 2022-11 に、インターネットなしの Wi-Fi アクセスポイントとして Raspberry Pi を使う実験を記録し、「地図サーバー作成に一歩近づいた」と結んだ(2022-11-28)。2024 の Issue(#567、#575)で、Pi を AP にした場合の不安定さが記録されたこととつながる。
+- 標高データの年(stated): 2022-05 に MapLibre GL JS が Terrain 3D に対応した後、1 年間に使った無料の標高データ 4 種を、解像度・範囲・登録の要否・注意点の表にまとめた(2022-12-12)。
+- 運用の学び(stated): k96mz の記事は、運用中の `produce-gsc-small`(国連データと OSM データから、ズームレベル 0〜5 のタイルを作るコード)を読み解く(2024-10)。国連の Clear Map のタイル構造を、charites でレイヤに分解して観察した(2024-09)。
+- 配信の移行(stated): 2026-04 の記事で、k96mz は unvt のタイル配信(coesite4)を MBTiles から PMTiles に移す計画を「今後の展開を考えて」と書く。認証と取得制限を持つため、まず範囲取得(Range Request)を使わない方式で実装した。2026-10 に charites で PMTiles を使い、2026-11-05 にスタイルファイルとともにホストする方法を記した。
+- Portable は続いている(stated、訂正): k96mz は 2026-11-10 に「Raspberry Pi 5 の設定 (UNVT Portable)」を書いた。#567 は停止したが、UNVT Portable の系は現在も続く。`/lessons/dormant-themes` の他主題の記述は、この点で補う。
+- 学びの文化(derived): 記事の「謝辞」と「参考にしたページ」の節で、先行者への言及が習慣になっている。k96mz は ubukawa の演習の記事とリポジトリを使って練習する。後続が先行の作業を再現し、結果を自分の環境の条件つきで記録する。
+- 未精読: ubukawa の日本の地図データ(法務省地図 XML、e-Stat、不動産情報ライブラリ)32 件。k96mz の Node.js 学習ノート 28 件。標高・点群 20 件。
 
 # /lessons/recurring-logic
 - status: derived(上の 6 件の読解から。確認 2026-11-11)
@@ -268,7 +281,7 @@
 - 注: 2023 年以前の記録は Objective 構成が異なる可能性がある(`open`)。
 
 # /sources/qiita-contributors
-- 取り込み状況: 索引と抜粋 10 件を取り込み済み。全文は未精読。
+- 取り込み状況: 索引と、unvt・ArcGIS・Portable・標高・PMTiles 系の 12 本の導入と結びを精読。残りの約 190 本は索引のみ。
 - URL: https://qiita.com/T-ubu (ubukawa、120 件)、https://qiita.com/k96mz (88 件)
 - 取得: 2026-11-11(Qiita API v2、未認証。`miso/source/qiita-*.json`、git 管理外)
 - 利用条件: 各記事の著者の著作物。guide では要約と記事へのリンクにとどめ、本文は転載しない。
