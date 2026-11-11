@@ -6,7 +6,7 @@ title: Onboarding Paths
 
 Six paths lead into the same work: a question, an experiment, a record, a review. Each path names real threads in the [dwg7 issues](https://github.com/UNopenGIS/7/issues), checked on 2026-11-11, and one small action you can finish in a week.
 
-Open threads accept your comment today. Closed threads show how the work was done, and a new issue that links to them continues it.
+The first steps come from the record. The small contribution and the one-week outcome on each path are this guide's suggestions. Open threads accept your comment today. Closed threads show how the work was done, and a new issue that links to them continues it.
 
 ## Geospatial Practitioner
 

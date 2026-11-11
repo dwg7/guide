@@ -70,7 +70,7 @@ They create a quiet place and compare dates. [#857](https://github.com/UNopenGIS
 
 ### 15. How does the weekly meetup work?
 
-Each week has one issue, titled with its date and time (Tuesdays, 12:30–12:55 JST). Presenters post written updates before the session, and the live session of about 25 minutes follows an agreed order. Written updates give remote participants and later readers the same information as the live audience. See [#1027](https://github.com/UNopenGIS/7/issues/1027).
+Each week has one issue, titled with its date and time (Tuesdays, 12:30–12:55 JST). Presenters post written updates before the session. Across the 163 weekly issues with comments, every one has at least one update that arrives before the start, and the median share is two in three comments. The live session of about 25 minutes then moves through the updates in turn. Written updates give remote participants and later readers the same information as the live audience. See [#1027](https://github.com/UNopenGIS/7/issues/1027).
 
 ### 16. What do the labels mean?
 

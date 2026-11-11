@@ -35,7 +35,7 @@ The record shows the same habits across ten themes and about a thousand threads.
 
 ## Rhythm
 
-- **Weekly meetup.** A 25-minute online session runs on Tuesdays at 12:30 JST. Each week is one issue. Presenters post their updates as comments beforehand, and the session moves through them in an agreed order. The record holds 277 meetup issues since 2022.
+- **Weekly meetup.** A 25-minute online session runs on Tuesdays at 12:30 JST. Each week is one issue. Presenters post their updates as comments beforehand: in all 163 slot-dated weekly issues that carry comments, at least one update arrives before the session starts, and a median of two in three comments do. The session then moves through the updates in turn. The record holds 277 meetup issues since November 2022, and 167 of them carry this 12:30–12:55 JST slot.
 - **Labels.** `priority/MUST`, `priority/SHOULD`, and `priority/MAY` order attention. Closed threads carry them: the middle time to close is 14, 23, and 32 days. Other labels name a purpose: `information`, `adopt`, `in progress`, `request for comments`, `help wanted`, `event`, `meetup`.
 - **Language.** Japanese appears in two of every three issues opened in 2025 and 2026. Machine translation reads technical threads well. A short English comment invites international readers.
 
@@ -46,9 +46,9 @@ The record shows the same habits across ten themes and about a thousand threads.
 - Language models meet geospatial data in a design that separates a staff assistant from a map-making service ([#936](https://github.com/UNopenGIS/7/issues/936)). A neighbouring group, dwg5, works on Geo AI ([#995](https://github.com/UNopenGIS/7/issues/995)).
 - Some themes are history. Between 2023 and 2024 the group tried distributing tiles through IPFS. Delivery has since moved to Martin servers, Source Cooperative, and GitHub Pages.
 
-## Why this method fits
+## Why this guide reads the method this way
 
-International and public-sector geospatial work needs claims that others can verify, choices that outlast staff changes, and data that stays open. A thread that keeps its conditions, corrections, and open items gives all three. Open repositories and issues carry all three as a matter of course.
+This guide's reading: international and public-sector geospatial work needs claims that others can verify, choices that outlast staff changes, and data that stays open. A thread that keeps its conditions, corrections, and open items gives all three. Open repositories and issues carry all three as a matter of course.
 
 ## Your path in four steps
 

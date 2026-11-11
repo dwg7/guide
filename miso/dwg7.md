@@ -364,6 +364,59 @@
 - 取得: 2026-11-11(Qiita API v2、未認証。`miso/source/qiita-*.json`、git 管理外)
 - 利用条件: 各記事の著者の著作物。guide では要約と記事へのリンクにとどめ、本文は転載しない。
 
+# /inventory/guide-claims
+- status: verified / derived / suggestion の別を主張ごとに付けた台帳。確認 2026-11-11。
+- 凡例: `verified` = JSON またはスレッド本文で確認した。`derived` = 件数や中央値など、JSON からの計算。`suggestion` = 記録に根拠がなく、ガイドが勧めると明示した。`partial` = 一部だけ確認した。
+- 一括の確認(2026-11-11): 週次の 12:30–12:55 JST の枠は 167 件の題にあり、日付が読める 165 件のうち 164 件が火曜(最初の 2022-11-16 のみ水曜)。#1027 のコメントはすべて、会議開始より前に投稿されていた(derived)。#932 の題は「Seek possibilities for collaboration with DWG 5 -Geo AI」。FERSPAS の検索ページ(#1014 の URL)は応答 200。
+
+## dwg7-in-5-minutes
+- dwg7 は UN Open GIS Initiative の Domain Working Group 7、Smart Maps — verified(リポジトリの README と docs/index.md)
+- #1003 の連鎖(条件、数値、再現、訂正、次の測定)— verified(スレッド全文)
+- 10 の習慣と各リンク(#1003、#567、#642、#936、#920、#361、#857)— verified(各スレッドの該当コメント)
+- 週次ミートアップ(火曜 12:30 JST、25 分、事前コメント)— verified。12:30 枠でコメントのある 163 件すべてに、開始前のコメントが 1 件以上あり、開始前の割合の中央値は 3 分の 2(derived)。「合意された順」は #1027 の 1 スレッドによる。ページでは「順に進む」と書き換えた。
+- 277 件の meetup と 167 件の 12:30 枠 — derived
+- ラベルの閉じるまでの中央値 14・23・32 日 — derived
+- 2025〜2026 の新規 Issue の 3 分の 2 が日本語を含む — derived(題と本文の先頭 500 字の判定)
+- 現在の構成(PMTiles、Source Cooperative、Martin)— verified(#642、#999)
+- 小型機の持ち運び(#567、#575)、Staccato(#936)、dwg5(#995)— verified
+- IPFS が 2023〜2024 に試され、配信が移った — derived(題の件数)+ 人の確認(あなたの指示)
+- 「国際・公共の地理空間業務は検証可能な主張を必要とする」— suggestion。見出しを「Why this guide reads the method this way」に改め、「このガイドの見方」と明示した。
+
+## onboarding-paths
+- #857、#1003、#642、#936、#1014、#575、#254、#976、#361、#740、#1027 の説明 — verified(題と本文の冒頭、一部はコメント)。#740 と #1014 は本文の冒頭と最初のコメントのみ(partial)。
+- #1014 の検索ページが使える — verified(応答 200、2026-11-11)。
+- 各道の「小さな貢献」と「1 週間後」— suggestion(このガイドの設計)。冒頭に「このガイドの提案」と明示した。
+
+## good-first-experiments
+- 実験 5(206)、9(charites)、10(rio-rgbify)— verified(実機、2026-11-11)。
+- 実験 4(sha256sum)— partial(ダウンロードは未確認)。
+- 実験 6、7、8 — Status 行で未再現と明記。
+- 各実験の元スレッド・記事 — verified(リンクと本文)。
+
+## field-guide
+- Q1 閉じた 967 件のうち 919 件にコメント — derived
+- Q2 リポジトリの説明 — verified(リポジトリ ページ、WebFetch)
+- Q3 外部プロジェクト(#920、#857)— verified
+- Q4〜Q14 の各スレッド記述 — verified(#642、#567、#1003、#936、#920、#999、#361、#857)
+- Q15 週次ミートアップ — verified + partial(上記)
+- Q16 ラベル — derived(定義の文書は未確認)
+- Q17 言語 — derived + suggestion(英語の要約コメント)
+- Q18 #575 の物流 — verified
+- Q19 AI — verified(#936、#1014)+ suggestion(開示と確認)
+- Q20 公開の範囲 — suggestion
+
+## monthly-snapshot
+- #1003 の作例 — verified(スレッド全文)
+- 2026 年 11 月の作例(#1027 の 2026-11-11 のコメント)— verified(コメント全文)。引用レポート本体は未読(partial)。
+- 研修講義の日付(#976、#1010)— verified(open Issue)。#1014、#1023 は open — verified。
+
+## 空いている根拠(次の作業)
+1. (解消)事前コメントは 163 件で確認した。順の合意は #1027 のみ。
+2. #740、#1014 の全文の読解。
+3. ラベルの定義文書の有無 — リポジトリの `.github` やラベル説明を確認する(API 権限が必要)。
+4. 実験 4・6・7・8 の再現。
+5. (解消)見方として明示した。
+
 # /open-questions/guide-claims
 - status: open
 - guide の Field Guide Q10・Q15・Q17・Q18 は、記録で確認できていない提案である。取り込みを進め、根拠が見つかれば `verified` として書き換え、見つからなければ削除する。
