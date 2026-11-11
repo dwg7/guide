@@ -14,7 +14,12 @@ Good first experiments are meant to be small, visible, reproducible, and low-pre
 
 - **Goal:** Understand how map styling affects the readability of a familiar place.
 - **Inputs or prerequisites:** a browser, a public mapping service, and a location you know well.
-- **Steps:** Open two basemaps with the same viewport, compare labels, roads, terrain, and water features, and note which makes the key information easier to read.
+- **Steps:**
+
+  1. Open two basemaps at the same location and zoom level.
+  2. Compare labels, roads, terrain, and water features.
+  3. Note which basemap makes the key information easier to read.
+
 - **Visible outcome:** a short comparison note with screenshots or a description of the differences.
 - **What to record or share:** what you were trying to read, which basemap was clearer, and why.
 - **A natural next experiment:** test the same comparison on a second location or use case.
@@ -28,7 +33,12 @@ Good first experiments are meant to be small, visible, reproducible, and low-pre
 
 - **Goal:** Learn how to assess whether a dataset is clear, usable, and documented enough for an experiment.
 - **Inputs or prerequisites:** access to a public data portal or repository and a browser.
-- **Steps:** Select a public dataset, read its metadata, identify its source, date coverage, license, and known limitations, and then write a one-paragraph summary.
+- **Steps:**
+
+  1. Select a public dataset.
+  2. Read its metadata: source, date coverage, license, and known limitations.
+  3. Write a one-paragraph summary of what you could and could not verify.
+
 - **Visible outcome:** a short description of data quality and usefulness.
 - **What to record or share:** what you could verify and what remains unclear.
 - **A natural next experiment:** compare two datasets that address the same problem.
@@ -42,7 +52,12 @@ Good first experiments are meant to be small, visible, reproducible, and low-pre
 
 - **Goal:** See how a dataset transforms when it is displayed as a map layer.
 - **Inputs or prerequisites:** a spreadsheet or CSV with coordinates, a basic GIS or mapping tool, and a browser.
-- **Steps:** Prepare a small CSV, load it in a mapping tool, verify the coordinate system, and review the map result.
+- **Steps:**
+
+  1. Prepare a small CSV with latitude and longitude columns.
+  2. Load it in a mapping tool.
+  3. Check the coordinate system and review the result on the map.
+
 - **Visible outcome:** a map layer that shows points or features in a visible format.
 - **What to record or share:** coordinate system choices, the number of features, and whether any records were missing or invalid.
 - **A natural next experiment:** symbolize the same layer by category or time.
@@ -56,7 +71,12 @@ Good first experiments are meant to be small, visible, reproducible, and low-pre
 
 - **Goal:** Learn whether a simple local workflow can quickly reproduce a familiar view.
 - **Inputs or prerequisites:** a laptop, a notebook environment, a public example, and a small dataset.
-- **Steps:** Take a small map example, reduce it to a single layer or style, and document the steps required to reproduce it locally.
+- **Steps:**
+
+  1. Take a small public map example.
+  2. Reduce it to a single layer or style.
+  3. Document each step needed to reproduce it locally.
+
 - **Visible outcome:** a notebook or script that produces a local view.
 - **What to record or share:** dependencies, assumptions, and what changed from the original example.
 - **A natural next experiment:** compare a notebook workflow with a browser-based workflow.
@@ -70,7 +90,12 @@ Good first experiments are meant to be small, visible, reproducible, and low-pre
 
 - **Goal:** Check whether a map is understandable to people who are not specialists.
 - **Inputs or prerequisites:** a map, a screenshot, or a published figure and a short rubric.
-- **Steps:** Ask a few basic questions: Is the legend clear? Are labels legible? Is the map too dense? What is the main message?
+- **Steps:**
+
+  1. Ask: Is the legend clear? Are labels legible? Is the map too dense?
+  2. Write down the main message you take from the map.
+  3. Compare it with the message the author intended, if known.
+
 - **Visible outcome:** a short critique of readability and clarity.
 - **What to record or share:** the main message, the areas of confusion, and recommended changes.
 - **A natural next experiment:** compare the same map with an alternative legend or style.
@@ -84,7 +109,12 @@ Good first experiments are meant to be small, visible, reproducible, and low-pre
 
 - **Goal:** Understand the difference between interfaces, data formats, and assumptions in practice.
 - **Inputs or prerequisites:** access to public APIs, a browser or command line, and a simple request example.
-- **Steps:** Pick a simple geospatial or public data API, inspect responses, note required parameters, and compare the result format and documentation quality.
+- **Steps:**
+
+  1. Pick a simple geospatial or public data API.
+  2. Send the same small request to two APIs and inspect the responses.
+  3. Compare required parameters, result formats, and documentation quality.
+
 - **Visible outcome:** a short comparison sheet or notes on request syntax and results.
 - **What to record or share:** pitfalls, error handling, and which API was easier to understand.
 - **A natural next experiment:** build a very small script that normalizes the data from one of them.
@@ -98,7 +128,12 @@ Good first experiments are meant to be small, visible, reproducible, and low-pre
 
 - **Goal:** Learn how to identify unclear terminology, hidden assumptions, and missing context.
 - **Inputs or prerequisites:** any public document, article, or note related to geospatial or technical work.
-- **Steps:** Read a short section, identify terms that may be unfamiliar, and ask what the reader needs to know before interpreting the text.
+- **Steps:**
+
+  1. Read a short section of the document.
+  2. Mark terms that may be unfamiliar to a new reader.
+  3. Note what the reader needs to know before interpreting the text.
+
 - **Visible outcome:** a list of confusing phrases or missing explanations.
 - **What to record or share:** specific wording changes and the problem they address.
 - **A natural next experiment:** rewrite one paragraph to make it more accessible without changing the technical meaning.
@@ -112,7 +147,12 @@ Good first experiments are meant to be small, visible, reproducible, and low-pre
 
 - **Goal:** Practice data validation without needing a full pipeline.
 - **Inputs or prerequisites:** a small public dataset, a spreadsheet or script, and a clear question.
-- **Steps:** Look for missing values, coordinate anomalies, duplicate records, and obvious outliers; then summarize the findings.
+- **Steps:**
+
+  1. Open the dataset and look for missing values, duplicate records, and coordinate anomalies.
+  2. Check for obvious outliers.
+  3. Summarize the findings and how you checked them.
+
 - **Visible outcome:** a small data-quality note or table of issues found.
 - **What to record or share:** the issue type, frequency, and whether it is likely to affect the analysis.
 - **A natural next experiment:** compare quality issues across two related datasets.
@@ -126,7 +166,12 @@ Good first experiments are meant to be small, visible, reproducible, and low-pre
 
 - **Goal:** Understand how much context is needed to make a repeatable process understandable to others.
 - **Inputs or prerequisites:** a familiar workflow or task, a note-taking tool, and a few examples.
-- **Steps:** Describe the task in plain language, list assumptions, and then write the sequence of actions from start to finish.
+- **Steps:**
+
+  1. Describe the task in plain language.
+  2. List the assumptions it relies on.
+  3. Write the sequence of actions from start to finish as a checklist.
+
 - **Visible outcome:** a step-by-step checklist or process note.
 - **What to record or share:** where the workflow is fragile, what assumptions are hidden, and what needs verification.
 - **A natural next experiment:** ask another person to follow the checklist and note the confusion points.
@@ -140,7 +185,12 @@ Good first experiments are meant to be small, visible, reproducible, and low-pre
 
 - **Goal:** Learn how the same dataset can look different across software due to styling, defaults, or processing assumptions.
 - **Inputs or prerequisites:** one small public dataset and two tools with comparable functionality.
-- **Steps:** Load the same data into two tools, compare the resulting map appearance, and note differences in symbols, labels, and filtering.
+- **Steps:**
+
+  1. Load the same data into two tools.
+  2. Compare the resulting map appearance.
+  3. Note differences in symbols, labels, and filtering.
+
 - **Visible outcome:** a short comparison of rendering differences.
 - **What to record or share:** default settings, visible differences, and whether the same interpretation holds across tools.
 - **A natural next experiment:** compare the same dataset with a different projection or scale.
@@ -154,7 +204,12 @@ Good first experiments are meant to be small, visible, reproducible, and low-pre
 
 - **Goal:** Learn how to turn an open question into an understandable summary without overclaiming.
 - **Inputs or prerequisites:** a public issue, a discussion thread, or a small open repository conversation.
-- **Steps:** Read the initial comment and a few follow-ups, identify the main question, and summarize the current state of the discussion.
+- **Steps:**
+
+  1. Read the initial comment and a few follow-ups.
+  2. Identify the main question.
+  3. Summarize the current state of the discussion in your own words.
+
 - **Visible outcome:** a short summary with the key points and remaining uncertainty.
 - **What to record or share:** the central question, assumptions, and any unresolved trade-offs.
 - **A natural next experiment:** translate the summary into a more accessible plain-language note.
@@ -168,7 +223,12 @@ Good first experiments are meant to be small, visible, reproducible, and low-pre
 
 - **Goal:** Build confidence by verifying a small claim in a controlled way.
 - **Inputs or prerequisites:** one existing tool or script, a reproducible example, and a clear expected result.
-- **Steps:** Pick one small claim or task, run it under known conditions, and compare the output to what was expected.
+- **Steps:**
+
+  1. Pick one small claim or task.
+  2. Run it under known conditions.
+  3. Compare the output with what you expected and record any difference.
+
 - **Visible outcome:** a reproducible result, a screenshot, or a short log.
 - **What to record or share:** the command, the result, and any unexpected differences.
 - **A natural next experiment:** vary one input and see how the result changes.
