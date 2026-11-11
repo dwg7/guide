@@ -100,6 +100,61 @@
 - AI と GeoAI: 24 件(2023-11〜2026-09)。例: #443、#525、#356。
 - guide での用途: `docs/onboarding-paths.md` の「最初に読む Issue」と、`docs/good-first-experiments.md` の題材の根拠。
 
+# /traces/issue-642-martins-cloak
+- status: stated + derived
+- リンク: https://github.com/UNopenGIS/7/issues/642 (closed 2025-03-18、priority/MUST、コメント 17、確認 2026-11-11)
+- 問い: 公開ホスティング上の PMTiles を、ローカルのキャッシュ(Martin または Caddy)で速く読めるか。
+- 実験: 公開ホスト(Source Cooperative)上の PMTiles を Martin に参照させ、使用前後の表示を動画で比較した。別方式として、ファイルを手元に取得して Martin に渡す方式(low orbit)も試した。
+- 結果(stated): 動画でキャッシュありの方が速かった。別の参加者が別のタイルサーバーで試し、性能がほとんど変わらなかったと報告した。その差から、ホスティング側(Source Cooperative)の遅さが主因という整理に至った。
+- レビューと訂正: 当初の計画(GeoNode 優先)は、ドキュメントを読んだ後に取り下げ、同じ行内で取り消し線で訂正された。
+- 設計の論理(stated): 高い公開性の配信元(high orbit)を維持し、性能不足はローカルのキャッシュ(Martin)で補う。
+- 成果の公開: 実験コードのリポジトリと解説記事。参加者が手順に従って再現を試みた。
+- guide での用途: 連鎖の第 2 の実例。`docs/dwg7-in-5-minutes.md`(実例)、`docs/good-first-experiments.md`(タイルキャッシュの再現実験の題材)。
+
+# /traces/issue-567-smart-maps-portable
+- status: stated + derived
+- リンク: https://github.com/UNopenGIS/7/issues/567 (closed 2024-10-13、priority/MUST、request for comments、in progress、コメント 約 16、確認 2026-11-11)
+- 問い: GNSS 受信機を備えた、携帯できる Web 地図サーバーをどう作るか。
+- 実験と観察(stated): Raspberry Pi 4B、SSD、USB UPS、GNSS 受信機、Sense HAT。SSD と GNSS を USB 3.0 / 2.0 に入れ替えて安定性を比較した。
+- 結果(stated): SSD を USB 3.0 に挿すと大量転送時にディスクが外れた。入れ替えで安定した。電力不足の仮説は検証前のものとして書かれている。直結接続のためにリンクローカル固定アドレスを追加した。183 GB の PMTiles ファイルをポータブル化し、Range Request に対応するため web サーバーを切り替えた。
+- 設計の論点(stated): インターネット接続を前提にするか。ソフトウェアを導入済みで配るか。参加者 1 人に 1 台を渡せるか。
+- 終結: 開発が止まった時点で閉じ、運用で得た教訓を待って再開する、と書かれている。
+- guide での用途: 未解決を可視のまま閉じる実例。`docs/field-guide.md` Q7。
+
+# /traces/issue-575-jica-training-2024
+- status: stated
+- リンク: https://github.com/UNopenGIS/7/issues/575 (closed 2024-11-26、priority/MUST、コメント 18、確認 2026-11-11)
+- 問い: 国際研修で、参加者 1 人に 1 台の計算機環境を、会場から離れた場所からどう準備するか。
+- 方法(stated): Raspberry Pi 16 台を 1 ロットにし、OS を書き直し、固定アドレスの一覧を作成。ネットワークが最大の不確定要素と判断した。Wi-Fi ルーターを使う方式と、Pi 自身を AP にする方式を比較した。
+- 結果(stated): Pi を AP にすると、8 台目あたりで不安定になった。ルーターを使う方式に戻し、全機の設定を完了した。
+- 毎年の形: 講義は毎年行われ、2025 年(#765)と 2026 年(#976、open)に続く。
+- guide での用途: 国際・公共セクターの実務者の経路(onboarding)に、研修という接点の実例を示す。
+
+# /traces/issue-920-mapterhorn-imagery-japan
+- status: stated
+- リンク: https://github.com/UNopenGIS/7/issues/920 (closed 2026-08-25、priority/SHOULD、コメント 22、確認 2026-11-11)
+- 起点: 外部プロジェクト(mapterhorn)の Issue(mapterhorn/mapterhorn#266)で歓迎された貢献。
+- 内容(stated): 国土地理院のシームレス写真を z2〜z18 まで取得し、PMTiles 化して再配布した。合計 1,935,326 枚(z2–z15 の時点)。z18 は約 400 GB と見積もられ、先に z18.pmtiles を用意する方針に変わった。torrent と Source Cooperative の両方でホストした。公開元への大量アクセスを減らすことが、再配布の理由として明記されている。
+- 役割分担: 取得と変換を行う contributor と、ホスティングを整える contributor が、同じスレッドで進捗率を共有した。
+- guide での用途: 外部プロジェクトへの貢献と、公開リソースへの配慮の実例。
+
+# /traces/issue-254-unifil-gis
+- status: stated(個人情報を除いて要約)
+- リンク: https://github.com/UNopenGIS/7/issues/254 (closed 2023-08-27、priority/MUST、request for comments、コメント 約 10、確認 2026-11-11)
+- 内容(stated): 国連ミッションの GIS 担当との対話を、候補時刻の相談、参加者の事前メモ、議事録、次回の予定、扱う言語カテゴリの検討までを、1 つのスレッドで記録した。大規模言語モデルを使うパイロットの可能性が議題だった。
+- guide での用途: 組織外の相手との対話も、公開記録の連鎖(問い、メモ、議事録、次の一歩)で進める例。個人名や所属は guide に書かない。
+
+# /lessons/recurring-logic
+- status: derived(上の 6 件の読解から。確認 2026-11-11)
+- パターン 1: 条件を付けた主張。機器、版、データ量、負荷が数値の隣に書かれる(#1003、#567)。
+- パターン 2: 仮説と検証の分離。「仮説を持っている」と書き、検証後に結論を更新する(#567 の電力不足、#1003 の設定ファイル)。
+- パターン 3: 訂正の可視化。取り消し線や、同スレッド内の訂正コメントで残す(#642、#1003)。
+- パターン 4: 設計の論理を言語化する。選択の理由を箇条書きで述べる(#642 の high orbit / low orbit、#567 の論点)。
+- パターン 5: 再現の招待。コードと手順を公開し、参加者が試して質問する(#642)。
+- パターン 6: 未解決を残して閉じる。再開の条件を書く(#567)。
+- パターン 7: 外部への配慮。公開元への負荷を減らす設計理由を書く(#920)。
+- guide での用途: `docs/dwg7-in-5-minutes.md` の「The method in one chain」と `docs/field-guide.md` の習慣の根拠。
+
 # /inventory/issues-open-2026-11-11
 - status: volatile(次の確認で更新する)
 - 取り込み状況: 一覧のみ取り込み済み。本文は #1003、#995、#1027、#1029 以外は未取り込み。
@@ -134,7 +189,7 @@
 - 全体: 993 件。統計と主題の分類(題ベース)は取り込み済み。本文の読解は 4 件。
 - 次に取り込む順序(案):
   1. open 26 件の本文を連鎖(問い → 実験 → 結果 → 訂正 → 未解決)で記録する。
-  2. 主題ごとに、コメント数の多いスレッドを 2〜3 件読み、`/traces/` に記録する。
+  2. 主題ごとの代表スレッドを読み、`/traces/` に記録する。済み: #642、#567、#575、#920、#254。残り: FOSS4G、STAC/FERSPAS、AI、HOT、IPFS。
   3. 全期間の時系列を `/traces/timeline` に作る。
 - 注: 2023 年以前の記録は Objective 構成が異なる可能性がある(`open`)。
 
