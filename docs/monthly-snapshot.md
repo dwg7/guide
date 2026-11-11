@@ -36,7 +36,28 @@ Use one entry per thread. Replace each bracketed text with content from the publ
 - **Open items.** Measurements on a Raspberry Pi 3 with 1 GB memory, and a check of the MapServer configuration examples in the published hands-on guide.
 - **Checked.** 2026-11-11.
 
-## 3. Writing rules for entries
+## 3. Worked example: November 2026
+
+The entry below comes from a comment posted in the weekly meetup thread [#1027](https://github.com/UNopenGIS/7/issues/1027) on 2026-11-11. Its author separates premises, facts, and interpretation, and the entry keeps that order.
+
+### Connectivity around peacekeeping sites ([#1027](https://github.com/UNopenGIS/7/issues/1027))
+
+- **Question.** Can an architecture built on stable fast internet serve every site of a United Nations peacekeeping mission?
+- **Experiment.** A contributor surveyed public connectivity data around the sites of one mission, and asked two other contributors to review the findings.
+- **Result with conditions.** The open data was uneven in coverage, and the author states the bias first. Around the sites, connections exist and speeds vary. In some areas a 100 MB PMTiles file takes about 30 minutes to download. In the host country, mobile subscriptions stood at 46.6 per 100 people in 2023, and that figure includes voice calls. Fixed broadband subscriptions stood at 0.00174 per 100 people in 2023.
+- **Review and correction.** The author labels a quoted passage on resource-limited intelligence work as general background, and says that whether it applies to this mission is unknown to the author.
+- **Interpretation.** A cloud-native design may cover some sites and leave others open. A portable device that serves tiles over local Wi-Fi fits places where fixed lines are absent, and it sits beside a design that downloads PMTiles into the browser's storage.
+- **Open items.** A fuller data set, and a check at the sites themselves. The full report is linked from the thread.
+- **Checked.** 2026-11-11.
+
+### Also active in November 2026
+
+- The 2026 training lectures for the surveying course ([#976](https://github.com/UNopenGIS/7/issues/976), [#1010](https://github.com/UNopenGIS/7/issues/1010)) run on 2026-11-25, 2026-11-26, and 2026-12-14.
+- A semantic search over a large public catalogue is open for comment ([#1014](https://github.com/UNopenGIS/7/issues/1014)).
+- A study of high-resolution drone imagery as PMTiles is open ([#1023](https://github.com/UNopenGIS/7/issues/1023)).
+
+## 4. Writing rules for entries
+
 
 - Link every entry to its thread.
 - Keep conditions next to numbers.

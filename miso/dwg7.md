@@ -225,7 +225,7 @@
 - 配信の移行(stated): 2026-04 の記事で、k96mz は unvt のタイル配信(coesite4)を MBTiles から PMTiles に移す計画を「今後の展開を考えて」と書く。認証と取得制限を持つため、まず範囲取得(Range Request)を使わない方式で実装した。2026-10 に charites で PMTiles を使い、2026-11-05 にスタイルファイルとともにホストする方法を記した。
 - Portable は続いている(stated、訂正): k96mz は 2026-11-10 に「Raspberry Pi 5 の設定 (UNVT Portable)」を書いた。#567 は停止したが、UNVT Portable の系は現在も続く。`/lessons/dormant-themes` の他主題の記述は、この点で補う。
 - 学びの文化(derived): 記事の「謝辞」と「参考にしたページ」の節で、先行者への言及が習慣になっている。k96mz は ubukawa の演習の記事とリポジトリを使って練習する。後続が先行の作業を再現し、結果を自分の環境の条件つきで記録する。
-- 未精読: k96mz の Node.js 学習ノート 28 件。標高・点群 20 件。日本の地図データ(24 件)は `/lessons/lineage-qiita-japan-data` で精読。
+- 未精読: 各主題の残りの記事の本文(約 150 本)。主題ごとの精読は `/lessons/lineage-qiita-*` に記録済み(unvt、日本のデータ、標高と引き継ぎ)。
 
 # /traces/un-system-contacts
 - status: stated(Issue の題と本文による。確認 2026-11-11。人の確認は未了)
@@ -294,6 +294,16 @@
 - dwg7 の Issue との接続(derived): 2024 年度版の PMTiles が公開ホスティング(Source Cooperative)に置かれ(`MojMap_amx_2024.pmtiles`、#713)、UNDP GeoHub への登録の試験に使われた。海外の事例として、タイの地籍データを扱う作業(#695、2025-04、測地系の変換に苦労し見通しがついたと記録)が、関連プロジェクト(amx)の Issue を参照して始まった。
 - guide での用途: `docs/onboarding-paths.md` の Geospatial Practitioner の道と、`docs/good-first-experiments.md` の「データの品質を数える」実験の題材候補(件数を年度間で比べる)。記事は日本語であり、リンクと要約にとどめる。
 - 未確認(`open`): amx プロジェクトと dwg7 の組織上の関係(Issue と記事からは、同じ contributor が両方で作業していることだけが分かる)。
+
+# /lessons/lineage-qiita-elevation-and-handover
+- status: stated + derived(ubukawa の標高・点群・衛星画像の 25 本と、k96mz の Node.js 学習ノート 28 本の題と抜粋による。確認 2026-11-11)
+- 内部メモ。guide には載せない。
+- 標高・点群・衛星画像(ubukawa、2022-05〜2023-06 と 2025-02): 2022-05 に MapLibre GL JS が Terrain 3D に対応したのを受けて、標高データから RGB 標高タイルを作る記事が続いた(地球地図、AW3D30、SRTM、NASADEM。2022-05〜10)。標高データの一括ダウンロードの記事(2022-07、2022-10)。点群(OpenDroneMap)から voxel タイルを作る記事(2022-08/09、pdal と tippecanoe。元データは約 5.5 GB の LAZ)。MODIS と Sentinel-2 から小縮尺ラスタタイルを作る記事(2022-12、2023-01)。初心者向けのダウンロードの記事(2022-10、2025-02)。2022-12-12 のまとめが 4 種の標高データを比べた。
+- うまくいかなかった経験の共有(stated): 2022-06-01 の記事は、Terrain 3D でブラウザのメモリ使用量が増えすぎ、「結局、原因はわからなかった」と書き、「上手く行かなかった経験をメモしておく」ことを趣旨とする。2022-09-30 の記事は「今の課題をメモしておく」と、高さのオフセットが合わない現象を観察として書く。原因不明のまま観察を公開する習慣である。dwg7 の Issue で「仮説を持っている」と書き、検証後に更新する習慣(#567)と同じ形。
+- 引き継ぎ(stated): k96mz の記事(2024-08〜2026-03)は、Node.js のモジュール(stream、child_process、winston、better-queue、mbtiles、tilebelt、express-session、axios、pg など)と、unvt の運用リポジトリ(onyx 2024-11-13、coesite 2024-12-07、marble 2025-01-29)を、一つずつ「理解する」形で解説する。onyx は複数の MBTiles から配信するルーティング、coesite は Microsoft の認証つき配信(ubukawa の記事によると 2021-04 以前のチュートリアルに基づく)、marble は ArcGIS Online 向けの配信。
+- 訂正の可視化(stated): k96mz は 2024-11-13 に、以前の記事のサーバーの選定(CentOS 7)が「不適切だった」と書き、RHEL 8 互換の Rocky Linux 8 で書き直した。旧記事の末尾のエラーの原因かもしれない、とも書く。
+- 運用の引き継ぎの型(derived): 先行者のコードを、行ごとに解説し、自分の環境で動かし、記事にする。2026-03 以降は、produce 系の運用コードのリファクタリングに進み、2026-04 には配信を MBTiles から PMTiles に移す計画を述べた(`/lessons/lineage-qiita-unvt`)。引き継ぎは、読む → 再現する → 改良する、の順に進んだ。
+- guide での用途: なし(内部の理解のため)。ただし、Onboarding の「学びの連鎖」(先行者の記事を足場にする)の事実の裏づけ。
 
 # /lessons/recurring-logic
 - status: derived(上の 6 件の読解から。確認 2026-11-11)
