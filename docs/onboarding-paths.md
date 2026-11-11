@@ -170,7 +170,7 @@ Post your English summary as a comment on the meetup issue, with the link to the
 
 ### What success may look like after one week
 
-A reader who never saw the original update can state what was tried and what remains open.
+A reader who skipped the original update can state what was tried and what remains open.
 
 ### Where to go next
 
