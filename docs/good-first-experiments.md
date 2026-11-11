@@ -79,6 +79,7 @@ Use open data, open tools, and files you may publish. Keep personal data and cre
 - **Visible outcome:** A match, or a mismatch with a note on where the copies diverge.
 - **What to record or share:** The file name, the size, the checksum, and the date.
 - **Next:** Experiment 5.
+- **Checked:** `sha256sum` printed a 64-character value for a local file on 2026-11-11. The download step awaits a first repeat by a reader.
 
 ## 5. Serve a PMTiles file with range requests
 
@@ -97,6 +98,7 @@ Use open data, open tools, and files you may publish. Keep personal data and cre
 - **Visible outcome:** A response code 206 and a map in the viewer.
 - **What to record or share:** The server, its version, and the response headers. [#567](https://github.com/UNopenGIS/7/issues/567) records a server switch made for this reason.
 - **Next:** Experiment 6.
+- **Checked:** The static server `http-server` answered `curl -r 0-511` with status 206 and `Content-Range: bytes 0-511/2000000` on 2026-11-11.
 
 ## 6. Compare a hosted PMTiles file with a local cache
 
@@ -115,6 +117,7 @@ Use open data, open tools, and files you may publish. Keep personal data and cre
 - **Visible outcome:** Two timings for the same view, with the network noted.
 - **What to record or share:** The host, the cache software and version, your network, and both timings.
 - **Next:** Experiment 7.
+- **Status:** The steps follow the source thread or article. A first repeat by a reader, with the conditions recorded, would complete this entry.
 
 ## 7. Repeat a measurement from the Raspberry Pi thread
 
@@ -133,6 +136,7 @@ Use open data, open tools, and files you may publish. Keep personal data and cre
 - **Visible outcome:** One row for your hardware next to the published rows.
 - **What to record or share:** Hardware, versions, data size, load pattern, and results.
 - **Next:** Experiment 1.
+- **Status:** The steps follow the source thread or article. A first repeat by a reader, with the conditions recorded, would complete this entry.
 
 ## 8. Make a PMTiles file from GeoJSON
 
@@ -151,6 +155,7 @@ Use open data, open tools, and files you may publish. Keep personal data and cre
 - **Visible outcome:** A PMTiles file that displays your features.
 - **What to record or share:** The input source and licence, the command, and the file size.
 - **Next:** Experiment 5.
+- **Status:** The steps follow the source thread or article. A first repeat by a reader, with the conditions recorded, would complete this entry.
 
 ## 9. Style a vector tile map with charites
 
@@ -158,35 +163,39 @@ Use open data, open tools, and files you may publish. Keep personal data and cre
 
 *For GIS practitioners and designers.*
 
-- **Goal:** Edit a map style in readable files and see the result.
-- **Inputs:** Node.js, `charites`, and the article [Using unvt/charites for Web Map Styling](https://qiita.com/k96mz/items/d43d89bad37f46d6b71c).
+- **Goal:** Edit a map style in a readable YAML file and see the change in a local preview.
+- **Inputs:** Node.js, `npm install -g @unvt/charites`, and the article [Using unvt/charites for Web Map Styling](https://qiita.com/k96mz/items/d43d89bad37f46d6b71c).
 - **Steps:**
 
-  1. Install charites and start from the sample style.
-  2. Change the colour and width of one layer.
-  3. Build the style and view it in a MapLibre page.
+  1. Run `charites init style.yml` to create a starting style file.
+  2. Add one background layer with a colour, then change the colour.
+  3. Run `charites build style.yml style.json` and check the colour in the JSON. Run `charites serve style.yml` and open `http://localhost:8080/`.
+  4. Add a vector tile source from experiment 8 and style one layer.
 
-- **Visible outcome:** A rendered map with one layer restyled.
-- **What to record or share:** The style files and a before-and-after screenshot.
+- **Visible outcome:** A local preview that shows your colour change.
+- **What to record or share:** The style file, the charites version, and a screenshot before and after.
 - **Next:** Experiment 8.
+- **Checked:** Steps 1–3 ran on charites 2.1.15 with Node.js 22 on 2026-11-11.
 
 ## 10. Build a small elevation tile set
 
-<ul class="exp-meta"><li>2 hours</li><li>Difficulty: challenging</li></ul>
+<ul class="exp-meta"><li>90 minutes</li><li>Difficulty: moderate</li></ul>
 
 *For software engineers and researchers.*
 
-- **Goal:** Make open elevation tiles at a low zoom level, and check them against a known place.
-- **Inputs:** Open elevation data, the article [Making small-scale RGB elevation tiles](https://qiita.com/T-ubu/items/ced8423e0ebeda8c9244) (Japanese), and [#361](https://github.com/UNopenGIS/7/issues/361) for the global version.
+- **Goal:** Encode open elevation data as RGB tiles, and decode one tile to confirm the values.
+- **Inputs:** An open elevation raster for a small region, Python with `rasterio`, `pip install rio-rgbify`, and the article [Making small-scale RGB elevation tiles](https://qiita.com/T-ubu/items/ced8423e0ebeda8c9244) (Japanese). [#361](https://github.com/UNopenGIS/7/issues/361) shows the global version.
 - **Steps:**
 
-  1. Download a small open elevation dataset.
-  2. Encode it as RGB tiles with the tool from the article.
-  3. Display the tiles with terrain in a MapLibre page.
+  1. Clip the raster to a region of about one degree on each side.
+  2. Run `rio rgbify -b -10000 -i 0.1 --min-z 5 --max-z 9 region.tif region.mbtiles`.
+  3. Open the MBTiles file with SQLite and count the tiles for each zoom level.
+  4. Decode one tile with the formula `height = -10000 + (R × 65536 + G × 256 + B) × 0.1` and compare the range with your input.
 
-- **Visible outcome:** A 3D view of a known mountain or valley.
-- **What to record or share:** The data source, licence, tool versions, and a screenshot.
-- **Next:** repeat with a second elevation source and compare the two.
+- **Visible outcome:** A tile count per zoom level, and a decoded range that matches the raster.
+- **What to record or share:** The data source and licence, the tool version, the command, and the two ranges.
+- **Next:** Repeat with a second elevation source and compare the two.
+- **Checked:** Steps 2–4 ran on rio-rgbify 0.4.0 with a synthetic one-degree raster on 2026-11-11. A raster that spans the whole globe from pole to pole stops with an error in this version, so a regional clip is the safe start.
 
 ## 11. Summarise a weekly update
 
