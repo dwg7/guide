@@ -1,6 +1,6 @@
-# DWG7 Guide
+# dwg7 Guide
 
-This repository hosts the public DWG7 Access Layer: a practical guide for understanding the UN Open GIS Initiative Domain Working Group 7 (DWG7), finding a suitable first path, and trying a small, visible experiment without reducing the work to recruitment or governance content.
+This repository hosts the public dwg7 Access Layer: a practical guide for understanding the UN Open GIS Initiative Domain Working Group 7 (dwg7), finding a suitable first path, and trying a small, visible experiment without reducing the work to recruitment or governance content.
 
 ## Public site
 
@@ -9,7 +9,7 @@ This repository hosts the public DWG7 Access Layer: a practical guide for unders
 
 ## Repository purpose
 
-This repository is not a membership portal, an organization chart, or a roadmap for one product. It is a public access layer for explaining the context, culture, and entry points for engaging with DWG7 in a way that remains useful over time.
+This repository is not a membership portal, an organization chart, or a roadmap for one product. It is a public access layer for explaining the context, culture, and entry points for engaging with dwg7 in a way that remains useful over time.
 
 ## Source location
 
@@ -47,4 +47,4 @@ This repository does not create a `docs/CNAME` file. The custom domain is assume
 
 ## AGENTS guidance
 
-[AGENTS.md](AGENTS.md) is the permanent editorial and maintenance guide for this repo. It defines the working stance: help people understand DWG7, connect to it, and try small, visible experiments without building a gatekeeping or recruitment layer.
+[AGENTS.md](AGENTS.md) is the permanent editorial and maintenance guide for this repo. It defines the working stance: help people understand dwg7, connect to it, and try small, visible experiments without building a gatekeeping or recruitment layer.

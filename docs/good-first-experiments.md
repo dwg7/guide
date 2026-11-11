@@ -4,7 +4,7 @@ title: Good First Experiments
 
 # Good First Experiments
 
-Good first experiments are meant to be small, visible, reproducible, and low-pressure. They help people learn by doing without requiring a large technical setup or a formal role in the group. The purpose is not to finish a major project in one session. It is to produce a small observation that can be shared, inspected, and discussed.
+Good first experiments are meant to be small, visible, reproducible, and low-pressure. They help people learn by doing with a small setup and an open role for everyone. The purpose is not to finish a major project in one session. It is to produce a small observation that can be shared, inspected, and discussed.
 
 ## 1. Compare two basemaps
 
@@ -37,7 +37,7 @@ Good first experiments are meant to be small, visible, reproducible, and low-pre
 
   1. Select a public dataset.
   2. Read its metadata: source, date coverage, license, and known limitations.
-  3. Write a one-paragraph summary of what you could and could not verify.
+  3. Write a one-paragraph summary of what you verified and what remains unverified.
 
 - **Visible outcome:** a short description of data quality and usefulness.
 - **What to record or share:** what you could verify and what remains unclear.
@@ -54,7 +54,7 @@ Good first experiments are meant to be small, visible, reproducible, and low-pre
 - **Inputs or prerequisites:** a spreadsheet or CSV with coordinates, a basic GIS or mapping tool, and a browser.
 - **Steps:**
 
-  1. Prepare a small CSV with latitude and longitude columns.
+  1. Prepare a small CSV with latitude and longitude columns, using public or invented coordinates.
   2. Load it in a mapping tool.
   3. Check the coordinate system and review the result on the map.
 
@@ -82,13 +82,13 @@ Good first experiments are meant to be small, visible, reproducible, and low-pre
 - **A natural next experiment:** compare a notebook workflow with a browser-based workflow.
 
 
-## 5. Review a map for accessibility
+## 5. Review a map for readability
 
 <ul class="exp-meta"><li>30 minutes</li><li>Difficulty: easy</li></ul>
 
 *For designers, practitioners, and documenters.*
 
-- **Goal:** Check whether a map is understandable to people who are not specialists.
+- **Goal:** Check whether a map is understandable to non-specialist readers.
 - **Inputs or prerequisites:** a map, a screenshot, or a published figure and a short rubric.
 - **Steps:**
 
@@ -111,7 +111,7 @@ Good first experiments are meant to be small, visible, reproducible, and low-pre
 - **Inputs or prerequisites:** access to public APIs, a browser or command line, and a simple request example.
 - **Steps:**
 
-  1. Pick a simple geospatial or public data API.
+  1. Pick a simple geospatial or public data API and read its terms of use and rate limits.
   2. Send the same small request to two APIs and inspect the responses.
   3. Compare required parameters, result formats, and documentation quality.
 
@@ -136,7 +136,7 @@ Good first experiments are meant to be small, visible, reproducible, and low-pre
 
 - **Visible outcome:** a list of confusing phrases or missing explanations.
 - **What to record or share:** specific wording changes and the problem they address.
-- **A natural next experiment:** rewrite one paragraph to make it more accessible without changing the technical meaning.
+- **A natural next experiment:** rewrite one paragraph to make it more accessible while keeping the technical meaning.
 
 
 ## 8. Check a dataset for obvious quality issues
@@ -145,7 +145,7 @@ Good first experiments are meant to be small, visible, reproducible, and low-pre
 
 *For data contributors, researchers, and curious analysts.*
 
-- **Goal:** Practice data validation without needing a full pipeline.
+- **Goal:** Practice data validation with a single small script or a spreadsheet.
 - **Inputs or prerequisites:** a small public dataset, a spreadsheet or script, and a clear question.
 - **Steps:**
 
@@ -200,9 +200,9 @@ Good first experiments are meant to be small, visible, reproducible, and low-pre
 
 <ul class="exp-meta"><li>20 minutes</li><li>Difficulty: easy</li></ul>
 
-*For contributors who want to participate without changing code immediately.*
+*For contributors who want to participate through reading and writing first.*
 
-- **Goal:** Learn how to turn an open question into an understandable summary without overclaiming.
+- **Goal:** Learn how to turn an open question into an understandable summary with claims that match the evidence.
 - **Inputs or prerequisites:** a public issue, a discussion thread, or a small open repository conversation.
 - **Steps:**
 

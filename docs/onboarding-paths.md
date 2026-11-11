@@ -4,7 +4,7 @@ title: Onboarding Paths
 
 # Onboarding Paths
 
-This guide aims to support a range of entry points. People reach DWG7 from different backgrounds: some bring geospatial practice, some bring software engineering, and some bring documentation, public-sector experience, or a question that is still emerging. The goal is not to force everyone into the same path, but to help each person find a sensible first step.
+This guide aims to support a range of entry points. People reach dwg7 from different backgrounds: some bring geospatial practice, some bring software engineering, and some bring documentation, public-sector experience, or a question that is still emerging. Each path leads to the same chain of question, experiment, record, and review, and every background adds evidence to it.
 
 ## Geospatial Practitioner
 
@@ -21,13 +21,13 @@ People working with maps, data, field operations, geospatial analysis, or public
 
 ### Three first steps
 
-1. Read the overview in [DWG7 in 5 Minutes](dwg7-in-5-minutes.md).
+1. Read the overview in [dwg7 in 5 Minutes](dwg7-in-5-minutes.md).
 2. Look for an issue or discussion that speaks to a data or mapping challenge you have seen.
 3. Note one practical problem, one public data source, and one question you would like to test.
 
 ### A small first contribution
 
-Prepare a short written note that explains a dataset challenge, a geographic workflow issue, or a question about reproducibility. This is useful even if it does not include code.
+Prepare a short written note that explains a dataset challenge, a geographic workflow issue, or a question about reproducibility. A written note counts as a full contribution.
 
 ### What success may look like after one week
 
@@ -35,7 +35,7 @@ You have identified one problem area, observed public discussions around it, and
 
 ### Where to go next
 
-Try a relevant experiment in [Good First Experiments](good-first-experiments.md), or read the [DWG7 Field Guide](field-guide.md) to understand the norms of discussion and participation.
+Try a relevant experiment in [Good First Experiments](good-first-experiments.md), or read the [dwg7 Field Guide](field-guide.md) to understand the norms of discussion and participation.
 
 ## Software Engineer
 
@@ -52,7 +52,7 @@ People building tools, APIs, data processing pipelines, or open-source prototype
 
 ### Three first steps
 
-1. Review the orientation page and identify the kind of technical activity that is most relevant.
+1. Read the worked example in [dwg7 in 5 Minutes](dwg7-in-5-minutes.md) (a Raspberry Pi benchmark thread) and note which of its steps you could repeat.
 2. Search public repositories and issue discussions for a problem that can be explored with a small reproducible test.
 3. Start from one narrow question: what is the smallest reliable proof of a problem or solution?
 
@@ -66,7 +66,7 @@ You have completed one small technical probe and shared a record of what worked,
 
 ### Where to go next
 
-Look at the experiments in [Good First Experiments](good-first-experiments.md) and then review the norms in [DWG7 Field Guide](field-guide.md).
+Look at the experiments in [Good First Experiments](good-first-experiments.md) and then review the norms in [dwg7 Field Guide](field-guide.md).
 
 ## AI Builder
 
@@ -93,11 +93,11 @@ Write a short note comparing two approaches, or document how an AI-assisted work
 
 ### What success may look like after one week
 
-You have one tested workflow or example that shows what AI can and cannot help with in a transparent and reviewable way.
+You have one tested workflow or example that shows where AI helps and where it needs human checks in a transparent and reviewable way.
 
 ### Where to go next
 
-Read the guidance on AI-assisted work in [DWG7 Field Guide](field-guide.md) and then review the experiments in [Good First Experiments](good-first-experiments.md).
+Read the guidance on AI-assisted work in [dwg7 Field Guide](field-guide.md) and then review the experiments in [Good First Experiments](good-first-experiments.md).
 
 ## International and Public-Sector Practitioner
 
@@ -120,7 +120,7 @@ People working in government, multilateral settings, humanitarian environments, 
 
 ### A small first contribution
 
-Write a brief field note, a use-case summary, or a question for public review that clarifies the operational need without exposing confidential information.
+Write a brief field note, a use-case summary, or a question for public review that clarifies the operational need using information cleared for publication.
 
 ### What success may look like after one week
 
@@ -128,7 +128,7 @@ You have reframed one practical problem in a way that can be discussed with tech
 
 ### Where to go next
 
-Continue into [Onboarding Paths](onboarding-paths.md) and then review the relevant experiments or field-guide entries for public-sector norms.
+Read the responsibility entries in the [dwg7 Field Guide](field-guide.md), then try an experiment from [Good First Experiments](good-first-experiments.md).
 
 ## Student or Researcher
 
@@ -165,7 +165,7 @@ Move into [Good First Experiments](good-first-experiments.md) for practical exam
 
 ### Who this path is for
 
-People who do not primarily write code but can contribute through writing, curation, data checking, translation, or observing and summarizing public work.
+People whose main tools are words and data, who can contribute through writing, curation, data checking, translation, or observing and summarizing public work.
 
 ### What you can bring
 
@@ -178,7 +178,7 @@ People who do not primarily write code but can contribute through writing, curat
 
 1. Review one document in the guide and identify the audience question it answers.
 2. Look for a place where clarity, terminology, or structure could improve understanding.
-3. Draft a short improvement or explanation and share it in the repository.
+3. Draft a short improvement or explanation and share it as a comment on a related issue in the [dwg7 issues](https://github.com/UNopenGIS/7/issues).
 
 ### A small first contribution
 

@@ -10,7 +10,7 @@
   <a class="skip" href="#main">Skip to content</a>
   <header class="site-header">
     <div class="wrap">
-      <a class="brand" href="{{ '/' | relative_url }}">DWG7 <span>Guide</span></a>
+      <a class="brand" href="{{ '/' | relative_url }}">dwg7 <span>Guide</span></a>
       <nav aria-label="Guide pages">
         {% assign nav = "dwg7-in-5-minutes|5 Minutes,onboarding-paths|Paths,good-first-experiments|Experiments,field-guide|Field Guide,monthly-snapshot|Snapshot" | split: "," %}
         {% for item in nav %}{% assign p = item | split: "|" %}<a href="{{ '/' | append: p[0] | append: '.html' | relative_url }}"{% if page.url contains p[0] %} aria-current="page"{% endif %}>{{ p[1] }}</a>{% endfor %}
@@ -23,7 +23,7 @@
   <footer class="site-footer">
     <div class="wrap">
       <a href="{{ '/' | relative_url }}">&larr; Back to the guide index</a>
-      <span>DWG7 Access Layer &middot; a set of stepping stones, not a gateway &middot; <a href="https://github.com/dwg7/guide">Source on GitHub</a></span>
+      <span>dwg7 Access Layer &middot; a set of stepping stones, not a gateway &middot; <a href="https://github.com/dwg7/guide">Source on GitHub</a></span>
     </div>
   </footer>
 </body>

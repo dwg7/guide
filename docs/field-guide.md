@@ -14,7 +14,7 @@ A claim can be checked only when its evidence is visible. Public issues hold the
 
 ### 2. What is dwg7?
 
-dwg7 is Domain Working Group 7 of the UN Open GIS Initiative, working on "Smart Maps". The group works through a public record of questions, experiments, results, and corrections. Membership follows from contributing to that record.
+dwg7 is Domain Working Group 7 of the UN Open GIS Initiative, working on "Smart Maps". The group works through a public record of questions, experiments, results, and corrections.
 
 ### 3. How does dwg7 relate to standards, vendors, and funded programmes?
 
@@ -48,7 +48,7 @@ Labels organise the record by purpose: `meetup` for weekly sessions, `informatio
 
 ### 10. In which language is the record written?
 
-Many issues are written in Japanese, and some in English. Machine translation reads technical issues well, and an English summary comment helps international readers and is welcome.
+Many issues are written in Japanese, and some in English. Machine translation reads technical issues well. This guide suggests adding a short English summary comment when you want international readers to join a thread.
 
 ### 11. How do I introduce a question?
 
@@ -64,13 +64,13 @@ Ask directly in the thread. A plain-language question exposes an undefined term,
 
 Clear questions, reproducible examples, data checks, documentation, translation, summaries, and reviews of other people's results all help. Each of them adds evidence or clarity to the chain from question to reuse.
 
-### 14. Can I contribute without writing code?
+### 14. Which contributions fit a reader who prefers words and data?
 
-Yes. Many steps of the chain are non-code work: stating a user need, checking a dataset, repeating an experiment on a different machine, and translating a thread. In #1003 the decisive review step came from repeating the test on other operating systems.
+Many steps of the chain are non-code work: stating a user need, checking a dataset, repeating an experiment on a different machine, and translating a thread. In #1003 the decisive review step came from repeating the test on other operating systems.
 
 ### 15. What gives a contribution influence?
 
-Evidence and reproducibility give influence. A result that others can repeat shapes the discussion, whatever the title or affiliation of its author.
+In the threads read for this guide, repeatable results move the discussion forward. This guide suggests leading with evidence and reproducibility.
 
 ### 16. How should disagreement be expressed?
 
@@ -80,11 +80,11 @@ Point to the condition or the measurement that differs, and propose a test that 
 
 ### 17. How are public-sector responsibilities respected?
 
-Contributors from public institutions describe operational needs in general terms and publish only information cleared for publication. Open collaboration works with data classification and institutional rules.
+This guide suggests that contributors from public institutions describe operational needs in general terms and publish information that their institution has cleared. Open collaboration fits alongside data classification and institutional rules.
 
 ### 18. How should AI-assisted work be handled?
 
-State where AI contributed, and verify its output with the same checks as any other source. Several dwg7 threads combine AI assistants and geospatial data, and the neighbouring dwg5 focuses on Geo AI. A claim from an AI assistant enters the record once a person has checked it against evidence.
+This guide suggests stating where AI contributed and verifying its output with the same checks as any other source. Several threads combine AI assistants and geospatial data, and the neighbouring dwg5 focuses on Geo AI. A person who checks an AI-assisted claim against evidence makes it a solid part of the record.
 
 ### 19. What can be published?
 
