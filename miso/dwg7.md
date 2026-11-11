@@ -199,6 +199,21 @@
 - 一般化: 止まった主題は、後継と移行の理由を記録する。これも踏み跡の一部である。
 - 他の主題の状態(derived): UNVT/Smart Maps Portable は最後の題が 2025-11(#567 は 2024-10 に停止)。UNIFIL は最後の題が 2025-02。活動中かどうかは、本文の確認と人の確認を経て記す(`open`)。
 
+# /lessons/lineage
+- status: derived(Issue と Qiita 記事 208 件の索引・抜粋による。確認 2026-11-11。人の確認は未了)
+- 内部メモ。guide には載せない。
+- 出典: Qiita の公開記事(API v2 の取得): ubukawa のアカウント(T-ubu)120 件(2021-11〜)、k96mz 88 件(2024-04〜)。記事の主題は、ubukawa が vectortile 57%・unvt 47%・MapLibre 24%、k96mz が unvt 72%・vectortile 51%・Node.js 25%。索引は `miso/scripts/qiita_index.py`。
+- 系譜 1(2018〜): UN Vector Tile Toolkit(unvt)。ubukawa の 2022-04 の記事は、unvt を「2018 年に hfu が立ち上げ、UN Open GIS Initiative の活動の一つ」と述べ、ツールを「生産・スタイル・ホスト・最適化・消費」の 5 段階で整理している(stated)。この 5 段階で、実務者が一段ずつ記事を書く習慣があった。
+- 系譜 2(2021〜2022): 小型機での配信。Raspberry Pi 上のベクトルタイルサーバー(2021-12、2022-12)。mbtiles を Node.js/Express で配る。持ち出す(portable)という発想がここで始まる。
+- 系譜 3(2022): 標高と点群。小縮尺の RGB 標高タイル(2022-05)、NASADEM の取得(2022-10)、点群から voxel タイル(2022-08/09)。後の全球標高タイル(#361、2023-12〜)の下地。
+- 系譜 4(2023-01〜): PMTiles。tippecanoe の PMTiles 対応(2022-12 末)から数日で、unvt/nanban を使う作成手順の記事が出た(2023-01-07)。同月に Issue #50「PMTilesについての考察」が立つ。
+- 系譜 5(2023〜2024): IPFS と Bazaar、Smart Maps Portable、研修用の Raspberry Pi 16 台(#575)。配信を「持ち運ぶ」「分散する」方向。
+- 系譜 6(2024〜): 学びの連鎖。k96mz の記事(2024-08)は、ubukawa の演習記事とリポジトリ(charites-init)を使った練習の記録である。先行者の記事を足場に、後続が自分の環境で再現して記録する。これは `/lessons/recurring-logic` のパターン 9(足場にして始める)の人づてのかたち。
+- 系譜 7(2025〜2026): Martin、Source Cooperative、GitHub Pages への配信の移行(#642、#999)、PMTiles を使う produce 系ツールの更新(k96mz、2026-03/04/10)、AI と GeoAI(#936 ほか)。
+- 発展の論理(derived): 作る → 持ち出す → 分散する → 正本を公開して Martin で配る、と進んだ。各段階で「何が配信のボトルネックか」という問いが変わり、解は前の段階の成果(PMTiles、Raspberry Pi)を使い続けた。
+- 未確認(`open`): 2018〜2021 の初期の経緯(unvt の立ち上げ時の動機)。UN Open GIS Initiative 全体との関係。
+- guide での用途: なし(内部の理解のため)。ただし `docs/good-first-experiments.md` の題材は、この系譜の「手を動かせる地点」から選んだ。
+
 # /lessons/recurring-logic
 - status: derived(上の 6 件の読解から。確認 2026-11-11)
 - パターン 1: 条件を付けた主張。機器、版、データ量、負荷が数値の隣に書かれる(#1003、#567)。
@@ -251,6 +266,12 @@
   2. 主題ごとの代表スレッドを読み、`/traces/` に記録する。済み(代表 10 件): #642、#567、#575、#920、#254、#361、#936、#443、#857、#625。全 10 主題で代表スレッドを 1 件ずつ記録した。
   3. 全期間の時系列を `/traces/timeline` に作る。
 - 注: 2023 年以前の記録は Objective 構成が異なる可能性がある(`open`)。
+
+# /sources/qiita-contributors
+- 取り込み状況: 索引と抜粋 10 件を取り込み済み。全文は未精読。
+- URL: https://qiita.com/T-ubu (ubukawa、120 件)、https://qiita.com/k96mz (88 件)
+- 取得: 2026-11-11(Qiita API v2、未認証。`miso/source/qiita-*.json`、git 管理外)
+- 利用条件: 各記事の著者の著作物。guide では要約と記事へのリンクにとどめ、本文は転載しない。
 
 # /open-questions/guide-claims
 - status: open
