@@ -74,7 +74,7 @@ Each week has one issue, titled with its date and time (Tuesdays, 12:30–12:55 
 
 ### 16. What do the labels mean?
 
-`priority/MUST`, `priority/SHOULD`, and `priority/MAY` order attention. Closed threads show it: the middle time to close is 14, 23, and 32 days. `information` marks items to share, `adopt` marks candidates for adoption, `in progress` marks active work, `request for comments` invites response, `help wanted` asks for hands, `event` marks events, and `meetup` marks weekly sessions. The meanings above come from how the labels are used, since the record holds no definition document.
+`priority/MUST`, `priority/SHOULD`, and `priority/MAY` order attention. Closed threads show it: the middle time to close is 14, 23, and 32 days. `information` marks items to share, `adopt` marks candidates for adoption, `in progress` marks active work, `request for comments` invites response, `help wanted` asks for hands, `event` marks events, and `meetup` marks weekly sessions. The record defines these labels through use, and the meanings above come from that use.
 
 ### 17. In which language is the record written?
 
