@@ -93,7 +93,7 @@
 - FOSS4G: 30 件(2022-10〜2026-06)。発表の準備と参加の記録。
 - JICA 研修: 11 件(2022-10〜2026-09)。例: #575(2024)、#765(2025)、#976(2026-11/12、open)。
 - Mapterhorn Japan(標高・画像タイル): 11 件(2025-08〜2026-08)。例: #978、#920、#925。
-- IPFS と Bazaar: 24 件(2023-03〜2024-05)。例: #361(PMTiles と IPFS の全球標高タイル)、#82。
+- IPFS と Bazaar: 24 件(2023-03〜2024-05)。**停止した主題**(人の確認)。後継は Martin のインスタンス、Source Cooperative、GitHub Pages(`/lessons/dormant-themes`)。例: #361、#82。
 - UNIFIL との対話: 18 件(2023-05〜2025-02)。例: #254(UNIFIL GIS との会話)、#258。
 - HOT タスクと地域の地図化: 10 件(2024-06〜2026-09)。例: #857、#867、#873(open)。
 - STAC / FERSPAS / Staccato: 19 件(2023-10〜2026-09)。例: #936、#997、#1011。
@@ -183,6 +183,21 @@
 - リンク: https://github.com/UNopenGIS/7/issues/625 (closed 2025-11-25、event、priority/MUST、コメント 6、確認 2026-11-11)
 - 内容(stated): 国際会議(FOSS4G 2025、オークランド)への参加を、提出、発表予定、スライドの公開、参加後の感想の置き場(別 Issue #825)という順で記録した。2023 年の前回(#47、#191)でも、投稿から準備までを Issue で進めた。
 - guide での用途: 外部への発信が、公開記録の延長として行われる実例。FOSS4G 主題(30 件、2022-10〜2026-06)の代表。
+
+# /traces/issue-999-stars-martin
+- status: stated(#934 と #999 の読解)
+- リンク: https://github.com/UNopenGIS/7/issues/934 (Martin の Web UI を有効化、closed 2026-06-19)、https://github.com/UNopenGIS/7/issues/999 (closed 2026-09-10、priority/SHOULD、確認 2026-11-11)
+- 現在の配信構成(stated): Martin の独自配信サーバー「stars」でタイルを配信し、大容量の PMTiles(768 GB と 425 GB)の配信元を Source Cooperative に集約した。切り替え前に、ローカルファイルを一時退避してタイル取得を確認し、バイト単位の一致(ハッシュ)を確認し、1 週間コメントを待った。結果として、ローカルの使用率が 76% から 13% に下がった。利用者側の TileJSON URL とスタイル定義は変わらなかった。
+- 論理(stated): 公開性の高い配信元(Source Cooperative)を正本にし、Martin のインスタンスが配信を受け持つ。#642 の high orbit / low orbit の構成が、運用に定着した形。
+- guide での用途: 運用の実例。変更前の検証、コメント期間、利用者への影響なしの確認という手順。
+
+# /lessons/dormant-themes
+- status: verified(人の確認: 2026-11-11 の指示)+ derived(JSON の件数による)
+- IPFS と Bazaar(題に ipfs または bazaar を含む 24 件、2023-03〜2024-05、最後の題は 2024-05-05)は、活動が止まった主題である。2025 年以降に本文やコメントで IPFS に触れる Issue は 2 件(#889、#765)にとどまる。
+- 後継(人の確認): Martin のインスタンス(stars など)、Source Cooperative、GitHub Pages。
+- 書き方の規則: guide は IPFS・Bazaar を現在の活動として書かず、経緯として書く。「2023–2024 に試され、配信は Martin、Source Cooperative、GitHub Pages に移った」と日付つきで書く。
+- 一般化: 止まった主題は、後継と移行の理由を記録する。これも踏み跡の一部である。
+- 他の主題の状態(derived): UNVT/Smart Maps Portable は最後の題が 2025-11(#567 は 2024-10 に停止)。UNIFIL は最後の題が 2025-02。活動中かどうかは、本文の確認と人の確認を経て記す(`open`)。
 
 # /lessons/recurring-logic
 - status: derived(上の 6 件の読解から。確認 2026-11-11)
