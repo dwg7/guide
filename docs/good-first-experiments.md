@@ -4,236 +4,224 @@ title: Good First Experiments
 
 # Good First Experiments
 
-Good first experiments are meant to be small, visible, reproducible, and low-pressure. They help people learn by doing with a small setup and an open role for everyone. The purpose is not to finish a major project in one session. It is to produce a small observation that can be shared, inspected, and discussed.
+Each experiment below comes from a real thread in the dwg7 record, checked on 2026-11-11. You repeat one step of that thread, write down your conditions and your result, and share the record. A finished record counts as success.
 
-## 1. Compare two basemaps
+Use open data, open tools, and files you may publish. Keep personal data and credentials out of every record.
+
+## 1. Read one thread from question to result
 
 <ul class="exp-meta"><li>20 minutes</li><li>Difficulty: easy</li></ul>
 
-*For geospatial practitioners and curious newcomers.*
+*For a reader of any background.*
 
-- **Goal:** Understand how map styling affects the readability of a familiar place.
-- **Inputs or prerequisites:** a browser, a public mapping service, and a location you know well.
+- **Goal:** See the whole chain of question, experiment, result, and correction in one thread.
+- **Inputs:** A browser and [#1003](https://github.com/UNopenGIS/7/issues/1003).
 - **Steps:**
 
-  1. Open two basemaps at the same location and zoom level.
-  2. Compare labels, roads, terrain, and water features.
-  3. Note which basemap makes the key information easier to read.
+  1. Read the first post and state the question in one sentence.
+  2. List the test conditions: hardware, software versions, data, load.
+  3. Find the comment that corrects an earlier claim, and note what changed.
 
-- **Visible outcome:** a short comparison note with screenshots or a description of the differences.
-- **What to record or share:** what you were trying to read, which basemap was clearer, and why.
-- **A natural next experiment:** test the same comparison on a second location or use case.
+- **Visible outcome:** A five-line note: question, conditions, result, correction, open item.
+- **What to record or share:** Your five lines, posted as a comment or kept as a file.
+- **Next:** Experiment 9, which repeats a measurement.
 
+## 2. Overlay two dates of one task
 
-## 2. Open a public dataset and inspect its metadata
+<ul class="exp-meta"><li>45 minutes in two sittings</li><li>Difficulty: easy</li></ul>
+
+*For geospatial practitioners and data contributors.*
+
+- **Goal:** Show a change over time from two public snapshots.
+- **Inputs:** [#857](https://github.com/UNopenGIS/7/issues/857) and the public task page it links.
+- **Steps:**
+
+  1. Open the task page and note the progress figures with today's date.
+  2. Return a week later and note them again.
+  3. Place the two dates side by side in a table or a two-colour overlay.
+
+- **Visible outcome:** One image or table that shows what changed between the two dates.
+- **What to record or share:** The two dates, the source page, and the figures.
+- **Next:** Experiment 3.
+
+## 3. Observe one block of a mapping task
 
 <ul class="exp-meta"><li>30 minutes</li><li>Difficulty: easy</li></ul>
 
-*For people working with data, policy, or maps.*
+*For geospatial practitioners.*
 
-- **Goal:** Learn how to assess whether a dataset is clear, usable, and documented enough for an experiment.
-- **Inputs or prerequisites:** access to a public data portal or repository and a browser.
+- **Goal:** Judge the quality of one small block, and say how you judged it.
+- **Inputs:** [#857](https://github.com/UNopenGIS/7/issues/857) and the task it links.
 - **Steps:**
 
-  1. Select a public dataset.
-  2. Read its metadata: source, date coverage, license, and known limitations.
-  3. Write a one-paragraph summary of what you verified and what remains unverified.
+  1. Choose one small block in a corner of the task area.
+  2. Compare the map with the imagery behind it.
+  3. List three features that match and three that differ.
 
-- **Visible outcome:** a short description of data quality and usefulness.
-- **What to record or share:** what you could verify and what remains unclear.
-- **A natural next experiment:** compare two datasets that address the same problem.
+- **Visible outcome:** A comment on #857 with your findings for that block.
+- **What to record or share:** The block, the imagery you used, and the criteria you applied.
+- **Next:** Experiment 2.
 
+## 4. Check a download with a checksum
 
-## 3. Plot a simple point layer
+<ul class="exp-meta"><li>20 minutes</li><li>Difficulty: easy</li></ul>
 
-<ul class="exp-meta"><li>45 minutes</li><li>Difficulty: easy to moderate</li></ul>
+*For anyone who handles large public files.*
 
-*For software engineers, GIS practitioners, and beginners with limited setup.*
-
-- **Goal:** See how a dataset transforms when it is displayed as a map layer.
-- **Inputs or prerequisites:** a spreadsheet or CSV with coordinates, a basic GIS or mapping tool, and a browser.
+- **Goal:** Confirm that two copies of a file are identical before one of them is removed.
+- **Inputs:** Any public file that comes with a published SHA-256 value. [#999](https://github.com/UNopenGIS/7/issues/999) shows the practice at 400 GB scale.
 - **Steps:**
 
-  1. Prepare a small CSV with latitude and longitude columns, using public or invented coordinates.
-  2. Load it in a mapping tool.
-  3. Check the coordinate system and review the result on the map.
+  1. Download the file and its published checksum.
+  2. Run `sha256sum` on the file.
+  3. Compare the two values.
 
-- **Visible outcome:** a map layer that shows points or features in a visible format.
-- **What to record or share:** coordinate system choices, the number of features, and whether any records were missing or invalid.
-- **A natural next experiment:** symbolize the same layer by category or time.
+- **Visible outcome:** A match, or a mismatch with a note on where the copies diverge.
+- **What to record or share:** The file name, the size, the checksum, and the date.
+- **Next:** Experiment 5.
 
-
-## 4. Recreate a familiar map view in a small notebook
-
-<ul class="exp-meta"><li>60 minutes</li><li>Difficulty: moderate</li></ul>
-
-*For people with coding experience and people testing lightweight tooling.*
-
-- **Goal:** Learn whether a simple local workflow can quickly reproduce a familiar view.
-- **Inputs or prerequisites:** a laptop, a notebook environment, a public example, and a small dataset.
-- **Steps:**
-
-  1. Take a small public map example.
-  2. Reduce it to a single layer or style.
-  3. Document each step needed to reproduce it locally.
-
-- **Visible outcome:** a notebook or script that produces a local view.
-- **What to record or share:** dependencies, assumptions, and what changed from the original example.
-- **A natural next experiment:** compare a notebook workflow with a browser-based workflow.
-
-
-## 5. Review a map for readability
-
-<ul class="exp-meta"><li>30 minutes</li><li>Difficulty: easy</li></ul>
-
-*For designers, practitioners, and documenters.*
-
-- **Goal:** Check whether a map is understandable to non-specialist readers.
-- **Inputs or prerequisites:** a map, a screenshot, or a published figure and a short rubric.
-- **Steps:**
-
-  1. Ask: Is the legend clear? Are labels legible? Is the map too dense?
-  2. Write down the main message you take from the map.
-  3. Compare it with the message the author intended, if known.
-
-- **Visible outcome:** a short critique of readability and clarity.
-- **What to record or share:** the main message, the areas of confusion, and recommended changes.
-- **A natural next experiment:** compare the same map with an alternative legend or style.
-
-
-## 6. Compare open APIs for a simple lookup
+## 5. Serve a PMTiles file with range requests
 
 <ul class="exp-meta"><li>45 minutes</li><li>Difficulty: moderate</li></ul>
 
-*For software engineers and technical practitioners.*
+*For software engineers.*
 
-- **Goal:** Understand the difference between interfaces, data formats, and assumptions in practice.
-- **Inputs or prerequisites:** access to public APIs, a browser or command line, and a simple request example.
+- **Goal:** Learn that a single PMTiles file serves tiles through HTTP range requests.
+- **Inputs:** A small public PMTiles file, a static web server that supports range requests, and `curl`.
 - **Steps:**
 
-  1. Pick a simple geospatial or public data API and read its terms of use and rate limits.
-  2. Send the same small request to two APIs and inspect the responses.
-  3. Compare required parameters, result formats, and documentation quality.
+  1. Serve the file from a folder.
+  2. Request bytes 0–511 with `curl -r 0-511` and read the response code.
+  3. Open the file in a viewer that reads PMTiles over HTTP.
 
-- **Visible outcome:** a short comparison sheet or notes on request syntax and results.
-- **What to record or share:** pitfalls, error handling, and which API was easier to understand.
-- **A natural next experiment:** build a very small script that normalizes the data from one of them.
+- **Visible outcome:** A response code 206 and a map in the viewer.
+- **What to record or share:** The server, its version, and the response headers. [#567](https://github.com/UNopenGIS/7/issues/567) records a server switch made for this reason.
+- **Next:** Experiment 6.
 
+## 6. Compare a hosted PMTiles file with a local cache
 
-## 7. Audit a public document for clarity
+<ul class="exp-meta"><li>90 minutes</li><li>Difficulty: moderate</li></ul>
+
+*For software engineers.*
+
+- **Goal:** Measure how a local cache changes the load time of tiles from a public host.
+- **Inputs:** A public PMTiles file on a public host, Martin or Caddy, and the repository linked in [#642](https://github.com/UNopenGIS/7/issues/642).
+- **Steps:**
+
+  1. Load a map from the public host and record the time to first render.
+  2. Start a local cache that points at the same file.
+  3. Load the same map through the cache and record the time again.
+
+- **Visible outcome:** Two timings for the same view, with the network noted.
+- **What to record or share:** The host, the cache software and version, your network, and both timings.
+- **Next:** Experiment 7.
+
+## 7. Repeat a measurement from the Raspberry Pi thread
+
+<ul class="exp-meta"><li>2 hours</li><li>Difficulty: moderate</li></ul>
+
+*For software engineers.*
+
+- **Goal:** Add your own hardware to a public comparison.
+- **Inputs:** [#1003](https://github.com/UNopenGIS/7/issues/1003) and a small computer or a container with a memory limit.
+- **Steps:**
+
+  1. Read the setup and the load pattern in the thread.
+  2. Run one server with the same kind of load.
+  3. Record requests per second.
+
+- **Visible outcome:** One row for your hardware next to the published rows.
+- **What to record or share:** Hardware, versions, data size, load pattern, and results.
+- **Next:** Experiment 1.
+
+## 8. Make a PMTiles file from GeoJSON
+
+<ul class="exp-meta"><li>60 minutes</li><li>Difficulty: moderate</li></ul>
+
+*For GIS practitioners and software engineers.*
+
+- **Goal:** Turn a small vector dataset into one PMTiles file.
+- **Inputs:** A small open GeoJSON file, Docker, and the tutorial [Making PMTiles from GeoJSON with unvt](https://qiita.com/T-ubu/items/93d84b9d4bf5be608fda) (Japanese).
+- **Steps:**
+
+  1. Start the container from the tutorial.
+  2. Run tippecanoe on your file with PMTiles output.
+  3. Open the result in a PMTiles viewer.
+
+- **Visible outcome:** A PMTiles file that displays your features.
+- **What to record or share:** The input source and licence, the command, and the file size.
+- **Next:** Experiment 5.
+
+## 9. Style a vector tile map with charites
+
+<ul class="exp-meta"><li>60 minutes</li><li>Difficulty: moderate</li></ul>
+
+*For GIS practitioners and designers.*
+
+- **Goal:** Edit a map style in readable files and see the result.
+- **Inputs:** Node.js, `charites`, and the article [Using unvt/charites for Web Map Styling](https://qiita.com/k96mz/items/d43d89bad37f46d6b71c).
+- **Steps:**
+
+  1. Install charites and start from the sample style.
+  2. Change the colour and width of one layer.
+  3. Build the style and view it in a MapLibre page.
+
+- **Visible outcome:** A rendered map with one layer restyled.
+- **What to record or share:** The style files and a before-and-after screenshot.
+- **Next:** Experiment 8.
+
+## 10. Build a small elevation tile set
+
+<ul class="exp-meta"><li>2 hours</li><li>Difficulty: challenging</li></ul>
+
+*For software engineers and researchers.*
+
+- **Goal:** Make open elevation tiles at a low zoom level, and check them against a known place.
+- **Inputs:** Open elevation data, the article [Making small-scale RGB elevation tiles](https://qiita.com/T-ubu/items/ced8423e0ebeda8c9244) (Japanese), and [#361](https://github.com/UNopenGIS/7/issues/361) for the global version.
+- **Steps:**
+
+  1. Download a small open elevation dataset.
+  2. Encode it as RGB tiles with the tool from the article.
+  3. Display the tiles with terrain in a MapLibre page.
+
+- **Visible outcome:** A 3D view of a known mountain or valley.
+- **What to record or share:** The data source, licence, tool versions, and a screenshot.
+- **Next:** repeat with a second elevation source and compare the two.
+
+## 11. Summarise a weekly update
 
 <ul class="exp-meta"><li>20 minutes</li><li>Difficulty: easy</li></ul>
 
-*For documentation contributors, researchers, and analysts.*
+*For documentation contributors and students.*
 
-- **Goal:** Learn how to identify unclear terminology, hidden assumptions, and missing context.
-- **Inputs or prerequisites:** any public document, article, or note related to geospatial or technical work.
+- **Goal:** Turn one written update into two clear sentences.
+- **Inputs:** The latest weekly meetup issue, for example [#1027](https://github.com/UNopenGIS/7/issues/1027).
 - **Steps:**
 
-  1. Read a short section of the document.
-  2. Mark terms that may be unfamiliar to a new reader.
-  3. Note what the reader needs to know before interpreting the text.
+  1. Choose one update.
+  2. Follow its link to the source thread.
+  3. Write two sentences for a reader who joined late.
 
-- **Visible outcome:** a list of confusing phrases or missing explanations.
-- **What to record or share:** specific wording changes and the problem they address.
-- **A natural next experiment:** rewrite one paragraph to make it more accessible while keeping the technical meaning.
+- **Visible outcome:** A comment on the meetup issue with your summary and the source link.
+- **What to record or share:** The update you read and the thread it came from.
+- **Next:** Experiment 1.
 
+## 12. Write a one-page design note
 
-## 8. Check a dataset for obvious quality issues
+<ul class="exp-meta"><li>60 minutes</li><li>Difficulty: moderate</li></ul>
 
-<ul class="exp-meta"><li>30 to 60 minutes</li><li>Difficulty: easy to moderate</li></ul>
+*For AI builders and engineers.*
 
-*For data contributors, researchers, and curious analysts.*
-
-- **Goal:** Practice data validation with a single small script or a spreadsheet.
-- **Inputs or prerequisites:** a small public dataset, a spreadsheet or script, and a clear question.
+- **Goal:** State a design decision with its context, options, and consequences.
+- **Inputs:** [#936](https://github.com/UNopenGIS/7/issues/936), which records a design as an ADR, and one decision from your own work.
 - **Steps:**
 
-  1. Open the dataset and look for missing values, duplicate records, and coordinate anomalies.
-  2. Check for obvious outliers.
-  3. Summarize the findings and how you checked them.
+  1. Read the ADR headings in #936.
+  2. Write the same headings for your own decision.
+  3. Ask one colleague to find the weakest sentence.
 
-- **Visible outcome:** a small data-quality note or table of issues found.
-- **What to record or share:** the issue type, frequency, and whether it is likely to affect the analysis.
-- **A natural next experiment:** compare quality issues across two related datasets.
-
-
-## 9. Document one workflow as a plain-language checklist
-
-<ul class="exp-meta"><li>20 minutes</li><li>Difficulty: easy</li></ul>
-
-*For practitioners, technical contributors, and documentation-oriented participants.*
-
-- **Goal:** Understand how much context is needed to make a repeatable process understandable to others.
-- **Inputs or prerequisites:** a familiar workflow or task, a note-taking tool, and a few examples.
-- **Steps:**
-
-  1. Describe the task in plain language.
-  2. List the assumptions it relies on.
-  3. Write the sequence of actions from start to finish as a checklist.
-
-- **Visible outcome:** a step-by-step checklist or process note.
-- **What to record or share:** where the workflow is fragile, what assumptions are hidden, and what needs verification.
-- **A natural next experiment:** ask another person to follow the checklist and note the confusion points.
-
-
-## 10. Compare how different tools render the same dataset
-
-<ul class="exp-meta"><li>45 to 90 minutes</li><li>Difficulty: moderate</li></ul>
-
-*For technical practitioners and people exploring geospatial tooling.*
-
-- **Goal:** Learn how the same dataset can look different across software due to styling, defaults, or processing assumptions.
-- **Inputs or prerequisites:** one small public dataset and two tools with comparable functionality.
-- **Steps:**
-
-  1. Load the same data into two tools.
-  2. Compare the resulting map appearance.
-  3. Note differences in symbols, labels, and filtering.
-
-- **Visible outcome:** a short comparison of rendering differences.
-- **What to record or share:** default settings, visible differences, and whether the same interpretation holds across tools.
-- **A natural next experiment:** compare the same dataset with a different projection or scale.
-
-
-## 11. Record an observation from an open source issue or discussion
-
-<ul class="exp-meta"><li>20 minutes</li><li>Difficulty: easy</li></ul>
-
-*For contributors who want to participate through reading and writing first.*
-
-- **Goal:** Learn how to turn an open question into an understandable summary with claims that match the evidence.
-- **Inputs or prerequisites:** a public issue, a discussion thread, or a small open repository conversation.
-- **Steps:**
-
-  1. Read the initial comment and a few follow-ups.
-  2. Identify the main question.
-  3. Summarize the current state of the discussion in your own words.
-
-- **Visible outcome:** a short summary with the key points and remaining uncertainty.
-- **What to record or share:** the central question, assumptions, and any unresolved trade-offs.
-- **A natural next experiment:** translate the summary into a more accessible plain-language note.
-
-
-## 12. Run a very small reproducible check
-
-<ul class="exp-meta"><li>15 to 40 minutes</li><li>Difficulty: easy to moderate</li></ul>
-
-*For engineers, researchers, and anyone testing a local workflow.*
-
-- **Goal:** Build confidence by verifying a small claim in a controlled way.
-- **Inputs or prerequisites:** one existing tool or script, a reproducible example, and a clear expected result.
-- **Steps:**
-
-  1. Pick one small claim or task.
-  2. Run it under known conditions.
-  3. Compare the output with what you expected and record any difference.
-
-- **Visible outcome:** a reproducible result, a screenshot, or a short log.
-- **What to record or share:** the command, the result, and any unexpected differences.
-- **A natural next experiment:** vary one input and see how the result changes.
-
-
-These experiments are intentionally modest. The real value is in the observation, the verification, and the ability to share a result clearly enough for others to inspect.
+- **Visible outcome:** A one-page note with context, decision, options, and consequences.
+- **What to record or share:** The note, and the change you made after the colleague's reading.
+- **Next:** Experiment 1, applied to your own thread.
 
 [Back to index](index.md)
