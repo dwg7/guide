@@ -77,12 +77,12 @@ Evaluation habits: a fixed task, a recorded input, a checked output.
 ### Three first steps
 
 1. Read [#936](https://github.com/UNopenGIS/7/issues/936). It records a design decision as an ADR and then reports each step of the build.
-2. Try the semantic search described in [#1014](https://github.com/UNopenGIS/7/issues/1014) with a question from your own work.
+2. Try the search in [#1014](https://github.com/UNopenGIS/7/issues/1014) with a question from your own work. It covers 1,921 collections of a public FAO catalogue and adds semantic search to the full-text search that the catalogue already offers.
 3. Write down the question, the result, and your judgment of it.
 
 ### A small first contribution
 
-Comment on #1014 with three queries, what came back, and whether it answered the question.
+Comment on #1014 with three queries, what came back, and whether it answered the question. The thread notes that the source code was in preparation on 2026-09-21.
 
 ### What success may look like after one week
 
@@ -133,7 +133,7 @@ Structured questions, literature, and time to read closely.
 ### Three first steps
 
 1. Read [#361](https://github.com/UNopenGIS/7/issues/361), which builds global elevation tiles from published recipes.
-2. Read [#740](https://github.com/UNopenGIS/7/issues/740), an open question about converting national coordinate-transformation parameters into open formats.
+2. Read [#740](https://github.com/UNopenGIS/7/issues/740). It lays out six steps for converting national coordinate-transformation parameters into open grid formats. A comment from September 2026 names a GeoTIFF grid for PROJ as the short-term route.
 3. Choose one claim in either thread that you can check with public data.
 
 ### A small first contribution

@@ -214,6 +214,22 @@
 - 初期の経緯(`/lessons/lineage-qiita-unvt` で一部補った): unvt の公開は 2018 年。2021 年にコミュニティの記事が増えた。立ち上げ時の動機は未確認(`open`)。UN Open GIS Initiative 全体との関係も未確認。
 - guide での用途: なし(内部の理解のため)。ただし `docs/good-first-experiments.md` の題材は、この系譜の「手を動かせる地点」から選んだ。
 
+# /traces/issue-740-coordinate-transformation
+- status: stated
+- リンク: https://github.com/UNopenGIS/7/issues/740 (open、priority/MAY、コメント 1、確認 2026-11-11)
+- 問い: 日本の座標変換パラメータ(tky2jgd.par)や、他国(ヨルダン)の変換パラメータを、オープンソースが使える形式に変換できるか。
+- 計画(stated、本文): 6 段階。(1)パラメータファイルの構造と内容を調べる。(2)NTv2 形式を調べる。(3)対応するオープンソース(PROJ、GDAL)を特定する。(4)変換ツールを探すか作る。(5)変換して、対象ソフトで試す。(6)データ入手の状況に応じて優先順位を調整する(ヨルダンの方が先に入手できれば優先する)。
+- 更新(stated、2026-09-10 のコメント): POS2JGD を既存のオープンソースに接続するなら、短期は PROJ の general grid shift 用 GeoTIFF、長期は変形モデルが妥当と整理した。手順は、par → tif → `+proj=gridshift`。PROJ が水平グリッドで GeoTIFF、CTable2、NTv2 を扱うことが前提。
+- 状態: open。2026-09-10 の更新後、実装の報告はない(2026-11-11 時点、`open`)。
+- guide での用途: Student or Researcher の道の最初の一歩(研究課題として読める open の問い)。
+
+# /traces/issue-1014-ferspas-semantic-search
+- status: stated
+- リンク: https://github.com/UNopenGIS/7/issues/1014 (open、priority/SHOULD、コメント 0、本文 327 字、確認 2026-11-11)
+- 内容(stated): FAO FERSPAS の 1,921 件のコレクションに、全文検索と意味検索ができるページを公開した。全文検索は元から FAO のサイトにあり、意味検索が新規要素。ソースコードは準備中(2026-09-21)。
+- 確認(2026-11-11): ページ(`stac.yuiseki.net/fao-ferspas/search/`)は応答 200。
+- guide での用途: AI Builder の道の最初の一歩(利用して、問いと結果を記録する)。
+
 # /lessons/lineage-qiita-unvt
 - status: stated(記事の本文の記述)+ derived。確認 2026-11-11。読了: 12 本(ubukawa 8 本、k96mz 6 本の導入と結び)。
 - 内部メモ。guide には載せない。
