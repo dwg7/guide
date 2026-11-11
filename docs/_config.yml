@@ -1,0 +1,5 @@
+title: DWG7 Guide
+description: A practical access layer for understanding, exploring, and contributing to DWG7.
+url: https://dwg7.opengis.org
+baseurl: /guide
+markdown: kramdown
