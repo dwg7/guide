@@ -17,6 +17,7 @@ The public guide content is maintained in the `docs/` directory. The content is 
 
 ## Key files
 
+- [CONTRIBUTIONS.md](CONTRIBUTIONS.md) — how to contribute to the guide.
 - [AGENTS.md](AGENTS.md) — permanent guidance for working on and editing this repository.
 - [docs/index.md](docs/index.md) — public landing page for the guide.
 - [docs/dwg7-in-5-minutes.md](docs/dwg7-in-5-minutes.md) — concise orientation for newcomers.
@@ -32,7 +33,7 @@ The public guide content is maintained in the `docs/` directory. The content is 
 
 ## Contributing
 
-Suggestions, corrections, and improvements are welcome through GitHub Issues or Pull Requests in this repository.
+Read [CONTRIBUTIONS.md](CONTRIBUTIONS.md). Suggestions, corrections, repeated experiments, and fresh checks are welcome through GitHub Issues or Pull Requests in this repository.
 
 ## GitHub Pages setup
 
