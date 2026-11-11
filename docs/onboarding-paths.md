@@ -4,192 +4,176 @@ title: Onboarding Paths
 
 # Onboarding Paths
 
-This guide aims to support a range of entry points. People reach dwg7 from different backgrounds: some bring geospatial practice, some bring software engineering, and some bring documentation, public-sector experience, or a question that is still emerging. Each path leads to the same chain of question, experiment, record, and review, and every background adds evidence to it.
+Six paths lead into the same work: a question, an experiment, a record, a review. Each path names real threads in the [dwg7 issues](https://github.com/UNopenGIS/7/issues), checked on 2026-11-11, and one small action you can finish in a week.
+
+Open threads accept your comment today. Closed threads show how the work was done, and a new issue that links to them continues it.
 
 ## Geospatial Practitioner
 
 ### Who this path is for
 
-People working with maps, data, field operations, geospatial analysis, or public spatial information.
+People who map, validate, and publish spatial data.
 
 ### What you can bring
 
-- Reviews of real-world geospatial problems
-- Data quality observations
-- Friction points in interoperability, metadata, or workflows
-- A practical sense of what works in the field
+A trained eye for data quality, and knowledge of how maps get used in the field.
 
 ### Three first steps
 
-1. Read the overview in [dwg7 in 5 Minutes](dwg7-in-5-minutes.md).
-2. Look for an issue or discussion that speaks to a data or mapping challenge you have seen.
-3. Note one practical problem, one public data source, and one question you would like to test.
+1. Read [#857](https://github.com/UNopenGIS/7/issues/857), a thread that tracks a humanitarian mapping task from "mapped" toward "validated".
+2. Open the linked task and look at one small block in a corner of the area.
+3. Compare what you see with the progress figures in the thread.
 
 ### A small first contribution
 
-Prepare a short written note that explains a dataset challenge, a geographic workflow issue, or a question about reproducibility. A written note counts as a full contribution.
+Comment on #857 with one observation about one block: what you checked, and what you found.
 
 ### What success may look like after one week
 
-You have identified one problem area, observed public discussions around it, and written a small note or example that others can follow.
+Your comment states its conditions, so a reader can repeat your check.
 
 ### Where to go next
 
-Try a relevant experiment in [Good First Experiments](good-first-experiments.md), or read the [dwg7 Field Guide](field-guide.md) to understand the norms of discussion and participation.
+[Good First Experiments](good-first-experiments.md), starting with the dataset checks.
 
 ## Software Engineer
 
 ### Who this path is for
 
-People building tools, APIs, data processing pipelines, or open-source prototypes connected to geospatial work.
+People who build and measure software.
 
 ### What you can bring
 
-- Reproducible examples
-- Validation scripts
-- Interface or tooling feedback
-- Practical observations about complexity and interoperability
+Reproducible measurements and the habit of stating test conditions.
 
 ### Three first steps
 
-1. Read the worked example in [dwg7 in 5 Minutes](dwg7-in-5-minutes.md) (a Raspberry Pi benchmark thread) and note which of its steps you could repeat.
-2. Search public repositories and issue discussions for a problem that can be explored with a small reproducible test.
-3. Start from one narrow question: what is the smallest reliable proof of a problem or solution?
+1. Read [#1003](https://github.com/UNopenGIS/7/issues/1003), which compares two map servers on a Raspberry Pi.
+2. Read the open item at the end of the thread: measurements on a Raspberry Pi 3 with 1 GB of memory.
+3. Read [#642](https://github.com/UNopenGIS/7/issues/642) to see a second experiment, a local tile cache, with its code.
 
 ### A small first contribution
 
-Create or improve a reproducible example, a documentation snippet, or a small validation script that can be reviewed by others.
+Repeat one measurement from #1003 or #642 on your own machine. Post the hardware, the versions, the data, and the numbers.
 
 ### What success may look like after one week
 
-You have completed one small technical probe and shared a record of what worked, what failed, and what you learned.
+Your result sits next to the original, and a reader can compare the two.
 
 ### Where to go next
 
-Look at the experiments in [Good First Experiments](good-first-experiments.md) and then review the norms in [dwg7 Field Guide](field-guide.md).
+The tile cache and range-request experiments in [Good First Experiments](good-first-experiments.md).
 
 ## AI Builder
 
 ### Who this path is for
 
-People using AI for reasoning, summarization, translation, analysis, experimentation, or tooling.
+People who build with language models, search, and agents.
 
 ### What you can bring
 
-- Prompt design and comparative testing
-- Practical evaluations of tool outputs
-- Documentation of assumptions and limits
-- Attention to verification and bias
+Evaluation habits: a fixed task, a recorded input, a checked output.
 
 ### Three first steps
 
-1. Define one concrete task where AI assistance could help in a geospatial or public-interest context.
-2. Test it with a narrow, observable objective rather than a broad claim.
-3. Record the input, output, and the limits of the result.
+1. Read [#936](https://github.com/UNopenGIS/7/issues/936). It records a design decision as an ADR and then reports each step of the build.
+2. Try the semantic search described in [#1014](https://github.com/UNopenGIS/7/issues/1014) with a question from your own work.
+3. Write down the question, the result, and your judgment of it.
 
 ### A small first contribution
 
-Write a short note comparing two approaches, or document how an AI-assisted workflow was checked for correctness and usefulness.
+Comment on #1014 with three queries, what came back, and whether it answered the question.
 
 ### What success may look like after one week
 
-You have one tested workflow or example that shows where AI helps and where it needs human checks in a transparent and reviewable way.
+Your comment separates what the system returned from what you verified.
 
 ### Where to go next
 
-Read the guidance on AI-assisted work in [dwg7 Field Guide](field-guide.md) and then review the experiments in [Good First Experiments](good-first-experiments.md).
+The [Field Guide](field-guide.md) entry on AI-assisted work.
 
 ## International and Public-Sector Practitioner
 
 ### Who this path is for
 
-People working in government, multilateral settings, humanitarian environments, public service, or cross-border coordination.
+People in governments, international organisations, and public programmes.
 
 ### What you can bring
 
-- Knowledge of operational constraints and data realities
-- Clear descriptions of user needs
-- Experience with public accountability and interoperability
-- Questions that matter in practice
+The operational question, the real constraint, and the sense of what a decision needs.
 
 ### Three first steps
 
-1. Identify the operational question that matters most to your work.
-2. Read the overview and field guide to understand the discussion culture.
-3. Look for an existing public note or discussion that addresses a comparable challenge.
+1. Read [#575](https://github.com/UNopenGIS/7/issues/575), which prepares one computer for each participant of an international training course.
+2. Read [#254](https://github.com/UNopenGIS/7/issues/254), a first conversation with a mission's GIS staff, from scheduling to minutes.
+3. Read [#976](https://github.com/UNopenGIS/7/issues/976), the open thread for the 2026 training lectures.
 
 ### A small first contribution
 
-Write a brief field note, a use-case summary, or a question for public review that clarifies the operational need using information cleared for publication.
+Write one operational question in general terms, using information your institution has cleared for publication. Post it as an issue or a comment.
 
 ### What success may look like after one week
 
-You have reframed one practical problem in a way that can be discussed with technical peers and documented for future review.
+A technical contributor can read your question and propose an experiment.
 
 ### Where to go next
 
-Read the responsibility entries in the [dwg7 Field Guide](field-guide.md), then try an experiment from [Good First Experiments](good-first-experiments.md).
+The responsibility entries in the [Field Guide](field-guide.md).
 
 ## Student or Researcher
 
 ### Who this path is for
 
-Students, researchers, educators, and early-career professionals exploring geospatial topics or collaborative public work.
+People who learn by framing a question and testing it.
 
 ### What you can bring
 
-- Fresh perspectives
-- Structured questions
-- Documentation and comparison skills
-- Careful observation and a willingness to test assumptions
+Structured questions, literature, and time to read closely.
 
 ### Three first steps
 
-1. Read one orientation piece and one field-guide section.
-2. Pick one small research question that can be explored with public data or a reproducible example.
-3. Write down the question, method, and what you observed.
+1. Read [#361](https://github.com/UNopenGIS/7/issues/361), which builds global elevation tiles from published recipes.
+2. Read [#740](https://github.com/UNopenGIS/7/issues/740), an open question about converting national coordinate-transformation parameters into open formats.
+3. Choose one claim in either thread that you can check with public data.
 
 ### A small first contribution
 
-Share a short experiment log, literature note, or reproducible workflow that others can inspect.
+Post a short log: the claim, your method, and what you observed.
 
 ### What success may look like after one week
 
-You have a documented, reviewable example that shows how the question was framed, explored, and interpreted.
+Another reader can repeat your method from the log.
 
 ### Where to go next
 
-Move into [Good First Experiments](good-first-experiments.md) for practical examples, then return to the field guide for culture and norms.
+[Good First Experiments](good-first-experiments.md), then the Field Guide on disagreement and error.
 
 ## Documentation, Data, or Community Contributor
 
 ### Who this path is for
 
-People whose main tools are words and data, who can contribute through writing, curation, data checking, translation, or observing and summarizing public work.
+People who write, curate, translate, and connect.
 
 ### What you can bring
 
-- Clarity in writing
-- Data curation and validation
-- Pattern recognition in public discussions
-- Good documentation habits
+Clear prose, careful data handling, and attention to what readers need.
 
 ### Three first steps
 
-1. Review one document in the guide and identify the audience question it answers.
-2. Look for a place where clarity, terminology, or structure could improve understanding.
-3. Draft a short improvement or explanation and share it as a comment on a related issue in the [dwg7 issues](https://github.com/UNopenGIS/7/issues).
+1. Read the latest weekly meetup issue, for example [#1027](https://github.com/UNopenGIS/7/issues/1027). Presenters post written updates there.
+2. Choose one update and write two English sentences that summarise it for a reader who joined late.
+3. Follow its links to the thread it comes from.
 
 ### A small first contribution
 
-Improve a sentence, add a missing example, clarify terminology, or summarize a discussion in a more accessible way.
+Post your English summary as a comment on the meetup issue, with the link to the source thread.
 
 ### What success may look like after one week
 
-A reader can understand the topic more easily, and one small improvement has been made in a way that is visible to others.
+A reader who never saw the original update can state what was tried and what remains open.
 
 ### Where to go next
 
-Review [Monthly Snapshot](monthly-snapshot.md) to see how public work is translated for outsiders, and then consider one small improvement in the guide itself.
+[Monthly Snapshot](monthly-snapshot.md), which turns threads into short records.
 
 [Back to index](index.md)
