@@ -1,93 +1,99 @@
 ---
-title: DWG7 Field Guide
+title: dwg7 Field Guide
 ---
 
-# DWG7 Field Guide
+# dwg7 Field Guide
 
-This guide is not a rulebook. It is a practical description of how work tends to move in a distributed, public, and experiment-driven environment. It helps newcomers understand the assumptions behind the work, the way public discussion is used, and the responsibilities that follow from open collaboration.
+This field guide explains how dwg7 works through the logic behind its habits. Each answer states the habit, the reason for it, and where to see it in the public record (checked 2026-11-11 at [UNopenGIS/7](https://github.com/UNopenGIS/7/issues)).
 
-## FAQ
+## The logic of the record
 
-### 1. Why does much of the work happen in public repositories and issues?
+### 1. Why does the work happen in public issues and repositories?
 
-Public repositories and issues make a practice visible enough for others to inspect, respond to, and build on. This is often the most direct way to make assumptions explicit, leave a trace of decisions, and reduce coordination friction without requiring a single gatekeeping process.
+A claim can be checked only when its evidence is visible. Public issues hold the question, the method, and the result in one place, so a reader can verify each step and a later contributor can continue from it.
 
-### 2. Is DWG7 a membership organization?
+### 2. What is dwg7?
 
-This guide does not describe DWG7 as a membership-driven recruitment vehicle or a formal certification body. It is better understood as a public, distributed working environment that connects people around practical questions and experimentation.
+dwg7 is Domain Working Group 7 of the UN Open GIS Initiative, working on "Smart Maps". The group works through a public record of questions, experiments, results, and corrections. Membership follows from contributing to that record.
 
-### 3. Is it a standards body, vendor, or funded programme?
+### 3. How does dwg7 relate to standards, vendors, and funded programmes?
 
-It is not appropriate to treat DWG7 as a single institutional category without a clear public basis. The work is often exploratory, practical, and cross-sectoral rather than exclusively tied to one organization, one market, or one funding model.
+The record shows a working group that tests tools and data. It adopts or adapts existing open standards and software, and it publishes the evidence behind each choice. Statements about funding or institutional authority belong with the institution that holds them, and the guide links to the source.
 
-### 4. Why are experiments often more visible than finished products?
+### 4. Why do experiments appear before finished products?
 
-Experiments are easier to share, test, and improve in public. They show what has been tried, what was learned, and what still needs attention. A finished product may appear later, but the path of learning is often more informative than the final polished form.
+An experiment states its conditions and gives a result that others can repeat. A finished product can grow from a sequence of such results. The early record shows why each design decision was taken.
 
-### 5. What kinds of contribution are useful?
+### 5. What does a good claim look like?
 
-Useful contributions include clear questions, small prototype work, reproducible examples, data checks, documentation improvements, careful summaries, and evidence-based feedback. The value is in the quality of the interaction, not only in the volume of code produced.
+A good claim names its conditions. For example, a throughput figure comes with the hardware, the software version, the data size, and the load pattern ([#1003](https://github.com/UNopenGIS/7/issues/1003)). Conditions let a reader decide whether the result applies to their own case.
 
-### 6. Do titles, institutional authority, or budgets determine influence?
+### 6. How are errors handled?
 
-Not by themselves. In an open, distributed setting, influence often grows from the clarity of an argument, the usefulness of a contribution, the quality of a review, and the ability to help others understand the work. Authority and resources may matter, but they do not automatically define the direction of the conversation.
+An error is corrected in the same thread where it appeared, with the reason. In #1003, the author confirmed that an earlier explanation of environment variables was wrong, restated the finding, and fixed the written guide. Visible corrections raise the trust in the remaining claims.
 
-### 7. Can I participate without writing code?
+### 7. What happens to unfinished questions?
 
-Yes. Many useful contributions do not require writing code. Documentation, issue summaries, data inspection, translation, workflow review, and user-centered observation all matter. Participation should not be reduced to writing software.
+They stay open and visible. In #1003 the Raspberry Pi 3 measurements are listed as the next step. An open item tells a newcomer exactly where a contribution helps.
 
-### 8. How should I introduce an idea or question?
+## Rhythm and vocabulary
 
-Begin with the context, the practical problem, and the evidence you have. Explain what is unclear, what you are trying to understand, and what kind of feedback you are looking for. A precise, modest introduction is more useful than a grand statement of importance.
+### 8. How does the weekly meetup work?
 
-### 9. What should I do when I do not understand the terminology?
+A weekly issue (titled with date and time, for example 12:30–12:55 JST) collects written updates from presenters as comments. The live session of about 25 minutes then moves through the updates in an agreed order. Written updates give remote participants and later readers the same information as the live audience.
 
-Ask the question directly. Many communities use terminology in ways that are legitimate within one domain but confusing to others. A short question, a plain-language summary, or a request for an example is often the best way to move forward.
+### 9. What do the labels mean?
 
-### 10. How should unsuccessful experiments be shared?
+Labels organise the record by purpose: `meetup` for weekly sessions, `information` for items to share, `adopt` for candidates for adoption, `in progress` for active work, and `priority/MUST`, `priority/SHOULD`, `priority/MAY` for attention order. Check the issue itself for the exact use in each case.
 
-Share the result honestly. Explain what was tested, what failed or did not scale, what was learned, and what remains uncertain. Unsuccessful experiments are often valuable when they reduce repeated mistakes and clarify next steps.
+### 10. In which language is the record written?
 
-### 11. How are public-sector responsibilities handled?
+Many issues are written in Japanese, and some in English. Machine translation reads technical issues well, and an English summary comment helps international readers and is welcome.
 
-Public-sector responsibilities are not erased by open collaboration. They are handled through careful attention to data sensitivity, operational context, and public accountability. Work should remain useful, transparent, and appropriate to the context in which it is being used.
+### 11. How do I introduce a question?
 
-### 12. How should open source be understood here?
+Write the context, the practical problem, the evidence you have, and the kind of feedback you seek. A short, specific introduction with a link to related issues connects quickly to existing work.
 
-Open source is a practical way of making work inspectable, reusable, and reviewable. It does not automatically mean that every project is fully standardised or that every participant is working in the same way. It is a method for sharing and learning, not a substitute for good judgment.
+### 12. How do I ask about unfamiliar terms?
 
-### 13. How should AI-assisted work be disclosed and reviewed?
+Ask directly in the thread. A plain-language question exposes an undefined term, and the answer improves the record for the next reader.
 
-AI-assisted work should be disclosed clearly when it influences the content, design, or reasoning behind a contribution. It should be reviewed in the same way as any other technical or written output: with a focus on accuracy, context, and evidence. AI assistance is a tool, not a substitute for human verification.
+## Contribution and roles
 
-### 14. What does respectful disagreement look like?
+### 13. Which contributions help?
 
-Respectful disagreement focuses on the evidence, the trade-offs, and the objective at hand, rather than personal status or rhetorical dominance. It is often most helpful when it is specific, observable, and tied back to the practical problem being discussed.
+Clear questions, reproducible examples, data checks, documentation, translation, summaries, and reviews of other people's results all help. Each of them adds evidence or clarity to the chain from question to reuse.
 
-### 15. How can newcomers avoid creating extra coordination work?
+### 14. Can I contribute without writing code?
 
-A useful rule is to first look for existing public context, then ask a precise question, and then keep the scope small. Do not assume that a newcomer must create new coordination or central approval processes before trying something modest and observable.
+Yes. Many steps of the chain are non-code work: stating a user need, checking a dataset, repeating an experiment on a different machine, and translating a thread. In #1003 the decisive review step came from repeating the test on other operating systems.
 
-### 16. What information should not be published?
+### 15. What gives a contribution influence?
 
-Do not publish personal data, private communications, sensitive credentials, unpublished operational details, or material that would create security or legal risk. The public nature of the work does not remove the need for judgment about what is appropriate to share.
+Evidence and reproducibility give influence. A result that others can repeat shapes the discussion, whatever the title or affiliation of its author.
 
-### 17. How does the group relate to the wider UN Open GIS Initiative?
+### 16. How should disagreement be expressed?
 
-The relationship is contextual and should be understood through the public record, not through assumptions. DWG7 is part of a wider ecosystem of open geospatial work, but this guide does not claim to represent or replace any broader institutional position without explicit evidence.
+Point to the condition or the measurement that differs, and propose a test that settles it. The exchange in #1003 about FastCGI environments follows this pattern: hypothesis, check, confirmation.
 
-### 18. How can work remain useful when people and technologies change?
+## Responsibility and context
 
-Useful work is often documented in a way that explains the purpose, assumptions, and evidence. When people move on or tools evolve, a good record makes it easier for future contributors to understand what was learned and why it mattered.
+### 17. How are public-sector responsibilities respected?
 
-### 19. What does good contribution culture look like?
+Contributors from public institutions describe operational needs in general terms and publish only information cleared for publication. Open collaboration works with data classification and institutional rules.
 
-It is a culture of clarity, patience, and reusability. People normally do better when they explain context, leave evidence, and make it easy for others to follow the reasoning without friction.
+### 18. How should AI-assisted work be handled?
 
-### 20. What should I do if I am still unsure?
+State where AI contributed, and verify its output with the same checks as any other source. Several dwg7 threads combine AI assistants and geospatial data, and the neighbouring dwg5 focuses on Geo AI. A claim from an AI assistant enters the record once a person has checked it against evidence.
 
-Start with a small observation. Look through a public issue, read a short summary, or try one low-stakes experiment. In a distributed environment, the next step is often easier than a grand understanding of the whole system.
+### 19. What can be published?
 
-The most useful approach in DWG7 is to begin with something observable and make the learning legible to others. That creates connection without demanding control.
+Publish open data, public information, and your own results. Keep personal data, private messages, credentials, and unpublished operational details in their own secure places. Cite the licence and source of every dataset you use.
+
+### 20. What is a good next step?
+
+Read one thread from question to result, then reproduce one small step from it. Post what you observed as a comment. That sequence already completes the chain once.
+
+The chain turns attention into evidence, and evidence into reuse: observe, try, record, share.
 
 [Back to index](index.md)

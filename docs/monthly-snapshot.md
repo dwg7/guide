@@ -4,80 +4,44 @@ title: Monthly Snapshot
 
 # Monthly Snapshot
 
-This page is designed for readers who want a short, readable summary of what changed, what was tested, and what it means. It is not a transcript, a count sheet, or a meeting record. A good Monthly Snapshot translates activity into a small narrative of learning.
+A monthly snapshot translates the public record into a short chain of reasoning for readers who follow the work from a distance. Each entry follows the same chain that dwg7 uses in its issues, so that the snapshot and the record read the same way.
 
-## 1. Reusable monthly template
+## 1. Entry template
 
-### This Month in DWG7
+Use one entry per thread. Replace each bracketed text with content from the public record.
 
-Summarize the month in plain language. Focus on the shape of the work: what was discussed, what was tested, and what questions remained open. Keep the explanation grounded in things that can be verified in the public record.
+### [Thread title and link]
 
-### Why It Matters
+- **Question.** [The question the thread asks, in one sentence.]
+- **Experiment.** [What was run: device, software versions, data, load.]
+- **Result with conditions.** [Measured values together with the conditions that produce them.]
+- **Review and correction.** [Who repeated or reviewed the work, and what changed in the conclusion.]
+- **Open items.** [What remains to be measured or decided, and where to contribute.]
+- **Checked.** [Date on which you read the thread.]
 
-Explain why the activity matters to outsiders and practitioners. Describe the practical problem, the context, or the trend that the work helps make visible. Avoid declaring a broad institutional conclusion without clear evidence.
+### Month header
 
-### Interesting Experiments
+- **Period.** [YYYY-MM]
+- **Threads covered.** [Number of entries and a link to the issue list filtered for the month.]
+- **Reading order.** [Which entry to read first, and why.]
 
-Highlight a few examples of work that changed understanding or produced a visible result. Describe what was tried, what was observed, and what the experiment suggests. Keep the emphasis on learning rather than on hype.
+## 2. Worked example from the public record
 
-### Notable Discussions
+### GeoServer / MapServer on a Raspberry Pi ([UNopenGIS/7#1003](https://github.com/UNopenGIS/7/issues/1003))
 
-Summarize the important questions or debates without turning the note into a debate transcript. Describe the underlying issue, the trade-offs under discussion, and what remains unresolved.
+- **Question.** How do GeoServer and MapServer perform on a small, low-cost computer, and where does the hardware reach its limit?
+- **Experiment.** GeoServer 2.28.4 and MapServer 8.4.0 on a Raspberry Pi 4B, with 5,000 random points and 4 workers sending 20 WMS GetMap requests each. A second test used GeoServer 3.0.1 with a public health-facilities dataset of 8,975 features, a mixed read–write workload, and a 30-hour soak.
+- **Result with conditions.** MapServer under FastCGI reached 16.9–22.5 requests per second against 13.1–13.6 for GeoServer. MapServer under CGI reached 5.1–5.5 against 7.6–13.6, which the author explains with per-request process cost. In the second test, concurrent write edits and the soak completed with zero server-side errors, and the unfiltered full-dataset request was the one workload that saturated the device.
+- **Review and correction.** A repeat on Ubuntu 24.04 and Debian 13 showed that the working configuration relied on MapServer's default config path. The first author confirmed this and corrected two earlier statements about environment inheritance and CGI hosting. The simulated 1 GB memory limit was not binding, so that test leaves the 1 GB question open.
+- **Open items.** Measurements on a Raspberry Pi 3 with 1 GB memory, and a check of the MapServer configuration examples in the published hands-on guide.
+- **Checked.** 2026-11-11.
 
-### Emerging Themes
+## 3. Writing rules for entries
 
-Note the recurring topics or patterns across discussions and experiments. These may relate to data quality, interoperability, usability, public-sector needs, or methods for evaluating evidence and uncertainty.
-
-### Ways to Explore
-
-Offer a few concrete entry points for readers who want to continue. Link to a document, a public issue, a small experiment, or a relevant discussion where they can begin, without suggesting a required path or a central approval mechanism.
-
-### Looking Ahead
-
-Describe what seems likely to be explored next, but do not overstate certainty. Explain what remains open, what needs validation, or what could benefit from more public input.
-
-### Sources and Verification
-
-List the public records that support the narrative. Include the repository, issue, note, or document used, and the date when the information was checked. This keeps the month summary anchored in public evidence rather than in informal impression.
-
-## 2. Sample writing pattern
-
-> This is a generic illustration of tone and structure. It does not describe real activity.
-
-### This Month in DWG7
-
-This month, attention was focused on practical questions of interpretability, public data quality, and how small experiments help clarify real-world needs. The work was not dominated by one product or one platform; instead, it showed how a distributed group can test methods, compare observations, and make uncertainty visible.
-
-### Why It Matters
-
-These conversations matter because the environment around geospatial data and public services is often fragmented. Documenting small observations helps people understand where workflows are reliable, where confusion remains, and what needs more evidence before it is considered a durable recommendation.
-
-### Interesting Experiments
-
-Several experiments centered on comparing rendering choices, examining metadata quality, and documenting repeatable steps for small technical checks. These experiments did not aim to solve everything at once. Their value was in making assumptions visible and showing where a specific workflow still needs attention.
-
-### Notable Discussions
-
-A recurring theme was the value of clear public documentation alongside technical work. Discussions highlighted the difference between a polished result and a trustworthy path of learning, especially when a contribution is still evolving.
-
-### Emerging Themes
-
-The month suggested a continued interest in practical interoperability, documentation quality, and the careful use of public records. There was also strong interest in making it easier for newcomers to contribute without needing to guess the expected form of participation.
-
-### Ways to Explore
-
-Readers can begin with the [DWG7 in 5 Minutes](dwg7-in-5-minutes.md) overview, review [Onboarding Paths](onboarding-paths.md) for role-based entry options, and try a small experiment from [Good First Experiments](good-first-experiments.md).
-
-### Looking Ahead
-
-The next useful step is likely to be a clearer connection between observed practice and public documentation. That may help make emerging patterns easier to understand for readers who do not follow every issue or repository update in detail.
-
-### Sources and Verification
-
-- Public repository and issue records reviewed during the month
-- Documentation and summaries checked against the latest public state
-- Verification date: current month, before publication
-
-This sample is intentionally generic. It reflects a writing pattern rather than a claim about specific activities. The core rule remains simple: only describe what can be verified in public records, and keep the writing focused on learning, uncertainty, and next steps.
+- Link every entry to its thread.
+- Keep conditions next to numbers.
+- Report corrections as part of the result.
+- Name a person only when the thread needs the name for credit, and prefer the role (for example "a contributor").
+- Record the date of reading in every entry.
 
 [Back to index](index.md)
