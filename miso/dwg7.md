@@ -214,6 +214,27 @@
 - 初期の経緯(`/lessons/lineage-qiita-unvt` で一部補った): unvt の公開は 2018 年。2021 年にコミュニティの記事が増えた。立ち上げ時の動機は未確認(`open`)。UN Open GIS Initiative 全体との関係も未確認。
 - guide での用途: なし(内部の理解のため)。ただし `docs/good-first-experiments.md` の題材は、この系譜の「手を動かせる地点」から選んだ。
 
+# /traces/open-issues-batch-2026-11
+- status: stated(open の Issue の本文と一部のコメントの読解。確認 2026-11-11 の JSON。新着の追従は `/inventory/issues-follow-up`)
+- #891(Deep-dive into CNG、open、priority/MUST、2026-04-30〜): 本文は、セルフホスティングとポータビリティの重視を維持しつつ、「持てる」ことと「必要な範囲だけ効率よく扱える」ことは別、という整理から、Cloud Native Geospatial を深掘りする宣言。目指す性質(stated): ポータブル、セルフホスト可能、オープンな形式、必要な範囲だけ読める、必要な処理だけオンデマンド、ブラウザやエッジでも動く、オフラインや低接続性にも応用できる。深掘りの主題に、オブジェクトストレージと HTTP Range Request、PMTiles・GeoParquet・COG・Zarr などの使い分け、DuckDB・WebAssembly・OPFS、Raspberry Pi での処理、動的タイル生成、ポータブルな Function as a Service がある。コメント(2026-05-01): hfu が、dwg7 の活動は CNG の既存の範囲の内側というより隣接して補完する立場であり、「DWG 7 は、運用に耐える形で FOSS を統合し、プロジェクトに装備する取り組みである」と説明できるとよい、と書いた(英語版も併記)。別の contributor が、セルフホストした FaaS で動的にタイルを作る実験(DuckDB-Spatial と Overture Maps の GeoParquet)を共有した。
+- #1021(ドローンのオルソ、open、information、2026-10-11〜): #921 の 99 g 機体の実験の続き。100 g 超の機体をレンタルし、河川敷で、管理者への事前相談と一時使用届のうえ、半自律の撮影からオルソ画像の構築まで実行した(stated)。条件と数値: 1 泊 2 日 7,700 円、32 枚の半自律撮影、現地で 382 枚、OpenDroneMap の FAST mode で 5 データセットすべてがオルソ画像化し、統合した 285 枚も 285/285 枚が 1 つの再構築に入った。「機体調達 → 飛行場所確保 → 管理者調整 → 現地安全確認 → 半自律撮影 → OpenDroneMap」を一通り実行したことが要点と記す。コメント: 手順をハーネス化したリポジトリを公開(2026-10-12)。
+- #1023(5 cm オルソ、open、priority/MAY、2026-10-15〜): 新しい OpenAerialMap からのシエラレオネの高解像度ドローン画像を調べる。PMTiles と MBTiles が取得できる。調査用リポジトリを立ち上げ、作業中(2026-10-19)。
+- #1016(Risk Data Library、open、information、2026-09-24〜): 約 1 万件のリスクデータセットを共通メタデータで参照する取り組みの紹介。関心事項として、現場が意味を理解できるか、責任主体へ届くか、どの意思決定に使うか、平時の業務にどう組み込むかが挙がる。説明文は Microsoft Copilot が書いたと明記されている(stated)。
+- #952(sakasa、open、priority/MUST、2026-07-02〜): Mapterhorn の日本ミラーと配信の実験。ミラー、torrent、協調的なデータホスティングで、地形タイルの配信の耐性を探る。コメントなし。経緯は #937(週次ミートアップ 2026-06-30)。
+- #963(Dutch Portolan Demo、open、information、2026-07-16〜): STAC カタログと llms.txt、AGENTS.md を持つオープンデータの例。2026-09-18 のコメントで、エンタープライズ環境の AI エージェントが、カタログをたどり、メタデータを理解し、実データに軽く触れられるかを試した記録(実行環境、ブラウジングの有無、コードの実行環境、制限を表にして共有。stated)。
+- #783(Planetarble、open、priority/SHOULD、in progress、2025-09-24〜): 地球規模の衛星画像ラスタータイルを 1 つの PMTiles にするプロジェクト。2026-04-14 に「Mapterhorn Imagery が本命になった」として閉じる提案、2026-06-04 にスターが増え続けるため再開した。
+- guide での用途: #891 の一行の説明を `docs/dwg7-in-5-minutes.md` に引用(「ある contributor の表現」として)。#1021 は、条件・費用・手順を記録する実験の型(探索の手順の公開)。#963 は AI の項(Q19)の実例。
+- 未読(open): #873・#867・#857(HOT タスク。#857 は読了)、#830(CSDI Hong Kong)、#768(MapLibre と UN Smart Maps Group の用例)、#593(OpenLandMap)、#580(Dateno Registry)、#578(Adopt Geodata incubation)、#1013(ferspas-udf)、#1028(週次、2026-11-17)。
+
+# /inventory/issues-follow-up
+- status: volatile(新着の追従の手順と、最後の確認)
+- 手順: (1) 自動: 公開ページの新着・更新の一覧を取得する(新着順と更新順の 1 ページ目)。(2) 完全: `miso/scripts/merge_issues.py` の冒頭の `gh` コマンドで増分を書き出して統合する。(3) 変更のあった Issue を `/traces/` に記録し、guide の `docs/` で引用している Issue の状態(open/closed、更新日)を台帳で点検する。
+- 最後の確認: 2026-11-19(公開ページ、1 ページ目。総数 973 件の表示は検索結果の件数)。JSON は 2026-11-11 時点。
+- 新着(2026-11-11 以降): #1030(2026-11-15、open、priority/MAY、「Dorayaki: Gaussian splat の z/x/y タイル」、コメント 1、2026-11-17 更新)、#1031(2026-11-18、open、meetup、2026-11-24 の週次)。
+- 更新: #1027(2026-11-10 の週次、2026-11-15 に closed、コメント 11)、#1028(2026-11-17 の週次、コメント 18、2026-11-18 更新)、#873(HOT タスク、ヴィエンチャン、2026-11-13 更新、コメント 7)、#1029(「a dwg7 guide」、priority/SHOULD、2026-11-11)。
+- guide が引用する Issue の状態(2026-11-19): #1027 は closed に変わった。ページでは「latest weekly meetup issue, for example #1027」と書いており、最新は #1028(open)になった。次の更新で #1028 に差し替える。
+- 未取得: #1030 と #1031 の本文、#1028 と #873 の新しいコメント(JSON の再エクスポートが必要)。
+
 # /traces/issue-740-coordinate-transformation
 - status: stated
 - リンク: https://github.com/UNopenGIS/7/issues/740 (open、priority/MAY、コメント 1、確認 2026-11-11)
