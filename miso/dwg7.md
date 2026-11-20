@@ -224,7 +224,7 @@
 - #963(Dutch Portolan Demo、open、information、2026-07-16〜): STAC カタログと llms.txt、AGENTS.md を持つオープンデータの例。2026-09-18 のコメントで、エンタープライズ環境の AI エージェントが、カタログをたどり、メタデータを理解し、実データに軽く触れられるかを試した記録(実行環境、ブラウジングの有無、コードの実行環境、制限を表にして共有。stated)。
 - #783(Planetarble、open、priority/SHOULD、in progress、2025-09-24〜): 地球規模の衛星画像ラスタータイルを 1 つの PMTiles にするプロジェクト。2026-04-14 に「Mapterhorn Imagery が本命になった」として閉じる提案、2026-06-04 にスターが増え続けるため再開した。
 - guide での用途: #891 の一行の説明を `docs/dwg7-in-5-minutes.md` に引用(「ある contributor の表現」として)。#1021 は、条件・費用・手順を記録する実験の型(探索の手順の公開)。#963 は AI の項(Q19)の実例。
-- 未読(open): #873・#867・#857(HOT タスク。#857 は読了)、#830(CSDI Hong Kong)、#768(MapLibre と UN Smart Maps Group の用例)、#593(OpenLandMap)、#580(Dateno Registry)、#578(Adopt Geodata incubation)、#1013(ferspas-udf)、#1028(週次、2026-11-17)。
+- 未読(open): #1028(週次、2026-11-17)。他は `/traces/open-issues-batch-2026-11b` で読了。
 
 # /inventory/issues-follow-up
 - status: volatile(新着の追従の手順と、最後の確認)
@@ -234,6 +234,19 @@
 - 更新: #1027(2026-11-10 の週次、2026-11-15 に closed、コメント 11)、#1028(2026-11-17 の週次、コメント 18、2026-11-18 更新)、#873(HOT タスク、ヴィエンチャン、2026-11-13 更新、コメント 7)、#1029(「a dwg7 guide」、priority/SHOULD、2026-11-11)。
 - guide が引用する Issue の状態(2026-11-19): #1027 は closed に変わった。ページでは「latest weekly meetup issue, for example #1027」と書いており、最新は #1028(open)になった。次の更新で #1028 に差し替える。
 - 未取得: #1030 と #1031 の本文、#1028 と #873 の新しいコメント(JSON の再エクスポートが必要)。
+
+# /traces/open-issues-batch-2026-11b
+- status: stated(open の Issue の読解。確認 2026-11-11 の JSON)
+- #768(MapLibre と UN Smart Maps Group: use cases、open、priority/MAY、2025-08-23〜、コメント 1): MapLibre のコミュニティ宛ての、現場起点の用例の共有(stated)。現場では、低帯域、オフライン運用、電力と計算資源の制約が通常であり、軽量なブラウザ/ネイティブの描画が効く、と述べる。用例 4 件: UNVT Portable(Raspberry Pi、MapLibre GL JS と PMTiles.js、自己ホストの PMTiles、NASADEM などの標高、研修と現地で使用)、Charites(MapLibre スタイル仕様互換の YAML)、coesite4(強い認証つきの準リアルタイムのベクトルタイル配信、国連職員向け、OSM と国連内部の情報を統合)、FOIL4G(オープンデータのプレビュー用ストーリーブック)。提供できるものとして、現場で動く最小の再現、運用上のフィードバック、スタイル作成のベストプラクティスを挙げる。コメント(2025-08-24、hfu): 「UN Smart Maps Group は、実験を好む一人開発者の集まりで、PMTiles のようなクラウドネイティブ技術を国連の業務に提案する。地理空間情報がオープンになれば自由に使える、と主張したい」(stated)。
+- #873(HOT タスク 44787 ヴィエンチャン、open、priority/MAY、2026-03-04〜、コメント 6+): JICA Quick Mapping Challenge の一環として、ヴィエンチャンの歴史地区とスタジアム周辺の建物データを精緻化する。ToDo リスト(HOT-TM プロジェクト作成、公開、説明、ハッシュタグ、方法の解説、動作確認、背景画像の再検討)と、使うハッシュタグを同じスレッドで確認した。背景画像は標準(Bing)で、一部は Rapid を使う予定。
+- #867(HOT タスク 44589 フリータウン東部、open、priority/MAY、2026-02-17〜、コメント 5): #857 の 2 つ目の地区。名称の候補を挙げて選び、2026-02-25 に公開した。題は「建物・道路のマッピング(4 cm 航空画像)」、学生主導と説明されている。
+- #830(CSDI Hong Kong、open、adopt、2025-11-21〜): ポータルの URL のみ。本文にそれ以上の記述なし。
+- #593(OpenLandMap、open、adopt、2024-10-09〜、コメント 1): 「採用できるかもしれない」。2025-02-12 に試作のリポジトリとデモを共有。
+- #580(Dateno Registry、open、information、2024-09-01〜): データサイトをリスト化するレジストリの紹介。国別のページがある。
+- #578(Adopt Geodata incubation、open、priority/MAY、someday/maybe、2024-08-27〜): 置きっぱなしの Adopt の候補を 1 つの Issue に集約し、作業を始めた時点で別の Issue に「チェックアウト」する、という運用(stated)。目的は Issue 数の削減。候補の例: UNHCR の GIS コアデータベースの書き出しツール、バングラデシュの 1:25k ベクトルタイル(vtpk)。
+- #1013(ferspas-udf、open、priority/SHOULD、2026-09-21〜): FAO FERSPAS のデータを、ユーザー定義関数で任意の組合せ・処理にして、ラスタータイルとして動的に可視化する PoC。`{id}.py` を所定のディレクトリに置くと関数が増える、と README にある(stated)。
+- 運用の学び(derived): Issue を「採用候補の置き場」と「作業中」に分け、作業を始めるときに別の Issue に移す(#578)。これは「Issue 数の整理」と「優先度の可視化」の実践で、#274 の整理(2023-09)と同じ流れ。
+- guide での用途: #768 と #891 の 2 つの自己記述を `docs/dwg7-in-5-minutes.md` に引用(「Two summaries from the record」)。#768 の現場の前提(低帯域、オフライン、電力・計算資源の制約)は、ポータブル、オフライン、単一ファイル配信が繰り返し現れる理由の説明に使う。
 
 # /traces/issue-740-coordinate-transformation
 - status: stated

@@ -6,9 +6,14 @@ title: dwg7 in 5 Minutes
 
 dwg7 is Domain Working Group 7 of the UN Open GIS Initiative. It works on "Smart Maps": web maps that stay open, so that anyone can build, test, and reuse them. Its method is a public record. Each piece of work leaves a thread that runs from a question to a result and a correction. This page describes that method as it appears in the [dwg7 issues](https://github.com/UNopenGIS/7/issues) on 2026-11-11. The issues are the source, and this page is a reading aid.
 
-## One contributor's summary
+## Two summaries from the record
 
-In May 2026, a contributor wrote a one-line description for use when dwg7 engages with other communities: "dwg7 is an initiative to integrate FOSS and equip projects for operationally sustainable use" ([#891](https://github.com/UNopenGIS/7/issues/891)). The same thread describes a shift of interest from self-hosting planet-scale data toward cloud-native access patterns, with the aim of keeping them portable, self-hostable, and open. The line is one contributor's wording, and the thread is the source.
+Two contributors described dwg7 in the thread text, in their own words.
+
+- **August 2025, to the MapLibre community** ([#768](https://github.com/UNopenGIS/7/issues/768)). A contributor writes that in field missions, low bandwidth, offline operation, and limited power and computing are the norm. A reply describes the group as a collective of one-person developers who favour experiments and who propose cloud-native technologies, such as PMTiles, to United Nations operations, in the belief that open geospatial information can be used freely.
+- **May 2026, for engaging other communities** ([#891](https://github.com/UNopenGIS/7/issues/891)). A contributor offers one line: "dwg7 is an initiative to integrate FOSS and equip projects for operationally sustainable use." The same thread shifts attention from self-hosting planet-scale data toward cloud-native access patterns, kept portable, self-hostable, and open.
+
+Both summaries are individual wordings. The threads are the source, and the field conditions in the first summary explain why portability, offline use, and single-file delivery recur across the record.
 
 ## The method
 
