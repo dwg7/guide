@@ -204,7 +204,7 @@ Use open data, open tools, and files you may publish. Keep personal data and cre
 *For documentation contributors and students.*
 
 - **Goal:** Turn one written update into two clear sentences.
-- **Inputs:** The latest weekly meetup issue, for example [#1027](https://github.com/UNopenGIS/7/issues/1027).
+- **Inputs:** The latest weekly meetup issue, for example [#1028](https://github.com/UNopenGIS/7/issues/1028).
 - **Steps:**
 
   1. Choose one update.
