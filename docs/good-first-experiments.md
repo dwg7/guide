@@ -233,4 +233,42 @@ Use open data, open tools, and files you may publish. Keep personal data and cre
 - **What to record or share:** The note, and the change you made after the colleague's reading.
 - **Next:** Experiment 1, applied to your own thread.
 
+## 13. Read one decision from an application's log
+
+<ul class="exp-meta"><li>30 minutes</li><li>Difficulty: easy</li></ul>
+
+*For software engineers, designers, and documentation contributors.*
+
+- **Goal:** See how an application records a decision with its reason and its unknowns.
+- **Inputs:** [`notes/decisions.md`](https://github.com/dwg7/cvalda/blob/main/notes/decisions.md) of the building viewer cvalda, and its [`notes/p0-measurements.md`](https://github.com/dwg7/cvalda/blob/main/notes/p0-measurements.md).
+- **Steps:**
+
+  1. Choose one decision, for example the one that hides buildings below zoom 15.
+  2. Write the question it answers, the measurement behind it, the decision, and what remains unknown.
+  3. Find the later note that corrects an earlier stage, and mark which numbers changed.
+
+- **Visible outcome:** Four lines for the decision, and a list of the numbers that changed.
+- **What to record or share:** The decision you chose and the lines you wrote.
+- **Next:** Experiment 1, applied to a decision of your own project.
+- **Checked:** The decision log was read in full on 2026-11-26.
+
+## 14. Repeat a tile comparison in another town
+
+<ul class="exp-meta"><li>2 hours</li><li>Difficulty: challenging</li></ul>
+
+*For software engineers and geospatial practitioners.*
+
+- **Goal:** Add a second town to the comparison between official building tiles and an open global data set.
+- **Inputs:** The [cvalda](https://github.com/dwg7/cvalda) repository, Node.js, and the measurement scripts listed in its `AGENTS.md`, for example `scripts/compare-tiles.mjs`.
+- **Steps:**
+
+  1. Choose a town in Hokkaido that the notes leave out.
+  2. Run the comparison script on a few tiles at zoom 16, following the repository's instructions.
+  3. Put the table next to the tables of the original notes.
+
+- **Visible outcome:** One table for your town in the same layout as the notes.
+- **What to record or share:** The town, the tiles, the script version, and the table.
+- **Next:** Experiment 5.
+- **Status:** The steps follow the repository's notes. A first repeat by a reader, with the conditions recorded, would complete this entry.
+
 [Back to index](index.md)

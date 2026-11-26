@@ -94,6 +94,20 @@ The record gives examples. [#936](https://github.com/UNopenGIS/7/issues/936) des
 
 Open data, public information, and your own results. This guide suggests keeping personal data, private messages, credentials, and unpublished operational details out of the thread, and citing the licence and source of each dataset. Contributors from public institutions can describe an operational question in general terms and publish what their institution has cleared.
 
+## Projects and repositories
+
+### 21. Where do projects live?
+
+Each project has its own repository in the [dwg7 organisation](https://github.com/dwg7). The [`PROJECTS.md`](https://github.com/dwg7/cafebabe/blob/main/PROJECTS.md) file of the cafebabe repository gives each project a permanent link and one line of description, and it sends readers to the project's own `AGENTS.md`, `CLAUDE.md`, or `DECISIONS.md` for details. On 2026-11-26 the file lists 27 projects in the organisation, plus related repositories in two neighbouring organisations.
+
+### 22. How are application repositories published?
+
+The two repositories checked for this guide publish from the `main` branch and the `docs/` folder of GitHub Pages, at `https://dwg7.unopengis.org/<repository>/`. This guide uses Jekyll and Markdown pages. The viewer [cvalda](https://github.com/dwg7/cvalda) keeps its handwritten notes in `README.md`, `AGENTS.md`, and `notes/`, and uses `docs/` only for build output, a single `index.html`, with a `.nojekyll` file beside it. The record leaves the registration step for a new project open. This guide suggests adding a line to `PROJECTS.md` through a pull request, and checking with the cafebabe maintainers first.
+
+### 23. How do projects share what they learn?
+
+Through cafebabe, a repository where agents and contributors of several projects collect patterns. Each pattern states its context, forces, solution, and known uses. A pattern needs at least one implementation behind it, and an idea that awaits an implementation goes to a separate folder. When a pattern becomes outdated, the author appends a dated correction and leaves the original text, so that the reason for the change stays visible. The same habit appears in [#1003](https://github.com/UNopenGIS/7/issues/1003) and in the decision logs of individual projects.
+
 ## A good next step
 
 Read one thread from question to result. Repeat one small step of it. Post what you observed. That sequence completes the chain once.

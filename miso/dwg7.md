@@ -214,6 +214,35 @@
 - 初期の経緯(`/lessons/lineage-qiita-unvt` で一部補った): unvt の公開は 2018 年。2021 年にコミュニティの記事が増えた。立ち上げ時の動機は未確認(`open`)。UN Open GIS Initiative 全体との関係も未確認。
 - guide での用途: なし(内部の理解のため)。ただし `docs/good-first-experiments.md` の題材は、この系譜の「手を動かせる地点」から選んだ。
 
+# /traces/dwg7-org-repositories
+- status: stated(cafebabe の `PROJECTS.md`、`CONTRIBUTING.md`、`DECISIONS.md` D3、`DWG7-CONTEXT.md` による。確認 2026-11-26。ブリーフィング部分は hfu 経由で届いたものを cafebabe が保存した一次情報)
+- 発見(2026-11-26): dwg7 の活動は UNopenGIS/7 の Issue だけでなく、dwg7 組織の複数のリポジトリに分かれて記録されている。`PROJECTS.md`(cafebabe)は、dwg7 組織の 27 件のプロジェクトを、永続的なリンクと一言で並べる(例: 北海道防災ダッシュボード、建物高さの啓発サイト、印刷アトラス生成、Staccato 関連、JICA 研修用 Raspberry Pi の運用、公共ラジオの社会センサー、kcai と miso、dorayaki、cvalda ほか)。UNopenGIS 組織と optgeo 組織の関連リポジトリも別表にある。guide はこれまで Issue だけを一次情報としており、リポジトリ群を案内していなかった(空きだった)。
+- cafebabe の役割(stated): 担当エージェントたちが実地の知見を持ち寄る場所。「本部ではなく、互助が起きる場所」。`patterns/` は実装に裏打ちされた知見(状況、対立する力、解決、実例の型)、`ideas/` はまだ実装されていない案。古くなったパターンは書き換えず、日付つきの訂正を追記する(`CONTRIBUTING.md`)。プロジェクト固有の知見は各リポジトリの `CLAUDE.md`/`DECISIONS.md` に置き、`PROJECTS.md` から辿る(D3、2026-09-02)。
+- 組織の自己定義(stated、`DWG7-CONTEXT.md`、2026-09-02 の hfu 経由のブリーフィング): (1)スローガン "keep web maps open for a better world" は、データだけでなく実践そのものを開いておく意味を持つ。(2)核となる自己定義は「国の機関だけではできないことを、接続と協働で解決する」。(3)"test new technologies" によって "keep open" する集団。(4)統治は個人単位の多中心的な協調(individual polycentric coordination)。貢献者は所属を離れず、一時的に「加勢」する。意思決定は共同議長制による軽量な合意。(5)各プロジェクトは自律的で、中央からの技術指令はない。血統(lineage)を意識し、ノウハウの移転を意図的に語る。(6)週次・月次の進捗共有で緩やかに同期し、「Watching」(未確定の注視事項)の節も設ける。(7)「高密度・低圧」の伝え方。guide には(2)(3)(4)の趣旨と、(5)のうち「各リポジトリが自分の一次情報」を引用した(`docs/dwg7-in-5-minutes.md`)。
+- 公開 URL(measured、2026-11-26): guide は `https://dwg7.unopengis.org/guide/`(応答 200、CSS 200)。`https://dwg7.opengis.org/guide/` は名前解決できなかった。canonical リンクが旧 URL を指していた(`_config.yml` の `url`)ため、`https://dwg7.unopengis.org` に修正した。cvalda の `notes/decisions.md` D8 に、hfu が 2026-11-21 に `dwg7.unopengis.org/<repo>/` の形を確認した記録がある。
+- 要確認(`open`): 新しいプロジェクトの登録手順(`PROJECTS.md` への追記が実質の登録と読めるが、手順の記述は未確認)。登録の担当(cafebabe の保守者)。
+
+# /traces/cvalda
+- status: stated(リポジトリの `AGENTS.md`、`README.md`、`notes/` の読解。確認 2026-11-26。コミットは 2026-11-22 まで 20 件。Issue の記録はまだない(JSON は 2026-11-11 時点)。リポジトリは 2026-11-21 に作成され、PR は #1〜#4)
+- 目的(stated): 北海道を対象に、GSI の建物(bvmap 系のベクトルタイル)に写っていない建物を、Overture Maps の建物でブラウザ上で補う地図ビューア兼書き出しツール。公式を土台にし、Overture は公式に無い建物だけを足す。融合はユーザーの操作を引き金にブラウザ内で計算し、事前に結合したデータは作らない(理由はライセンスの混在: Overture の建物は OSM を含み ODbL、GSI のデータにも独自の帰属規則がある)。
+- 作り方(stated): オーナーが `notes/startup-prompt.md` で渡した段階計画(段階ごとに止まり、報告し、合図で次へ)。ルール: 未確認のことを事実として書かない、外部への投稿は下書きまで、URL やレイヤ名を推測しない、法的結論を書かない。`docs/` はビルド出力のみ。`notes/` に測定(`p0-measurements.md`)、決定(`decisions.md` D1〜D19)、ライセンスの論点(`licensing.md`)、到達性(`reachability.md`)、段階ごとの記録(`stage2〜6.md`)を残す。
+- 測定(stated、2026-11-21): 土台の koicha は MLT、z4–16、建物は `BldA` の z13–16。Overture は MVT、最大ズーム 14(z15 以上は 404)。z16 では koicha の `BldA` が公式と全タイルで一致(21 タイル、5 か所)。koicha の z13–14 の建物は z16 の面積の約 15〜20%(だから 15 未満では建物を描かない、D13)。
+- 判定(stated): Overture の建物のうち公式の建物に覆われた面積の割合で判断する(D9)。しきい値の既定は 0.5。分布は二つの山(ほぼ覆われない建物と、0.8 以上覆われる建物が多く、中間は少ない)。
+- 公開と到達性(stated、2026-11-21): GitHub Pages(`https://dwg7.unopengis.org/cvalda/`)で、200、バイト一致、CORS が Pages のオリジンから機能することを確認。モードは 3 つ(D14)。段階 4 まで公開、段階 5 で GeoJSON と FlatGeobuf の書き出し、段階 6 でタイル端の統合。
+- 訂正(stated、2026-11-22、`notes/stage6.md`): 公開済みの段階 3〜5 に欠陥があった。タイルのバッファのため、建物がタイル端で二重に数えられた。統合後、3×3 の 3 ブロックで、元の断片より 12.7%、17.9%、14.6% 少ない(1,513 → 1,321、407 → 334 ほか)。ニセコ駅 z17.2 で公式の建物が 391 → 325、モード 3 の「追加」が 314 → 265。Overture の端近くのコピーは 40〜60% が形が異なる。訂正は、以前の記録の脇に残された。
+- 未解決(stated): GSI の帰属の文言、混在した書き出しのライセンス表示、既定のしきい値、Chromebook での確認。ライセンスの項目は「法的結論ではない」と明記し、論点だけを列挙している。
+- 他の agent との関係(stated、`AGENTS.md`): 起動指示は、実装パターンは cafebabe の担当に、オンボーディングは guide の担当に、一度は相談すること。guide の担当には到達できなかった(クラウドのエージェント)ため、guide の軽いレビュー(`notes/guide-review.md`)で代えた。guide への質問 2 件が未送信で残っている: 「アプリのリポジトリはどこに登録するか」「Pages のソースは `main:/docs` か」。
+- guide での用途: Monthly Snapshot の作例(question → experiment → result → correction → open)、実験 13(決定ログを読む)・実験 14(別の町で比較を再現)、Onboarding の Software Engineer の次の一歩、Field Guide の Q21〜Q23、5 Minutes の「The repositories behind the threads」。個人名は書かず、「the owner」と書く。
+
+# /open-questions/cvalda-onboarding-answers
+- status: 下書き(外部へは投稿しない。hfu に渡す)
+- cvalda の `notes/guide-review.md` が guide の担当に向けて残した質問への、記録に基づく回答案(2026-11-26):
+  1. 公開 URL の食い違い: guide の `_config.yml` と README を `https://dwg7.unopengis.org/guide/` に直した。応答は 200。
+  2. アプリのリポジトリの登録先: 記録からは、`cafebabe/PROJECTS.md` に行を足すことが実質の登録と読める(cvalda はすでに載っている)。手順の記述は未確認。cafebabe の保守者に確認するとよい。guide の Q22 は「このガイドの提案」として書いた。
+  3. Pages のソース: guide と cvalda は `main` の `docs/` から公開されている(cvalda は `notes/reachability.md` の Pages ビルドの記録による。guide は応答 200 による)。アプリのリポジトリの `docs/` はビルド出力で `.nojekyll` を持ち、guide は Jekyll のページを持つ。guide の Q22 に違いを書いた。
+  4. 実験の提案(`compare-tiles.mjs` を別の町で再現): 実験 14 として載せた。guide の担当が実行して確認していないため、Status 行で再現待ちと明記した。
+  5. 確認日が 10 日前だった点: 週次の追従の手順を `/inventory/issues-follow-up` に置き、2026-11-26 に再確認した。
+
 # /traces/open-issues-batch-2026-11
 - status: stated(open の Issue の本文と一部のコメントの読解。確認 2026-11-11 の JSON。新着の追従は `/inventory/issues-follow-up`)
 - #891(Deep-dive into CNG、open、priority/MUST、2026-04-30〜): 本文は、セルフホスティングとポータビリティの重視を維持しつつ、「持てる」ことと「必要な範囲だけ効率よく扱える」ことは別、という整理から、Cloud Native Geospatial を深掘りする宣言。目指す性質(stated): ポータブル、セルフホスト可能、オープンな形式、必要な範囲だけ読める、必要な処理だけオンデマンド、ブラウザやエッジでも動く、オフラインや低接続性にも応用できる。深掘りの主題に、オブジェクトストレージと HTTP Range Request、PMTiles・GeoParquet・COG・Zarr などの使い分け、DuckDB・WebAssembly・OPFS、Raspberry Pi での処理、動的タイル生成、ポータブルな Function as a Service がある。コメント(2026-05-01): hfu が、dwg7 の活動は CNG の既存の範囲の内側というより隣接して補完する立場であり、「DWG 7 は、運用に耐える形で FOSS を統合し、プロジェクトに装備する取り組みである」と説明できるとよい、と書いた(英語版も併記)。別の contributor が、セルフホストした FaaS で動的にタイルを作る実験(DuckDB-Spatial と Overture Maps の GeoParquet)を共有した。
@@ -425,6 +454,7 @@
 - 利用条件: 各記事の著者の著作物。guide では要約と記事へのリンクにとどめ、本文は転載しない。
 
 # /inventory/guide-claims
+- 追記(2026-11-26): `dwg7-in-5-minutes` の「Three summaries」「The repositories behind the threads」— verified(`PROJECTS.md` の 27 行、`DWG7-CONTEXT.md`、`CONTRIBUTING.md`)。`monthly-snapshot` の cvalda の作例 — verified(`notes/` 全体、コミット 2026-11-22 まで)。Field Guide Q21・Q23 — verified。Q22 の登録手順 — suggestion(記録に手順の記述なし)。実験 13 — verified(決定ログを全文読了)。実験 14 — 再現待ちを Status 行で明記。公開 URL — verified(応答 200)。
 - status: verified / derived / suggestion の別を主張ごとに付けた台帳。確認 2026-11-11。
 - 凡例: `verified` = JSON またはスレッド本文で確認した。`derived` = 件数や中央値など、JSON からの計算。`suggestion` = 記録に根拠がなく、ガイドが勧めると明示した。`partial` = 一部だけ確認した。
 - 一括の確認(2026-11-11): 週次の 12:30–12:55 JST の枠は 167 件の題にあり、日付が読める 165 件のうち 164 件が火曜(最初の 2022-11-16 のみ水曜)。#1027 のコメントはすべて、会議開始より前に投稿されていた(derived)。#932 の題は「Seek possibilities for collaboration with DWG 5 -Geo AI」。FERSPAS の検索ページ(#1014 の URL)は応答 200。

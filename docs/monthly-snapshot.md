@@ -50,6 +50,17 @@ The entry below comes from a comment posted in the weekly meetup thread [#1027](
 - **Open items.** A fuller data set, and a check at the sites themselves. The full report is linked from the thread.
 - **Checked.** 2026-11-11.
 
+### Filling gaps in official building data ([cvalda](https://github.com/dwg7/cvalda))
+
+This entry comes from the decision log of an application repository, read on 2026-11-26. The viewer shows buildings from official vector tiles of a national mapping agency in Hokkaido, and adds buildings from an open global data set where the official data has none. All computation runs in the reader's browser, and the merged data set stays unpublished.
+
+- **Question.** Where official building data is thin, can an open global data set fill the gaps, and can a page do so for the visible area only?
+- **Experiment.** The owner and an assistant measured the tiles first: format, maximum zoom, layer names, and fields. At zoom 16, the repacked official tiles match the agency's own tiles in all 21 tiles tested, across 5 places. The open data set stops at zoom 14. At zooms 13 and 14, the official building layer holds about 15–20% of the area it holds at zoom 16. Buildings appear only from zoom 15 for this reason. Per building, the page computes the share of area that official polygons cover, and a slider sets the threshold; the default is 0.5.
+- **Result with conditions.** In the tests at Niseko, the covered shares form two humps: many buildings are almost uncovered, many are covered above 0.8, and few lie between. The page offers three modes, and a reader can save the view as GeoJSON or FlatGeobuf. The released stages were published on 2026-11-21 and checked on the public page.
+- **Review and correction.** On 2026-11-22 the owner's next stage found a defect in the released stages. Tiles carry buffers, so a building near a tile edge appears in two tiles, whole or as overlapping parts. After fusing, three blocks of 3×3 tiles hold 12.7%, 17.9%, and 14.6% fewer official buildings than the raw pieces. At Niseko station, zoom 17.2, official buildings fell from 391 to 325. Among open-data buildings, 40–60% of the copies near a coarse tile edge differ in shape. The log records the correction beside the earlier text.
+- **Open items.** The exact credit wording for the agency's data, the licence notice for an export that mixes the two sources, the default threshold after a visual check, and a check on a low-memory laptop. The log lists each as a question for the owner.
+- **Checked.** 2026-11-26, from the repository's `AGENTS.md`, `notes/decisions.md`, `notes/stage6.md`, and `notes/reachability.md`.
+
 ### Also active in November 2026
 
 - The 2026 training lectures for the surveying course ([#976](https://github.com/UNopenGIS/7/issues/976), [#1010](https://github.com/UNopenGIS/7/issues/1010)) run on 2026-11-25, 2026-11-26, and 2026-12-14.

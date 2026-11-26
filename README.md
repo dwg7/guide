@@ -4,7 +4,7 @@ This repository hosts the public dwg7 Access Layer: a practical guide for unders
 
 ## Public site
 
-- Site: https://dwg7.opengis.org/guide
+- Site: https://dwg7.unopengis.org/guide/
 - Source entry: [docs/index.md](docs/index.md)
 
 ## Repository purpose

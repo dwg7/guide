@@ -6,14 +6,16 @@ title: dwg7 in 5 Minutes
 
 dwg7 is Domain Working Group 7 of the UN Open GIS Initiative. It works on "Smart Maps": web maps that stay open, so that anyone can build, test, and reuse them. Its method is a public record. Each piece of work leaves a thread that runs from a question to a result and a correction. This page describes that method as it appears in the [dwg7 issues](https://github.com/UNopenGIS/7/issues) on 2026-11-11. The issues are the source, and this page is a reading aid.
 
-## Two summaries from the record
+## Three summaries from the record
 
-Two contributors described dwg7 in the thread text, in their own words.
+Three descriptions of dwg7 appear in the public record, each in its author's own words.
 
 - **August 2025, to the MapLibre community** ([#768](https://github.com/UNopenGIS/7/issues/768)). A contributor writes that in field missions, low bandwidth, offline operation, and limited power and computing are the norm. A reply describes the group as a collective of one-person developers who favour experiments and who propose cloud-native technologies, such as PMTiles, to United Nations operations, in the belief that open geospatial information can be used freely.
 - **May 2026, for engaging other communities** ([#891](https://github.com/UNopenGIS/7/issues/891)). A contributor offers one line: "dwg7 is an initiative to integrate FOSS and equip projects for operationally sustainable use." The same thread shifts attention from self-hosting planet-scale data toward cloud-native access patterns, kept portable, self-hostable, and open.
 
-Both summaries are individual wordings. The threads are the source, and the field conditions in the first summary explain why portability, offline use, and single-file delivery recur across the record.
+- **September 2026, a briefing recorded in the cafebabe repository** ([`DWG7-CONTEXT.md`](https://github.com/dwg7/cafebabe/blob/main/DWG7-CONTEXT.md)). The briefing describes dwg7 as a group that tests new technologies in order to keep practice open, and that meets through connection and collaboration the needs that exceed the mandate of any single national agency. Contributors keep their own affiliations and lend time to the work.
+
+All three are individual wordings. The threads and repositories are the source, and the field conditions in the first summary explain why portability, offline use, and single-file delivery recur across the record.
 
 ## The method
 
@@ -54,6 +56,12 @@ The record shows the same habits across ten themes and about a thousand threads.
 - Small computers carry maps into the field and the classroom ([#567](https://github.com/UNopenGIS/7/issues/567), [#575](https://github.com/UNopenGIS/7/issues/575)).
 - Language models meet geospatial data in a design that separates a staff assistant from a map-making service ([#936](https://github.com/UNopenGIS/7/issues/936)). A neighbouring group, dwg5, works on Geo AI ([#995](https://github.com/UNopenGIS/7/issues/995)).
 - Some themes are history. Between 2023 and 2024 the group tried distributing tiles through IPFS. Delivery has since moved to Martin servers, Source Cooperative, and GitHub Pages.
+
+## The repositories behind the threads
+
+The threads link to projects that live in their own repositories in the [dwg7 organisation](https://github.com/dwg7). The [`PROJECTS.md`](https://github.com/dwg7/cafebabe/blob/main/PROJECTS.md) file of the cafebabe repository lists 27 of them on 2026-11-26, from a Hokkaido disaster dashboard to a Raspberry Pi hands-on guide. Each repository keeps its own record of decisions in files such as `AGENTS.md`, `notes/`, and `DECISIONS.md`. cafebabe also collects patterns that several projects reuse, each with its known uses, and it appends dated corrections to a pattern and leaves the original text in place.
+
+Public pages follow one address form, `https://dwg7.unopengis.org/<repository>/`. This guide lives at [`/guide/`](https://dwg7.unopengis.org/guide/), and the building viewer described in [Monthly Snapshot](monthly-snapshot.md) lives at `/cvalda/`.
 
 ## Why this guide reads the method this way
 

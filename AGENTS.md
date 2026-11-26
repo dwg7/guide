@@ -15,7 +15,7 @@
 - 主張には、必ず条件（機器、バージョン、データ、負荷など）と、公開記録へのリンクと確認日を添える。
 - 英文は肯定形で書く。「〜でない」「〜しない」と述べる代わりに、何であり何をするかを述べる。
 - 「dwg7」は常に小文字で表記する（`DWG7` は使わない）。
-- 一次情報は https://github.com/UNopenGIS/7/issues の公開記録である。本リポジトリは記録の読解の補助であり、両者が異なる場合は Issue が優先する。
+- 一次情報は https://github.com/UNopenGIS/7/issues の公開記録と、dwg7 の各リポジトリ（一覧は https://github.com/dwg7/cafebabe の `PROJECTS.md`）の `AGENTS.md`・`CLAUDE.md`・`notes/`・`DECISIONS.md` である。本リポジトリは記録の読解の補助であり、食い違う場合は一次情報が優先する。
 - 公開記録から確認できない規範や事実を、dwg7 の慣行として書かない。確認できない提案は「このガイドは〜を勧める」と明示する。
 - 実在の Issue を例に使う場合は、個人名よりも役割（contributor）を用いる。
 
@@ -52,13 +52,13 @@
 
 - 公開原稿は `docs/` 配下に置く。
 - GitHub Pages は `main` ブランチの `/docs` から公開する。
-- 想定公開URLは `https://dwg7.opengis.org/guide` とする。
+- 公開URLは `https://dwg7.unopengis.org/guide/` とする（dwg7 の各リポジトリは `dwg7.unopengis.org/<repo>/` の形で公開される。cvalda の `notes/decisions.md` D8 に、hfu が 2026-11-21 に確認した旨がある。公開ページの応答も 200 で確認済み、2026-11-26）。当初の `dwg7.opengis.org/guide` は名前解決できなかった。
 - 内部リンクは、GitHub上とPages上の双方で機能しやすい相対リンクを優先する。
 - Pagesのためだけに、閲覧不能な独自記法へ依存しない。
 - 見た目は `docs/_layouts/default.html` と `docs/assets/css/style.css` の最小構成（JavaScriptなし、外部依存なし、ダークモード対応）で整える。ページ上部のナビゲーションは5点の公開プロダクトに限る。各ページは先頭にfront matter（`title`）を持つ。
 - 内部リンクは `.md` の相対リンクで書く（`jekyll-relative-links` がPages上で変換する）。`docs/` 外のファイルへの相対リンクは使わず、絶対URLを使う。
 - 初期構成では `docs/CNAME` を作らない。
-- `_config.yml` の `url` は `https://dwg7.opengis.org`、`baseurl` は `/guide` とする。
+- `_config.yml` の `url` は `https://dwg7.unopengis.org`、`baseurl` は `/guide` とする。
 
 ## 編集原則
 

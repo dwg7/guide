@@ -62,7 +62,7 @@ Your result sits next to the original, and a reader can compare the two.
 
 ### Where to go next
 
-The tile cache and range-request experiments in [Good First Experiments](good-first-experiments.md).
+The tile cache and range-request experiments in [Good First Experiments](good-first-experiments.md). For a whole application, read the decision log of the building viewer [cvalda](https://github.com/dwg7/cvalda/blob/main/notes/decisions.md): each decision lists its reason and what remains unknown, and a later stage corrects an earlier one in the open.
 
 ## AI Builder
 
