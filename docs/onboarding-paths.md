@@ -160,7 +160,7 @@ Clear prose, careful data handling, and attention to what readers need.
 
 ### Three first steps
 
-1. Read the latest weekly meetup issue, for example [#1028](https://github.com/UNopenGIS/7/issues/1028). Presenters post written updates there.
+1. Read a recent weekly meetup issue, for example [#1031](https://github.com/UNopenGIS/7/issues/1031). Presenters post written updates there.
 2. Choose one update and write two English sentences that summarise it for a reader who joined late.
 3. Follow its links to the thread it comes from.
 
