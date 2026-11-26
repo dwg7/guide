@@ -27,7 +27,7 @@ Read one thread, and the chain is visible. [#1003](https://github.com/UNopenGIS/
 2. **Experiment.** A contributor ran both servers on a Raspberry Pi 4B. The load was 4 workers sending 20 map requests each, on 5,000 random points.
 3. **Result with conditions.** One server in one mode served 16.9–22.5 requests per second. The other served 13.1–13.6. The thread gives versions and settings beside each number.
 4. **Review and correction.** A second contributor repeated the test on other operating systems and found that the result depended on a default file path. The first contributor confirmed it and corrected two earlier statements in the same thread.
-5. **Reuse.** A hands-on guide for an older, smaller Raspberry Pi followed. Its measurements are the open item.
+5. **Reuse.** A hands-on guide for an older, smaller Raspberry Pi followed. Its measurements are the open item. On 2026-11-26 the thread closed "for now" with that item still in place.
 
 ## Ten habits behind the method
 
@@ -38,7 +38,7 @@ The record shows the same habits across ten themes and about a thousand threads.
 3. **Visible correction.** A fix appears next to the claim it repairs, often as struck-through text ([#642](https://github.com/UNopenGIS/7/issues/642)).
 4. **Reasons in words.** A design choice comes with its reasons, in a short list or a decision record ([#642](https://github.com/UNopenGIS/7/issues/642), [#936](https://github.com/UNopenGIS/7/issues/936)).
 5. **Invitation to repeat.** Code and steps are public, and readers repeat them and report back ([#642](https://github.com/UNopenGIS/7/issues/642)).
-6. **Open items stay open.** A thread names what remains and the condition for resuming ([#567](https://github.com/UNopenGIS/7/issues/567)).
+6. **Open items stay visible.** A thread names what remains and the condition for resuming ([#567](https://github.com/UNopenGIS/7/issues/567)), and a thread that closes "for now" keeps that list in its text ([#1003](https://github.com/UNopenGIS/7/issues/1003)).
 7. **Care for shared resources.** A copy is hosted so that nobody must hit the public source repeatedly ([#920](https://github.com/UNopenGIS/7/issues/920)).
 8. **Decisions that settle.** A thread closes when the idea has become part of the work ([#936](https://github.com/UNopenGIS/7/issues/936)).
 9. **Start from others' work.** A thread builds on a published article or on an issue in another project ([#361](https://github.com/UNopenGIS/7/issues/361), [#920](https://github.com/UNopenGIS/7/issues/920)).

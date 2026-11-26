@@ -56,7 +56,7 @@ They plan for the load they place on others. In [#920](https://github.com/UNopen
 
 ### 12. When does a thread close?
 
-When the idea has become part of the work. #936 closed with the note that the concept had settled. #642 closed after the result was reported elsewhere. Closed threads remain readable and open to comment.
+When the idea has become part of the work, or for now. On 2026-11-26, thirteen threads closed in one pass, most with a one-line comment such as "一度、閉じておきます" ("for now, I'll close this"), and one closed as not planned. A thread closed for now keeps its text and its open items, and it accepts comments. A closing comment is a statement about attention, and the open items it lists are the statement about work. #936 closed with the note that the concept had settled. #642 closed after the result was reported elsewhere. Closed threads remain readable and open to comment.
 
 ### 13. How do contributors start?
 

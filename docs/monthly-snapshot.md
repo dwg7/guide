@@ -63,9 +63,10 @@ This entry comes from the decision log of an application repository, read on 202
 
 ### Also active in November 2026
 
-- The 2026 training lectures for the surveying course ([#976](https://github.com/UNopenGIS/7/issues/976), [#1010](https://github.com/UNopenGIS/7/issues/1010)) run on 2026-11-25, 2026-11-26, and 2026-12-14.
-- A semantic search over a large public catalogue is open for comment ([#1014](https://github.com/UNopenGIS/7/issues/1014)).
-- A study of high-resolution drone imagery as PMTiles is open ([#1023](https://github.com/UNopenGIS/7/issues/1023)).
+- The 2026 training lectures for the surveying course ran on 2026-11-25 ([#1010](https://github.com/UNopenGIS/7/issues/1010), closed on 2026-11-26 with the note "carried out"). The thread [#976](https://github.com/UNopenGIS/7/issues/976) stays open for 2026-11-26 and 2026-12-14, and lists the Raspberry Pi units assigned to the trainees' countries.
+- A semantic search over a large public catalogue, and a companion that builds raster tiles from the same catalogue with user-defined functions, closed on 2026-11-26 at their author's decision ([#1014](https://github.com/UNopenGIS/7/issues/1014), [#1013](https://github.com/UNopenGIS/7/issues/1013)).
+- A study of high-resolution drone imagery as PMTiles closed "for now" on 2026-11-26 ([#1023](https://github.com/UNopenGIS/7/issues/1023)). A candidate prompt for converting a national transformation-parameter file to a PROJ grid was posted in the open thread [#740](https://github.com/UNopenGIS/7/issues/740).
+- A drone experiment on a purchased aircraft continues from [#1021](https://github.com/UNopenGIS/7/issues/1021) in [#1036](https://github.com/UNopenGIS/7/issues/1036).
 
 ## 4. Writing rules for entries
 
