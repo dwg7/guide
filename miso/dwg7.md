@@ -235,8 +235,20 @@
 - 公開と非公開(measured、2026-11-27): `PROJECTS.md` の 27 件のうち、`m3xx-fleet-ops` は匿名の `git ls-remote` が認証を求めた(非公開)。他の 17 件を点検し、公開であることを確認した。guide の Onboarding は `m3xx-fleet-ops` ではなく、公開の `m3xx-fleet`(ダッシュボード)にリンクした。
 - 未確認(`open`): 前史の 8 プロジェクトのうち、各リポジトリの現状。guide に引用していないプロジェクトの内容。
 
+# /lessons/project-readme-check-2026-11-27
+- status: verified(17 件のリポジトリの README と一部の `DECISIONS.md` を読み、一行説明と照合した。確認 2026-11-27。浅い clone)
+- 食い違いと修正(stated):
+  - **ferspas57 は 2026-09-18 に停止(paused)**。README の冒頭に、FAO が公開したユーザーストーリー(`un-fao/FERSPAS_demo`)を読んだ後、hfu が「アーキテクチャを FERSPAS に当てはめていた。FERSPAS が実際にどう使われているかから始めていなかった」と結論した、と書かれている。作業は `dwg7/ferspas-html-demo`(Notebook のワークフローを、Staccato の枠組みなしに、透明なブラウザのツールにする)に続く。#997(closed)と #1011 が決定の記録。`DECISIONS.md` D66: 「Repo paused, not deleted」。デモとデータパイプラインは取り壊さないが、積極的には開発しない。→ guide は ferspas57 を「停止を記録するプロジェクト」として AI Builder の道に置き、Field Guide Q24 を追加した。International の道は ferspas-html-demo に差し替えた。
+  - 公開 URL の形が二つある: 新しいプロジェクトは `dwg7.unopengis.org/<repo>/`(guide、cvalda、do-survey、snow-hokkaido、plateau-juice、rpi3-server-guide、dorayaki)、古いプロジェクトは `dwg7.github.io/<repo>/`(height-coverage、m3xx-fleet、miso-geo)。guide の「一つの形」という記述を訂正した。
+  - kcai-un-docs の範囲は、国連総会と安保理の英語文書(39,363 行、安保理決議は S/RES/2699 まで)。専門機関や委員会などは含まない。guide の一行説明を、PROJECTS.md の記述(UN-GGIM 等)から README の記述に直した。
+  - snow-hokkaido、zukaku、dorayaki、staccato-ecosystem、ferspas-html-demo、m3xx-fleet(匿名化・集約済みの状態のみ)、kcai、kcai-terrio の一行説明を README の表現に合わせた。
+- 一致(stated): height-coverage、do-survey(GSI の公共測量実施情報、北海道地方測量部区分、1983 年度から、GeoParquet)、rpi3-server-guide、doverture(三つのデータの比較。どれが正しいかの判定ではない)、plateau-juice(札幌市 646,474 棟)、miso-geo、kikimimi。
+- 学び(derived): PROJECTS.md の一行説明は、プロジェクトの状態の変化(停止、範囲の再定義)に遅れる。guide は、リンクの前に各 README を確認する(`FOLLOW-UP.md` の手順 2 の対象に、引用する 17 件のリポジトリの状態を加える)。
+- 未確認(`open`): README を読んでいない `maplibre-gl-atlas`、`kaga0`、`bvmap`、`kataribe` の現状。cvalda 以外の `AGENTS.md` の運用規則。
+
 # /lessons/projects-to-paths
 - status: derived(`PROJECTS.md` の一行説明による。確認 2026-11-27。公開の確認は `git ls-remote`)
+- (2026-11-27 の README 確認で修正済み: AI Builder は ferspas57(停止の記録)、International は ferspas-html-demo。`/lessons/project-readme-check-2026-11-27`)
 - Geospatial Practitioner: height-coverage、do-survey、snow-hokkaido(関連: cvalda、doverture)
 - Software Engineer: cvalda、zukaku、dorayaki(関連: maplibre-gl-atlas、kaga0、bvmap)
 - AI Builder: staccato-ecosystem、ferspas-html-demo、kcai-un-docs(関連: kataribe、kcai、miso)

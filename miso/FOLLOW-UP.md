@@ -15,7 +15,7 @@ guide の引用を、公開記録の変化に追従させるための定例手�
    - `gh` が使える機械で、更新分のエクスポートを作る（コマンドは `miso/scripts/merge_issues.py` の冒頭）。
    - `python3 miso/scripts/merge_issues.py issues-new.json` で統合する。
    - `gh` が使えないときは、公開ページの新着順と更新順の 1 ページ目を読む（取得エージェントで代用できる。長いスレッドは要約を介すため、完全な確認にはエクスポートが要る）。
-2. **引用の状態を点検する。** `python3 miso/scripts/check_citations.py` を実行する。出力は、guide が引用する Issue ごとの状態、閉じた日、最後の動き、引用しているページ。エクスポートにない Issue は別に表示される。
+2. **引用の状態を点検する。** guide が一覧するリポジトリ(Onboarding の 17 件ほか)は、README の冒頭の状態(例: paused)も確認する。 `python3 miso/scripts/check_citations.py` を実行する。出力は、guide が引用する Issue ごとの状態、閉じた日、最後の動き、引用しているページ。エクスポートにない Issue は別に表示される。
    - 状態が変わった Issue（open → closed など）を、各ページの該当文に反映する。ページ内で状態を述べている箇所は、`onboarding-paths.md`、`monthly-snapshot.md`、`field-guide.md`（Q12）、`dwg7-in-5-minutes.md`（習慣 6 と #1003 の実例）。
 3. **新着と更新を読む。** 新着の Issue と、更新のあったスレッドを、問い → 実験 → 条件つきの結果 → 訂正 → 未解決の順に `miso/dwg7.md` の `/traces/` に記録する。要約を介して得た情報は、そう明記する。
 4. **guide への影響を決める。** 新しい作例の候補、引用の差し替え(例: 週次の例)、主張の訂正のいずれが要るかを決める。確認できない提案は「このガイドは〜を勧める」と書く。

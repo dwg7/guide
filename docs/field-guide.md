@@ -102,11 +102,15 @@ Each project has its own repository in the [dwg7 organisation](https://github.co
 
 ### 22. How are application repositories published?
 
-The two repositories checked for this guide publish from the `main` branch and the `docs/` folder of GitHub Pages, at `https://dwg7.unopengis.org/<repository>/`. This guide uses Jekyll and Markdown pages. The viewer [cvalda](https://github.com/dwg7/cvalda) keeps its handwritten notes in `README.md`, `AGENTS.md`, and `notes/`, and uses `docs/` only for build output, a single `index.html`, with a `.nojekyll` file beside it. The record leaves the registration step for a new project open. This guide suggests adding a line to `PROJECTS.md` through a pull request, and checking with the cafebabe maintainers first.
+Newer repositories, among them this guide, cvalda, do-survey, and snow-hokkaido, publish from the `main` branch and the `docs/` folder of GitHub Pages at `https://dwg7.unopengis.org/<repository>/`. Older ones, such as height-coverage, use `https://dwg7.github.io/<repository>/`. This guide uses Jekyll and Markdown pages. The viewer [cvalda](https://github.com/dwg7/cvalda) keeps its handwritten notes in `README.md`, `AGENTS.md`, and `notes/`, and uses `docs/` only for build output, a single `index.html`, with a `.nojekyll` file beside it. The record leaves the registration step for a new project open. This guide suggests adding a line to `PROJECTS.md` through a pull request, and checking with the cafebabe maintainers first.
 
 ### 23. How do projects share what they learn?
 
 Through cafebabe, a repository where agents and contributors of several projects collect patterns. Each pattern states its context, forces, solution, and known uses. A pattern needs at least one implementation behind it, and an idea that awaits an implementation goes to a separate folder. When a pattern becomes outdated, the author appends a dated correction and leaves the original text, so that the reason for the change stays visible. The same habit appears in [#1003](https://github.com/UNopenGIS/7/issues/1003) and in the decision logs of individual projects.
+
+### 24. How does a project record a pause?
+
+On the first line of its README, with the date and the reason. The repository [ferspas57](https://github.com/dwg7/ferspas57) states "Status: paused (2026-09-18)". After reading the user stories that FAO itself had published, the owner concluded that the project had fitted an architecture onto a system, when the work should begin from how the system is used. The work continues as [ferspas-html-demo](https://github.com/dwg7/ferspas-html-demo). The founding issue ([#997](https://github.com/UNopenGIS/7/issues/997)) is closed, the repository is paused and kept, and its text stays as a citable record of the state at the pause. A pause carries its reason, its successor, and its record, and so it serves the next reader as a result does.
 
 ## A good next step
 
