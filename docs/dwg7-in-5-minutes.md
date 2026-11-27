@@ -59,7 +59,7 @@ The record shows the same habits across ten themes and about a thousand threads.
 
 ## The repositories behind the threads
 
-The threads link to projects that live in their own repositories in the [dwg7 organisation](https://github.com/dwg7). The [`PROJECTS.md`](https://github.com/dwg7/cafebabe/blob/main/PROJECTS.md) file of the cafebabe repository lists 27 of them on 2026-11-26, from a Hokkaido disaster dashboard to a Raspberry Pi hands-on guide. Each repository keeps its own record of decisions in files such as `AGENTS.md`, `notes/`, and `DECISIONS.md`. cafebabe also collects patterns that several projects reuse, each with its known uses, and it appends dated corrections to a pattern and leaves the original text in place.
+The threads link to projects that live in their own repositories in the [dwg7 organisation](https://github.com/dwg7). The [`PROJECTS.md`](https://github.com/dwg7/cafebabe/blob/main/PROJECTS.md) file of the cafebabe repository lists 27 of them on 2026-11-26, from a Hokkaido disaster dashboard to a Raspberry Pi hands-on guide. Eighteen of them state a join or creation date between 2026-09-03 and 2026-11-21, so the organisation grows by projects joining over time. Each repository keeps its own record of decisions in files such as `AGENTS.md`, `notes/`, and `DECISIONS.md`. cafebabe also collects patterns that several projects reuse, each with its known uses, and it appends dated corrections to a pattern and leaves the original text in place.
 
 Public pages follow one address form, `https://dwg7.unopengis.org/<repository>/`. This guide lives at [`/guide/`](https://dwg7.unopengis.org/guide/), and the building viewer described in [Monthly Snapshot](monthly-snapshot.md) lives at `/cvalda/`.
 

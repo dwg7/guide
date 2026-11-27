@@ -222,6 +222,29 @@
 - 公開 URL(measured、2026-11-26): guide は `https://dwg7.unopengis.org/guide/`(応答 200、CSS 200)。`https://dwg7.opengis.org/guide/` は名前解決できなかった。canonical リンクが旧 URL を指していた(`_config.yml` の `url`)ため、`https://dwg7.unopengis.org` に修正した。cvalda の `notes/decisions.md` D8 に、hfu が 2026-11-21 に `dwg7.unopengis.org/<repo>/` の形を確認した記録がある。
 - 要確認(`open`): 新しいプロジェクトの登録手順(`PROJECTS.md` への追記が実質の登録と読めるが、手順の記述は未確認)。登録の担当(cafebabe の保守者)。
 
+# /lessons/lineage-repositories
+- status: stated + derived(cafebabe の `DECISIONS.md` D1〜D20、`PROJECTS.md`、コミット履歴、`DWG7-CONTEXT.md` による。確認 2026-11-27。浅い履歴 300 件)
+- 内部メモ。guide には、組織の成り立ちの事実(プロジェクトが参加して増える)だけを載せた。
+- 前史(stated、D1): 2026-09-02 より前に、claude-mct が dwg7 と hfu の 8 つのプロジェクトのエージェント(mapterhorn-japan-bridge、height-coverage、zukaku、sas0、kitavolca、kaga0、stars、plateau-mago-implicit)に、2 ラウンドの横断調査(MapLibre GL JS の構築知見、.md ファイルの運用知見)を行い、全員が横断ノウハウの集約に価値があると答えた。置き場所の意見は分かれ、あるエージェントは「話題が増えるたびに、その場の判断でどこかのプロジェクトにホストされ続けると、『dwg7 の共有知見はどこにあるか』の答えが『話題による』になる」と懸念を述べ、同時に「2〜3 件の段階で統治構造を先回りするのは時期尚早」とも留保した。組織判断として hfu に判断を仰いだ。
+- 創設(stated、D1〜D4、2026-09-02): cafebabe を創設。D3 で `PROJECTS.md`(永続的な参照先)を新設し、プロジェクト固有の知見は各リポジトリの `CLAUDE.md`/`DECISIONS.md` に置く。D4 で、hfu 経由の組織文脈ブリーフィングを `DWG7-CONTEXT.md` として原文のまま保存した。初日に 24 コミット。
+- 運用の発展(stated): D5 先行事例研究のパターン。D6 全エージェントからのパターン提案の募集(9 プロジェクト、自由回答)。D7・D9・D13 横断ヒアリング(スタイル設計、ベクトルタイルのサイズ最適化、terrain/hillshade)。D10 判断事項の棚卸し、D14 判断待ち事項の捌き方を「小分け・定期」に更新。D12 エージェントへの呼称習慣と、エージェンシーの希少性についての考察。D16 `ideas/` の新設(実装前の案を `patterns/` と分ける)。D17(2026-09-06)知見ベース全体を別モデルにレビューさせ、「局面の方針」と「大局の方針」を区別。D19 非公開リポジトリの情報を公開の cafebabe に書く基準。
+- 規模(derived、2026-11-21 時点の浅い履歴): `patterns/` に 39 ファイル、`ideas/` に 2 ファイル、「実例」の行が 240 件。最後のコミットは 2026-11-21。
+- プロジェクトの参加(derived、`PROJECTS.md` の記述): 日付が記された 18 件が 2026-09-03〜11-21 に参加または創設された。ferspas57(09-03)、m3xx-fleet-ops と kataribe(09-05)、staccato-ecosystem と maplibre-gl-atlas(09-09)、kikimimi(09-16)、ferspas-html-demo(09-18)、doverture(09-20)、do-survey(09-24)、plateau-juice と rpi3-server-guide(10-02)、snow-hokkaido(10-18)、kcai(10-19)、kcai-terrio(10-21)、kcai-un-docs(10-26)、miso-geo(11-11)、dorayaki(11-13)、cvalda(11-20/21)。miso は、kcaim から改称された(11-07)。
+- 主題の移り変わり(derived): 8 月〜9 月初旬はタイル、地図表現、可搬な機器(zukaku、kaga0、stars ほか)。9 月は FAO との接点と Staccato(ferspas57、staccato-ecosystem、kataribe)、研修の運用(m3xx-fleet-ops)。10〜11 月は知識の方法(kcai、miso、各インスタンス)と、データ品質・3D の実験(doverture、plateau-juice、dorayaki、cvalda)。
+- D20(stated、2026-11-13): cafebabe 自身の知識表現を miso に書き換える方針。条件つきで妥当と判断(miso の「確かさの区別、鮮度の規則、受け入れテスト」が、散文に溶けた「未検証」の書き添えや、古い記述の混入、伝聞を事実とした誤りという実際の不具合に対応するため)。miso の仕様は暫定で、形だけ移すと「miso の服を着たダンプ」になる、という留保つき。各段階の終わりに hfu が進むかやめるかを決める。
+- 公開と非公開(measured、2026-11-27): `PROJECTS.md` の 27 件のうち、`m3xx-fleet-ops` は匿名の `git ls-remote` が認証を求めた(非公開)。他の 17 件を点検し、公開であることを確認した。guide の Onboarding は `m3xx-fleet-ops` ではなく、公開の `m3xx-fleet`(ダッシュボード)にリンクした。
+- 未確認(`open`): 前史の 8 プロジェクトのうち、各リポジトリの現状。guide に引用していないプロジェクトの内容。
+
+# /lessons/projects-to-paths
+- status: derived(`PROJECTS.md` の一行説明による。確認 2026-11-27。公開の確認は `git ls-remote`)
+- Geospatial Practitioner: height-coverage、do-survey、snow-hokkaido(関連: cvalda、doverture)
+- Software Engineer: cvalda、zukaku、dorayaki(関連: maplibre-gl-atlas、kaga0、bvmap)
+- AI Builder: staccato-ecosystem、ferspas-html-demo、kcai-un-docs(関連: kataribe、kcai、miso)
+- International and Public-Sector Practitioner: m3xx-fleet(公開のダッシュボード)、rpi3-server-guide、ferspas57
+- Student or Researcher: doverture、plateau-juice、kcai-terrio(関連: snow-hokkaido、miso-geo)
+- Documentation, Data, or Community Contributor: kcai、miso-geo、kikimimi(関連: rpi3-server-guide)
+- 注: 対応は guide の提案(suggestion)。各プロジェクトの内容は一行説明に基づき、リポジトリの README の精読は未了。
+
 # /traces/cvalda
 - status: stated(リポジトリの `AGENTS.md`、`README.md`、`notes/` の読解。確認 2026-11-26。コミットは 2026-11-22 まで 20 件。Issue の記録はまだない(JSON は 2026-11-11 時点)。リポジトリは 2026-11-21 に作成され、PR は #1〜#4)
 - 目的(stated): 北海道を対象に、GSI の建物(bvmap 系のベクトルタイル)に写っていない建物を、Overture Maps の建物でブラウザ上で補う地図ビューア兼書き出しツール。公式を土台にし、Overture は公式に無い建物だけを足す。融合はユーザーの操作を引き金にブラウザ内で計算し、事前に結合したデータは作らない(理由はライセンスの混在: Overture の建物は OSM を含み ODbL、GSI のデータにも独自の帰属規則がある)。

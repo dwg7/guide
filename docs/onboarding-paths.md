@@ -34,7 +34,7 @@ Your comment states its conditions, so a reader can repeat your check.
 
 ### Where to go next
 
-[Good First Experiments](good-first-experiments.md), starting with the dataset checks.
+[Good First Experiments](good-first-experiments.md), starting with the dataset checks. Projects to browse in the dwg7 organisation: [height-coverage](https://github.com/dwg7/height-coverage) (an awareness site on building-height entries in OpenStreetMap), [do-survey](https://github.com/dwg7/do-survey) (public survey information of one regional office, summed by municipality), and [snow-hokkaido](https://github.com/dwg7/snow-hokkaido) (a daily record of snow, cloud, and green cover on a zoom-18 grid).
 
 ## Software Engineer
 
@@ -62,7 +62,7 @@ Your result sits next to the original, and a reader can compare the two.
 
 ### Where to go next
 
-The tile cache and range-request experiments in [Good First Experiments](good-first-experiments.md). For a whole application, read the decision log of the building viewer [cvalda](https://github.com/dwg7/cvalda/blob/main/notes/decisions.md): each decision lists its reason and what remains unknown, and a later stage corrects an earlier one in the open.
+The tile cache and range-request experiments in [Good First Experiments](good-first-experiments.md). For a whole application, read the decision log of the building viewer [cvalda](https://github.com/dwg7/cvalda/blob/main/notes/decisions.md): each decision lists its reason and what remains unknown, and a later stage corrects an earlier one in the open. Other projects to browse: [zukaku](https://github.com/dwg7/zukaku) (a print atlas generator with MapLibre and Martin) and [dorayaki](https://github.com/dwg7/dorayaki) (an experiment that carries surfels on map tiles).
 
 ## AI Builder
 
@@ -90,7 +90,7 @@ Your comment separates what the system returned from what you verified.
 
 ### Where to go next
 
-The [Field Guide](field-guide.md) entry on AI-assisted work.
+The [Field Guide](field-guide.md) entry on AI-assisted work. Projects to browse: [staccato-ecosystem](https://github.com/dwg7/staccato-ecosystem) (a cooperation method for education, disaster prevention, and surveying), [ferspas-html-demo](https://github.com/dwg7/ferspas-html-demo) (a move of a Jupyter workflow on FAO data into a transparent web app), and [kcai-un-docs](https://github.com/dwg7/kcai-un-docs) (geospatial traces from United Nations documents).
 
 ## International and Public-Sector Practitioner
 
@@ -118,7 +118,7 @@ A technical contributor can read your question and propose an experiment.
 
 ### Where to go next
 
-The responsibility entries in the [Field Guide](field-guide.md).
+The responsibility entries in the [Field Guide](field-guide.md). Projects to browse: [m3xx-fleet](https://github.com/dwg7/m3xx-fleet) (a public monitoring dashboard for the Raspberry Pi fleet of a training course), [rpi3-server-guide](https://github.com/dwg7/rpi3-server-guide) (a hands-on guide to GeoServer and MapServer on a Raspberry Pi 3 with 1 GB), and [ferspas57](https://github.com/dwg7/ferspas57) (a link between FERSPAS and Staccato for the work of FAO and dwg5).
 
 ## Student or Researcher
 
@@ -146,7 +146,7 @@ Another reader can repeat your method from the log.
 
 ### Where to go next
 
-[Good First Experiments](good-first-experiments.md), then the Field Guide on disagreement and error.
+[Good First Experiments](good-first-experiments.md), then the Field Guide on disagreement and error. Projects to browse: [doverture](https://github.com/dwg7/doverture) (an exploratory comparison of building footprints from several sources), [plateau-juice](https://github.com/dwg7/plateau-juice) (attributes of buildings in a city 3D model, viewed apart from geometry), and [kcai-terrio](https://github.com/dwg7/kcai-terrio) (a knowledge instance that tracks one open-source project).
 
 ## Documentation, Data, or Community Contributor
 
@@ -174,6 +174,6 @@ A reader who skipped the original update can state what was tried and what remai
 
 ### Where to go next
 
-[Monthly Snapshot](monthly-snapshot.md), which turns threads into short records.
+[Monthly Snapshot](monthly-snapshot.md), which turns threads into short records. Projects to browse: [kcai](https://github.com/dwg7/kcai) (principles for sharing knowledge made with AI as short, sourced Markdown traces), [miso-geo](https://github.com/dwg7/miso-geo) (geographic documentation in Markdown with a small map viewer), and [kikimimi](https://github.com/dwg7/kikimimi) (public-radio mentions of a volcano, treated as a social sensor).
 
 [Back to index](index.md)
