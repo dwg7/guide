@@ -48,6 +48,7 @@ Open `http://localhost:4000/` and check the page you changed, on a narrow window
 
 - [`miso/dwg7.md`](miso/dwg7.md) collects the record in one Markdown file: statistics, representative threads, lessons, and open questions. Add to it first when you learn something new, and write the guide from it.
 - `miso/scripts/` holds small scripts that summarise an export of the issues and index the articles used as background. Re-run them to refresh the figures.
+- [`miso/FOLLOW-UP.md`](miso/FOLLOW-UP.md) describes the weekly routine that keeps the pages in step with the record, and `miso/scripts/check_citations.py` lists the state of every issue the pages cite.
 - [`AGENTS.md`](AGENTS.md) holds the editorial principles for people and assistants who maintain the repository.
 
 ## Checks before you submit
