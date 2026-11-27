@@ -61,12 +61,23 @@ This entry comes from the decision log of an application repository, read on 202
 - **Open items.** The exact credit wording for the agency's data, the licence notice for an export that mixes the two sources, the default threshold after a visual check, and a check on a low-memory laptop. The log lists each as a question for the owner.
 - **Checked.** 2026-11-26, from the repository's `AGENTS.md`, `notes/decisions.md`, `notes/stage6.md`, and `notes/reachability.md`.
 
+### Orthophotos from a small drone ([#1036](https://github.com/UNopenGIS/7/issues/1036))
+
+This entry comes from a report posted on 2026-11-25. It continues an earlier test with a rented aircraft ([#1021](https://github.com/UNopenGIS/7/issues/1021)), and the author's code for planning flights is public.
+
+- **Question.** Can a small consumer drone, flown on a planned waypoint mission, give an orthophoto and a 3D view, and which settings decide the result?
+- **Experiment.** The author bought an aircraft with a basic controller, applied to the local authority for permission, consulted the regional civil engineering office, and flew on the afternoon of 2026-11-22 at a mountain-road car park. The maximum altitude was about 118 m, below 150 m, and the wind was 3 m/s or less. The mission had 48 waypoints and gave 46 photos. Firmware versions are listed in the report.
+- **Result with conditions.** The flight app's "adjust and save" option rewrote the mission: it removed stops at intermediate points, dropped the heading control, interpolated the camera angle, and raised the cruise speed from 2.0 to 2.5 m/s. The photos came out nearly horizontal, between 0° and −4.6°, and the orthophoto smeared. "Continue without adjusting" kept the planned camera angle: in a two-lap mission of 16 points on 2026-11-23, every first-lap photo was at −75.00°. With waypoints closer than 1 m, stops, heading, and camera angle were ignored. Manual flight gave 139 input images, 133 used, and an orthophoto at 2 cm per pixel over 131 × 154 m, with a surface model at 5 cm per pixel. For 3D Gaussian splatting on held-out photos after 7,000 steps, PSNR ran from 20.6 to 21.3 and SSIM from 0.68 to 0.75, depending on which images went in.
+- **Review and correction.** The author tests the second setting against the first within the report, and links the smear to the mission rewrite. The thread awaits its first outside comment.
+- **Interpretation.** An orthophoto needs downward-looking photos, and mixing horizontal or oblique photos smears it. Waypoint spacing and the "adjust" behaviour decide whether the planned angles survive.
+- **Open items.** Whether "continue without adjusting" flies the planned path, the position accuracy, and conversion of the results to COG, PMTiles, and STAC.
+- **Checked.** 2026-11-27.
+
 ### Also active in November 2026
 
 - The 2026 training lectures for the surveying course ran on 2026-11-25 ([#1010](https://github.com/UNopenGIS/7/issues/1010), closed on 2026-11-26 with the note "carried out"). The thread [#976](https://github.com/UNopenGIS/7/issues/976) stays open for 2026-11-26 and 2026-12-14, and lists the Raspberry Pi units assigned to the trainees' countries.
 - A semantic search over a large public catalogue, and a companion that builds raster tiles from the same catalogue with user-defined functions, closed on 2026-11-26 at their author's decision ([#1014](https://github.com/UNopenGIS/7/issues/1014), [#1013](https://github.com/UNopenGIS/7/issues/1013)).
 - A study of high-resolution drone imagery as PMTiles closed "for now" on 2026-11-26 ([#1023](https://github.com/UNopenGIS/7/issues/1023)). A candidate prompt for converting a national transformation-parameter file to a PROJ grid was posted in the open thread [#740](https://github.com/UNopenGIS/7/issues/740).
-- A drone experiment on a purchased aircraft continues from [#1021](https://github.com/UNopenGIS/7/issues/1021) in [#1036](https://github.com/UNopenGIS/7/issues/1036).
 
 ## 4. Writing rules for entries
 
